@@ -8,37 +8,29 @@ export type Testimonial = {
   photoPlaceholder?: string
 }
 
-/*
- * Testimonials are the most engaging content on the site (tester feedback).
- * Replace early-feedback quotes with real member voices post-launch.
- * Do not fabricate member quotes — mark early feedback clearly (type: 'early-feedback').
- */
-
 export const testimonials: Testimonial[] = [
   {
-    id: 'placeholder-1',
+    id: 'kiri-fitzpatrick',
     quote:
-      'Placeholder — add real testimonial from founding member or beta tester here. Specific detail beats generic praise. What did they actually get out of it?',
-    author: 'Name',
-    business: 'Business',
+      "I joined Business Heads because I wanted to meet people with similar interests. But instead, it has turned into business opportunities, more diverse work, and connections I was struggling to create in other spaces like my local business chamber.",
+    author: 'Kiri Fitzpatrick',
+    business: 'Simple Nimble Pty Ltd',
     location: 'Sydney',
-    type: 'early-feedback',
-    photoPlaceholder: '[Photo pending — confirm with Nica]',
+    type: 'member',
   },
   {
-    id: 'placeholder-2',
+    id: 'brad-seeto',
     quote:
-      'Placeholder — a second testimonial, ideally from a different type of business owner (e.g. if the first is a sole trader, this one could be a small team).',
-    author: 'Name',
-    business: 'Business',
+      "I was sick of wasting time at business events that always turned out to be sale pitches. I want a place where I can actually talk and connect with people, and help others do that too.",
+    author: 'Brad Seeto',
+    business: 'Bramelle Partners Pty Ltd',
     location: 'Sydney',
-    type: 'early-feedback',
-    photoPlaceholder: '[Photo pending — confirm with Nica]',
+    type: 'member',
   },
   {
     id: 'placeholder-3',
     quote:
-      'Placeholder — a third testimonial. Ideally addresses one of the four core hesitations: time, cost, not wanting to pitch, or not wanting another networking group.',
+      'Placeholder — add a third member testimonial here post-launch. Ideally addresses the time hesitation: something specific they got out of it that justified showing up.',
     author: 'Name',
     business: 'Business',
     location: 'Sydney',

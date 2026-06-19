@@ -10,19 +10,27 @@ export const metadata: Metadata = {
     'What actually happens at Business Heads. In-person events, the online platform, facilitated introductions, and co-coaching circles.',
 }
 
+const SPACE_COLORS = [
+  { bg: 'bg-bh-yellow',   text: 'text-bh-charcoal', sub: 'text-bh-charcoal/70', icon: 'text-bh-charcoal/40' },
+  { bg: 'bg-bh-blue',     text: 'text-white',        sub: 'text-white/70',       icon: 'text-white/40' },
+  { bg: 'bg-bh-red',      text: 'text-white',        sub: 'text-white/70',       icon: 'text-white/40' },
+  { bg: 'bg-bh-green',    text: 'text-white',        sub: 'text-white/70',       icon: 'text-white/40' },
+  { bg: 'bg-bh-charcoal', text: 'text-white',        sub: 'text-white/70',       icon: 'text-white/40' },
+]
+
 export default function ExperiencePage() {
   return (
     <>
       {/* ─── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="bg-white px-6 py-24">
+      <section className="bg-bh-blue px-6 py-24">
         <div className="max-w-5xl mx-auto">
-          <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
+          <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
             {experience.hero.overline}
           </p>
-          <h1 className="font-heading font-semibold text-4xl md:text-6xl text-bh-charcoal mb-6 leading-tight max-w-3xl">
+          <h1 className="font-heading font-semibold text-4xl md:text-6xl text-white mb-6 leading-tight max-w-3xl">
             {experience.hero.heading}
           </h1>
-          <p className="font-body text-lg text-bh-charcoal/55 max-w-xl">{experience.hero.body}</p>
+          <p className="font-body text-lg text-white/60 max-w-xl">{experience.hero.body}</p>
         </div>
       </section>
 
@@ -50,12 +58,8 @@ export default function ExperiencePage() {
                     {i + 1}.
                   </span>
                   <div>
-                    <p className="font-heading font-semibold text-white text-sm mb-1">
-                      {step.label}
-                    </p>
-                    <p className="font-body text-sm text-white/55 leading-relaxed">
-                      {step.description}
-                    </p>
+                    <p className="font-heading font-semibold text-white text-sm mb-1">{step.label}</p>
+                    <p className="font-body text-sm text-white/55 leading-relaxed">{step.description}</p>
                   </div>
                 </li>
               ))}
@@ -65,7 +69,7 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      {/* ─── The Platform ──────────────────────────────────────────────────── */}
+      {/* ─── The Platform (coloured card grid) ────────────────────────────── */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
@@ -78,49 +82,45 @@ export default function ExperiencePage() {
             {experience.platform.body}
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mb-8">
-            {experience.platform.spaces.map(({ name, description }) => (
-              <div key={name} className="bg-gray-50 rounded-2xl p-6">
-                <h3 className="font-heading font-semibold text-bh-charcoal mb-3">{name}</h3>
-                <p className="font-body text-sm text-bh-charcoal/60 leading-relaxed">
-                  {description}
-                </p>
-              </div>
-            ))}
+            {experience.platform.spaces.map(({ name, description }, i) => {
+              const c = SPACE_COLORS[i % SPACE_COLORS.length]
+              return (
+                <div key={name} className={`${c.bg} rounded-2xl p-6 flex flex-col gap-4`}>
+                  <div className={`w-8 h-8 rounded-full border-2 ${i === 0 ? 'border-bh-charcoal/30' : 'border-white/30'} flex items-center justify-center`}>
+                    <span className={`${c.icon} text-lg leading-none`}>+</span>
+                  </div>
+                  <h3 className={`font-heading font-semibold text-lg ${c.text}`}>{name}</h3>
+                  <p className={`font-body text-sm ${c.sub} leading-relaxed`}>{description}</p>
+                </div>
+              )
+            })}
           </div>
           <p className="font-body text-sm text-bh-charcoal/35 italic">{experience.platform.note}</p>
         </div>
       </section>
 
-      {/* ─── Introductions ─────────────────────────────────────────────────── */}
-      <section className="bg-bh-blue/5 px-6 py-24">
+      {/* ─── Introductions + Coaching ──────────────────────────────────────── */}
+      <section className="bg-bh-yellow px-6 py-24">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
+            <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-5">
               {experience.introductions.overline}
             </p>
             <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-5 leading-tight">
               {experience.introductions.heading}
             </h2>
-            <p className="font-body text-lg text-bh-charcoal/65 mb-5">
-              {experience.introductions.body}
-            </p>
-            <p className="font-body text-sm text-bh-charcoal/40 italic">
-              {experience.introductions.detail}
-            </p>
+            <p className="font-body text-lg text-bh-charcoal/75 mb-5">{experience.introductions.body}</p>
+            <p className="font-body text-sm text-bh-charcoal/45 italic">{experience.introductions.detail}</p>
           </div>
           <div>
-            <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
+            <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-5">
               {experience.coaching.overline}
             </p>
             <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-5 leading-tight">
               {experience.coaching.heading}
             </h2>
-            <p className="font-body text-lg text-bh-charcoal/65 mb-5">
-              {experience.coaching.body}
-            </p>
-            <p className="font-body text-sm text-bh-charcoal/40 italic">
-              {experience.coaching.detail}
-            </p>
+            <p className="font-body text-lg text-bh-charcoal/75 mb-5">{experience.coaching.body}</p>
+            <p className="font-body text-sm text-bh-charcoal/45 italic">{experience.coaching.detail}</p>
           </div>
         </div>
       </section>
@@ -133,15 +133,12 @@ export default function ExperiencePage() {
           </h2>
           <ul className="flex flex-wrap gap-3 mb-12">
             {experience.notHere.items.map((item) => (
-              <li
-                key={item}
-                className="font-body text-sm text-white/60 border border-white/15 rounded-full px-5 py-2"
-              >
+              <li key={item} className="font-body text-sm text-white/60 border border-white/15 rounded-full px-5 py-2">
                 {item}
               </li>
             ))}
           </ul>
-          <Button href={JOIN_URL} variant="primary">
+          <Button href={JOIN_URL} variant="white">
             Join Business Heads
           </Button>
         </div>

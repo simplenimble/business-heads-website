@@ -7,35 +7,47 @@ import { home } from '@/content/home'
 export const metadata: Metadata = {
   title: 'Business Heads | A Community for Business Owners Who Help Each Other Win',
   description:
-    'Not a referral machine. Not a pitch-fest. A community that genuinely pays its members back. $10,000 to the community every quarter. Sydney, Australia.',
+    'Not a referral machine. Not a pitch-fest. A community that genuinely pays its members back. $10,000 back to the community every quarter. Sydney, Australia.',
 }
+
+const CARD_COLORS = [
+  { bg: 'bg-bh-yellow', text: 'text-bh-charcoal', sub: 'text-bh-charcoal/70', icon: 'text-bh-charcoal/40' },
+  { bg: 'bg-bh-blue',    text: 'text-white',       sub: 'text-white/70',       icon: 'text-white/40' },
+  { bg: 'bg-bh-red',     text: 'text-white',       sub: 'text-white/70',       icon: 'text-white/40' },
+  { bg: 'bg-bh-green',   text: 'text-white',       sub: 'text-white/70',       icon: 'text-white/40' },
+  { bg: 'bg-bh-charcoal',text: 'text-white',       sub: 'text-white/70',       icon: 'text-white/40' },
+  { bg: 'bg-bh-blue',    text: 'text-white',       sub: 'text-white/70',       icon: 'text-white/40' },
+]
 
 export default function Home() {
   return (
     <>
       {/* ─── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="bg-white px-6 py-24 md:py-36">
+      <section className="bg-bh-blue px-6 py-24 md:py-36">
         <div className="max-w-5xl mx-auto">
-          <p className="font-body text-sm text-bh-charcoal/40 uppercase tracking-widest mb-8">
+          <p className="font-body text-sm text-white/50 uppercase tracking-widest mb-8">
             {home.hero.overline}
           </p>
-          <h1 className="font-heading font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-bh-charcoal leading-tight mb-10">
+          <h1 className="font-heading font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-10">
             {home.hero.headingLines.map((line) => (
-              <span key={line} className="block">
-                {line}
-              </span>
+              <span key={line} className="block">{line}</span>
             ))}
-            <span className="block text-bh-blue">{home.hero.highlight}</span>
+            <span className="block text-bh-yellow">{home.hero.highlight}</span>
           </h1>
-          <p className="font-body text-xl md:text-2xl text-bh-charcoal/70 max-w-2xl mb-3">
+          <p className="font-body text-xl md:text-2xl text-white/80 max-w-2xl mb-3">
             {home.hero.sub1}
           </p>
-          <p className="font-body text-lg text-bh-charcoal/50 max-w-2xl mb-14">
+          <p className="font-body text-lg text-white/60 max-w-2xl mb-14">
             {home.hero.sub2}
           </p>
-          <Button href={home.join_url} variant="primary" size="lg">
-            {home.hero.cta}
-          </Button>
+          <div className="flex flex-wrap gap-4">
+            <Button href={home.join_url} variant="white" size="lg">
+              {home.hero.cta}
+            </Button>
+            <Button href="/faq" variant="ghost" size="lg">
+              Learn more
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -51,9 +63,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-5">
               {home.people.body.map((para) => (
-                <p key={para} className="font-body text-lg text-white/70 leading-relaxed">
-                  {para}
-                </p>
+                <p key={para} className="font-body text-lg text-white/70 leading-relaxed">{para}</p>
               ))}
             </div>
             <blockquote className="border-l-4 border-bh-yellow pl-6 flex flex-col justify-center">
@@ -87,9 +97,7 @@ export default function Home() {
               </h2>
               <div className="space-y-4 mb-6">
                 {home.prize.body.map((para) => (
-                  <p key={para} className="font-body text-lg text-white/70">
-                    {para}
-                  </p>
+                  <p key={para} className="font-body text-lg text-white/70">{para}</p>
                 ))}
               </div>
               <p className="font-body text-sm text-white/40">{home.prize.footnote}</p>
@@ -98,7 +106,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── The Benefits ──────────────────────────────────────────────────── */}
+      {/* ─── The Benefits (coloured card grid) ────────────────────────────── */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
@@ -108,14 +116,18 @@ export default function Home() {
             {home.benefits.heading}
           </h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mb-8">
-            {home.benefits.items.map(({ title, body }) => (
-              <div key={title} className="bg-gray-50 rounded-2xl p-6">
-                <h3 className="font-heading font-semibold text-base text-bh-charcoal mb-2">
-                  {title}
-                </h3>
-                <p className="font-body text-sm text-bh-charcoal/60 leading-relaxed">{body}</p>
-              </div>
-            ))}
+            {home.benefits.items.map(({ title, body }, i) => {
+              const c = CARD_COLORS[i % CARD_COLORS.length]
+              return (
+                <div key={title} className={`${c.bg} rounded-2xl p-6 flex flex-col gap-4`}>
+                  <div className={`w-8 h-8 rounded-full border-2 ${i === 0 ? 'border-bh-charcoal/30' : 'border-white/30'} flex items-center justify-center`}>
+                    <span className={`${c.icon} text-lg leading-none`}>+</span>
+                  </div>
+                  <h3 className={`font-heading font-semibold text-lg ${c.text}`}>{title}</h3>
+                  <p className={`font-body text-sm ${c.sub} leading-relaxed`}>{body}</p>
+                </div>
+              )
+            })}
           </div>
           <Link href={home.benefits.link.href} className="font-body text-sm text-bh-blue hover:underline">
             {home.benefits.link.label} &rarr;
@@ -124,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* ─── Who it's for ──────────────────────────────────────────────────── */}
-      <section className="bg-bh-pink/15 px-6 py-24">
+      <section className="bg-bh-yellow px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-heading font-semibold text-3xl md:text-4xl text-bh-charcoal mb-12 max-w-xl leading-tight">
             {home.audience.heading}
@@ -132,25 +144,21 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {home.audience.groups.map(({ heading, body }) => (
               <div key={heading} className="bg-white rounded-2xl p-8">
-                <h3 className="font-heading font-semibold text-xl text-bh-charcoal mb-5">
-                  {heading}
-                </h3>
+                <h3 className="font-heading font-semibold text-xl text-bh-charcoal mb-5">{heading}</h3>
                 <div className="space-y-4">
                   {body.map((para) => (
-                    <p key={para} className="font-body text-bh-charcoal/65 leading-relaxed">
-                      {para}
-                    </p>
+                    <p key={para} className="font-body text-bh-charcoal/65 leading-relaxed">{para}</p>
                   ))}
                 </div>
               </div>
             ))}
           </div>
-          <p className="font-body text-sm text-bh-charcoal/40 italic">{home.audience.footer}</p>
+          <p className="font-body text-sm text-bh-charcoal/50 italic">{home.audience.footer}</p>
         </div>
       </section>
 
       {/* ─── Event proof ───────────────────────────────────────────────────── */}
-      <section className="bg-white px-6 py-24 border-t border-black/5">
+      <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
             {home.eventProof.overline}
@@ -181,45 +189,45 @@ export default function Home() {
       </section>
 
       {/* ─── Founding offer ────────────────────────────────────────────────── */}
-      <section className="bg-bh-yellow px-6 py-24">
+      <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-6">
+          <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-6">
             {home.foundingOffer.overline}
           </p>
-          <h2 className="font-heading font-semibold text-4xl md:text-6xl text-bh-charcoal mb-6 leading-tight">
+          <h2 className="font-heading font-semibold text-4xl md:text-6xl text-white mb-6 leading-tight">
             {home.foundingOffer.heading}
           </h2>
-          <p className="font-body text-xl text-bh-charcoal/70 mb-10 max-w-md mx-auto">
+          <p className="font-body text-xl text-white/70 mb-10 max-w-md mx-auto">
             {home.foundingOffer.body}
           </p>
-          <Button href={home.join_url} variant="primary" size="lg">
+          <Button href={home.join_url} variant="white" size="lg">
             {home.foundingOffer.cta}
           </Button>
-          <p className="font-body text-sm text-bh-charcoal/40 mt-5">{home.foundingOffer.footnote}</p>
+          <p className="font-body text-sm text-white/30 mt-5">{home.foundingOffer.footnote}</p>
         </div>
       </section>
 
       {/* ─── Lead capture ──────────────────────────────────────────────────── */}
-      <section className="bg-bh-charcoal px-6 py-24">
+      <section className="bg-bh-yellow px-6 py-24">
         <div className="max-w-md mx-auto text-center">
-          <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
+          <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-5">
             {home.leadCapture.overline}
           </p>
-          <h2 className="font-heading font-semibold text-3xl text-white mb-4">
+          <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-4">
             {home.leadCapture.heading}
           </h2>
-          <p className="font-body text-white/50 mb-10">{home.leadCapture.body}</p>
-          <LeadCaptureForm />
+          <p className="font-body text-bh-charcoal/60 mb-10">{home.leadCapture.body}</p>
+          <LeadCaptureForm dark={false} />
         </div>
       </section>
 
       {/* ─── Final CTA ─────────────────────────────────────────────────────── */}
-      <section className="bg-white px-6 py-28 text-center">
+      <section className="bg-bh-blue px-6 py-28 text-center">
         <div className="max-w-xl mx-auto">
-          <p className="font-body text-bh-charcoal/35 text-sm italic mb-8">
+          <p className="font-body text-white/40 text-sm italic mb-8">
             {home.finalCta.quote}
           </p>
-          <Button href={home.join_url} variant="primary" size="lg">
+          <Button href={home.join_url} variant="white" size="lg">
             {home.finalCta.cta}
           </Button>
         </div>

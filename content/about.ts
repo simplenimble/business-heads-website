@@ -20,16 +20,16 @@ export const about = {
       imagePlaceholder: "[Photo: Amy Kelley — placeholder until photography is confirmed with Nica]",
     },
     {
-      name: "Kiri [Surname]",
+      name: "Kiri Fitzpatrick",
       role: "Co-founder",
       bio: "Kiri has spent years as the person business owners come to when they need to think something through honestly. She brings that same directness to Business Heads: a genuine interest in other business owners, and a low tolerance for small talk that does not go anywhere.",
-      imagePlaceholder: "[Photo: Kiri — placeholder until photography is confirmed with Nica]",
+      imagePlaceholder: "[Photo: Kiri Fitzpatrick — placeholder until photography is confirmed with Nica]",
     },
     {
-      name: "Brad [Surname]",
+      name: "Brad Seeto",
       role: "Co-founder",
       bio: "Brad spent years as the accountant in the room for hundreds of small business owners. He noticed how often a five-minute introduction could have saved someone six months. He co-founded Business Heads because the conversations he was having in private deserved a proper home.",
-      imagePlaceholder: "[Photo: Brad — placeholder until photography is confirmed with Nica]",
+      imagePlaceholder: "[Photo: Brad Seeto — placeholder until photography is confirmed with Nica]",
     },
   ],
 

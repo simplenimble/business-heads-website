@@ -3,7 +3,7 @@ import Link from 'next/link'
 type ButtonProps = {
   children: React.ReactNode
   href?: string
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary' | 'white' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
   className?: string
   onClick?: () => void
@@ -16,8 +16,9 @@ const BASE =
 
 const VARIANTS = {
   primary: 'bg-bh-blue text-white hover:opacity-90 active:scale-[0.98]',
-  secondary:
-    'border-2 border-bh-blue text-bh-blue hover:bg-bh-blue hover:text-white active:scale-[0.98]',
+  secondary: 'border-2 border-bh-blue text-bh-blue hover:bg-bh-blue hover:text-white active:scale-[0.98]',
+  white: 'bg-white text-bh-blue hover:opacity-90 active:scale-[0.98]',
+  ghost: 'border-2 border-white text-white hover:bg-white hover:text-bh-blue active:scale-[0.98]',
 }
 
 const SIZES = {
@@ -42,17 +43,9 @@ export function Button({
 
   if (href) {
     if (href.startsWith('http') || href.startsWith('https')) {
-      return (
-        <a href={href} className={classes}>
-          {children}
-        </a>
-      )
+      return <a href={href} className={classes}>{children}</a>
     }
-    return (
-      <Link href={href} className={classes}>
-        {children}
-      </Link>
-    )
+    return <Link href={href} className={classes}>{children}</Link>
   }
 
   return (

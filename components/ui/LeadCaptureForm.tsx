@@ -4,7 +4,11 @@ import { useState, FormEvent } from 'react'
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
-export function LeadCaptureForm() {
+type Props = {
+  dark?: boolean  // true = dark/charcoal background (default), false = light/yellow background
+}
+
+export function LeadCaptureForm({ dark = true }: Props) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [businessName, setBusinessName] = useState('')
@@ -28,24 +32,26 @@ export function LeadCaptureForm() {
 
   if (status === 'success') {
     return (
-      <div className="rounded-2xl bg-white/10 px-8 py-10 text-center">
-        <p className="font-heading font-semibold text-white text-xl mb-2">Got it. Thank you.</p>
-        <p className="font-body text-sm text-white/60">
-          We'll be in touch before the founding rate closes.
+      <div className={`rounded-2xl px-8 py-10 text-center ${dark ? 'bg-white/10' : 'bg-white'}`}>
+        <p className={`font-heading font-semibold text-xl mb-2 ${dark ? 'text-white' : 'text-bh-charcoal'}`}>
+          Got it. Thank you.
+        </p>
+        <p className={`font-body text-sm ${dark ? 'text-white/60' : 'text-bh-charcoal/60'}`}>
+          We will be in touch before the founding rate closes.
         </p>
       </div>
     )
   }
 
-  const inputClass =
-    'w-full rounded-xl bg-white/10 border border-white/15 px-4 py-3 font-body text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-bh-blue transition-colors'
+  const labelClass = `block font-body text-sm mb-1.5 ${dark ? 'text-white/50' : 'text-bh-charcoal/60'}`
+  const inputClass = dark
+    ? 'w-full rounded-xl bg-white/10 border border-white/15 px-4 py-3 font-body text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-bh-blue transition-colors'
+    : 'w-full rounded-xl bg-white border border-bh-charcoal/15 px-4 py-3 font-body text-sm text-bh-charcoal placeholder:text-bh-charcoal/30 focus:outline-none focus:border-bh-blue transition-colors'
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div>
-        <label htmlFor="lcf-name" className="block font-body text-sm text-white/50 mb-1.5">
-          Your name
-        </label>
+        <label htmlFor="lcf-name" className={labelClass}>Your name</label>
         <input
           id="lcf-name"
           type="text"
@@ -58,9 +64,7 @@ export function LeadCaptureForm() {
       </div>
 
       <div>
-        <label htmlFor="lcf-email" className="block font-body text-sm text-white/50 mb-1.5">
-          Email address
-        </label>
+        <label htmlFor="lcf-email" className={labelClass}>Email address</label>
         <input
           id="lcf-email"
           type="email"
@@ -73,9 +77,7 @@ export function LeadCaptureForm() {
       </div>
 
       <div>
-        <label htmlFor="lcf-business" className="block font-body text-sm text-white/50 mb-1.5">
-          Business name
-        </label>
+        <label htmlFor="lcf-business" className={labelClass}>Business name</label>
         <input
           id="lcf-business"
           type="text"
