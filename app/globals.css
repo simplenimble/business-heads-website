@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Brand colours */
+  --color-bh-blue: #4f48ff;
+  --color-bh-yellow: #fdce00;
+  --color-bh-red: #ff452b;
+  --color-bh-green: #18b465;
+  --color-bh-charcoal: #473f42;
+  --color-bh-pink: #f59bb8;
+
+  /* Brand fonts
+     All Round Gothic (headings) → Nunito standin until font files are supplied.
+     Avant Garde ITC Book (body) → Jost standin until font files are supplied.
+     To swap: replace next/font/google in layout.tsx with next/font/local
+     pointing at the actual .woff2 files in /public/fonts/. */
+  --font-heading: var(--font-heading-var), Nunito, ui-rounded, sans-serif;
+  --font-body: var(--font-body-var), Jost, ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #473f42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
