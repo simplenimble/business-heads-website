@@ -24,6 +24,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-AU">
+      <head>
+        <link rel="preload" href="/fonts/AllRoundGothic-Demi.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/AllRoundGothic-Bold.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/AvantGardeGothic-Book.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-screen flex flex-col font-body">
         <Header />
         <main className="flex-1">{children}</main>
