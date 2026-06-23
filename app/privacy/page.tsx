@@ -32,7 +32,7 @@ export default function PrivacyPage() {
             </Section>
 
             <Section num="2" heading="Who This Policy Applies To">
-              <p>This policy applies to current and prospective Business Heads members, event attendees whether or not they are members, quarterly prize draw entrants including those entering via the free entry method, and visitors to www.businessheads.com.au.</p>
+              <p>This policy applies to current and prospective Business Heads members, event attendees whether or not they are members, quarterly prize draw entrants, and visitors to www.businessheads.com.au.</p>
               <p>The Business Heads platform is for individuals aged 18 and over. We do not knowingly collect personal information from anyone under 18. If you believe we have inadvertently collected information from a minor, contact us at <a href="mailto:hello@businessheads.com.au" className="text-bh-blue underline underline-offset-2">hello@businessheads.com.au</a> and we will delete it promptly.</p>
             </Section>
 
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
                       ['Contact details', 'Email address, phone number (if provided)', 'Membership admin, communications, direct marketing with consent', 'Up to 2 years after membership ends, then deleted or de-identified'],
                       ['Payment and billing', 'Billing address, ABN, transaction records. Card numbers processed by Stripe — not held by Business Heads.', 'Processing payments, financial records', '7 years (ATO)'],
                       ['Event registration', 'Name, contact details, dietary or accessibility requirements (if provided), ticket records', 'Event administration and attendance', '2 years from event'],
-                      ['Competition entries', 'Name, contact details, membership status, qualifying transaction records', 'Administering the draw, verifying eligibility, notifying winners', '7 years (members); 90 days post-draw (non-member free entries, unless opted in)'],
+                      ['Competition entries', 'Name, contact details, membership status, qualifying transaction records', 'Administering the draw, verifying eligibility, notifying winners', '7 years (members)'],
                       ['LinkedIn data', 'Name, photo, job title and employer, where you choose to link your LinkedIn profile', 'Pre-populating member profile, member directory', 'Treated as member profile data'],
                       ['Website analytics', 'IP address, browser type, device type, pages visited, session duration', 'Understanding site usage, improving the platform', '26 months'],
                       ['Communications', 'Emails, enquiries and support messages sent to us', 'Responding to enquiries, improving our service, legal records', '3 years from last interaction'],
@@ -124,7 +124,6 @@ export default function PrivacyPage() {
               </SubSection>
               <SubSection num="5" heading="Competition administration">
                 <p>Personal information collected from prize draw entrants is used to administer the draw, verify eligibility and notify winners. Winner names and general location may be published in accordance with the Competition Rules. We do not use prize draw entry data for marketing purposes without your consent.</p>
-                <p>Non-member free entry data is used only to administer the draw and is deleted within 90 days of the relevant draw being completed, unless the individual has opted in to further communications from Business Heads. Non-members entering via the free entry method are covered by this policy. A link to this policy is provided at the point of entry.</p>
               </SubSection>
               <SubSection num="6" heading="Events">
                 <p>We may share attendee information with third-party event suppliers, including venue operators, to manage event attendance and logistics. Photographers or videographers may be present at Business Heads events and we will notify attendees in advance where images may be taken and used in our communications. Where a Business Heads event involves a co-host, sponsor or event partner, any sharing of attendee information with that partner will be disclosed at the time of event registration.</p>
