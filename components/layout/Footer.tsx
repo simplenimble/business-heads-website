@@ -115,7 +115,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="font-body text-xs text-white/25">
-            &copy; {year} Business Heads. ABN [to be added].
+            &copy; {year} Business Heads. ABN 78 693 566 326.
           </p>
           <div className="flex gap-6">
             <a
