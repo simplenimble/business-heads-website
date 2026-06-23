@@ -13,16 +13,28 @@ export const metadata: Metadata = {
 export default function StoriesPage() {
   return (
     <>
-      {/* ─── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="bg-white px-6 py-24">
-        <div className="max-w-5xl mx-auto">
-          <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
-            {storiesHero.overline}
-          </p>
-          <h1 className="font-heading font-semibold text-4xl md:text-6xl text-bh-charcoal mb-6 leading-tight max-w-2xl">
-            {storiesHero.heading}
-          </h1>
-          <p className="font-body text-lg text-bh-charcoal/55 max-w-xl">{storiesHero.body}</p>
+      {/* ─── Hero — split layout: text left, brand photo right ────────────── */}
+      <section className="bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2">
+          <div className="px-6 py-24 flex flex-col justify-center">
+            <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
+              {storiesHero.overline}
+            </p>
+            <h1 className="font-heading font-semibold text-4xl md:text-5xl text-bh-charcoal mb-6 leading-tight max-w-lg">
+              {storiesHero.heading}
+            </h1>
+            <p className="font-body text-lg text-bh-charcoal/55 max-w-md leading-[1.8]">{storiesHero.body}</p>
+          </div>
+
+          {/* object-[center_65%] shows person, crops the logo at the top */}
+          <div className="relative h-72 lg:h-auto min-h-0 lg:min-h-[440px]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/photo-indoors.png"
+              alt="Business Heads community member"
+              className="absolute inset-0 w-full h-full object-cover object-[center_65%]"
+            />
+          </div>
         </div>
       </section>
 
@@ -39,7 +51,7 @@ export default function StoriesPage() {
             {testimonials.map(({ id, quote, author, business, location, photoPlaceholder }) => (
               <blockquote
                 key={id}
-                className="bg-white rounded-2xl p-8 flex flex-col justify-between"
+                className="bg-white rounded-3xl p-8 flex flex-col justify-between"
               >
                 <p className="font-body text-bh-charcoal/75 italic leading-relaxed mb-6">
                   &ldquo;{quote}&rdquo;

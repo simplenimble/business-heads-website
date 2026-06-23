@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
-import { events, eventFormat } from '@/content/events'
+import { events, eventFormat, eventsHero, eventsIntro } from '@/content/events'
 
 const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
 
@@ -16,17 +17,50 @@ export default function EventsPage() {
 
   return (
     <>
-      {/* ─── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="bg-white px-6 py-24">
-        <div className="max-w-5xl mx-auto">
-          <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">Events</p>
-          <h1 className="font-heading font-semibold text-4xl md:text-6xl text-bh-charcoal mb-6 leading-tight max-w-2xl">
-            Quarterly. Sydney.
-          </h1>
-          <p className="font-body text-lg text-bh-charcoal/55 max-w-xl">
-            One evening per quarter. A question-and-connection activity, the quarterly prize draw,
-            and open conversation with business owners who are not there to pitch you anything.
-          </p>
+      {/* ─── Hero — split layout with dark event photo ─────────────────────── */}
+      <section className="bg-bh-charcoal overflow-hidden">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center">
+          <div className="px-6 py-24 md:py-32">
+            <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
+              {eventsHero.overline}
+            </p>
+            <h1 className="font-heading font-semibold text-4xl md:text-6xl text-white mb-6 leading-tight max-w-xl">
+              {eventsHero.heading}
+            </h1>
+            <p className="font-body text-lg text-white/55 max-w-md leading-relaxed">
+              {eventsHero.body}
+            </p>
+          </div>
+
+          <div className="relative h-72 lg:h-auto lg:min-h-[520px] hidden lg:block">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/photo-experience-hero.png"
+              alt="Business Heads members at an evening event"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-bh-charcoal/20" />
+          </div>
+        </div>
+      </section>
+
+      {/* ─── What to expect ───────────────────────────────────────────────── */}
+      <section className="bg-gray-50 px-6 py-16">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+          <h2 className="font-heading font-semibold text-2xl md:text-3xl text-bh-charcoal leading-tight">
+            {eventsIntro.heading}
+          </h2>
+          <div>
+            <p className="font-body text-bh-charcoal/65 leading-[1.8] mb-5">
+              {eventsIntro.body}
+            </p>
+            <Link
+              href={eventsIntro.link.href}
+              className="font-body text-sm font-medium text-bh-blue hover:underline"
+            >
+              {eventsIntro.link.label} &rarr;
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -34,15 +68,15 @@ export default function EventsPage() {
       {upcoming.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
           <div className="max-w-5xl mx-auto">
-            <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
+            <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-8">
               Upcoming
             </p>
             {upcoming.map((event) => (
               <div key={event.id} className="bg-white/10 rounded-2xl p-8 mb-6 last:mb-0">
-                <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3">
+                <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-6">
                   {event.name}
                 </h2>
-                <div className="grid sm:grid-cols-3 gap-4 mb-8">
+                <div className="grid sm:grid-cols-3 gap-6 mb-8">
                   <div>
                     <p className="font-body text-xs text-white/40 uppercase tracking-widest mb-1">
                       Date
@@ -63,24 +97,23 @@ export default function EventsPage() {
                       Tickets
                     </p>
                     <p className="font-body text-white/80">{event.ticketPrice}</p>
+                    {event.bonusTicket && (
+                      <p className="font-body text-sm text-bh-yellow/85 mt-2 leading-relaxed">
+                        {event.bonusTicket}
+                      </p>
+                    )}
                   </div>
                 </div>
-                {event.rsvpUrl && event.rsvpUrl !== '[RSVP link to be added — Eventbrite or Circle]' ? (
-                  <Button href={event.rsvpUrl} variant="secondary" className="border-white text-white hover:bg-white hover:text-bh-blue">
-                    RSVP
-                  </Button>
-                ) : (
-                  <p className="font-body text-sm text-white/40 italic">
-                    RSVP link coming soon. Register your interest on the homepage to be notified.
-                  </p>
-                )}
+                <Button href={event.rsvpUrl} variant="white" size="md">
+                  RSVP for this event
+                </Button>
               </div>
             ))}
           </div>
         </section>
       )}
 
-      {/* ─── Run of the evening (also serves as on-screen agenda) ─────────── */}
+      {/* ─── Format / run of the evening ──────────────────────────────────── */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
@@ -136,7 +169,7 @@ export default function EventsPage() {
       <section className="bg-bh-yellow px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-6">
-            Members get in at member price. Join before 31 August.
+            Join before 31 August for 30% off your first annual subscription.
           </h2>
           <Button href={JOIN_URL} variant="primary">
             Join Business Heads

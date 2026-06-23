@@ -4,125 +4,118 @@ export const home = {
   join_url: JOIN_URL,
 
   hero: {
-    overline: 'Sydney, Australia',
-    headingLines: [
-      'Not a referral machine.',
-      'Not a room full of strangers pitching each other.',
-      'Not a corporate lottery.',
-    ],
-    highlight: 'Something else.',
-    sub1: 'A community that genuinely pays its members back.',
-    sub2: 'The place where successful business owners talk to each other like human beings.',
+    heading: 'Business is better with the right people around you.',
+    sub1: 'A business network where you can connect, test ideas, learn and grow with other business heads.',
+    sub2: 'Not a referral machine. Not a pitch-fest. Something worth your time.',
     cta: 'Join Business Heads',
   },
 
   people: {
     overline: 'Why members stay',
-    heading: 'One good conversation, every time.',
-    body: [
-      'Events are not pitch rounds. They are a question-and-connection activity, followed by open conversation. You show up, answer one honest question, and find out who else in the room has been thinking the same thing.',
-      'No name-tag small talk. No agenda. Just business owners being straight with each other.',
-    ],
-    testimonialPlaceholder:
-      '[Real member quote goes here post-launch. Specific detail beats generic praise.]',
-    testimonialAuthorPlaceholder: 'Name, Business, Sydney',
+    heading: 'One good conversation changes things.',
+    body: 'You\'ve been to those events. You circulate, grab a drink, and leave wondering whether you\'d have been better off staying home. Business Heads exists because a few of us needed somewhere to think out loud — with people who\'d been through it, push back on our thinking, and actually understand the pressure.',
+    link: { href: '/experience', label: 'What actually happens' },
   },
 
   prize: {
-    overline: 'The prize',
-    number: '$10k',
-    tagline: 'Back to the community, every quarter.',
-    heading: 'Not a raffle. Proof the model gives back.',
-    body: [
-      'Every quarter, Business Heads draws $10,000 from membership revenue and gives it back to the community. Winners spend it inside the community, on member businesses.',
-      'The more events you attend, the more entries you earn.',
-    ],
-    footnote:
-      'Winners receive $10,000 to spend on member businesses, or $3,000 cash if nothing fits.',
+    overline: 'The Quarterly Draw',
+    heading: '$10,000. Back in the room. Every quarter.',
+    body: 'One member wins it. They spend it with other members. The money moves around, not out.',
+    footnote: 'Every member gets a ticket to every draw. Additional ticket entries granted with every event ticket purchase.',
+    footnoteLinkLabel: 'See Terms and Conditions',
+    footnoteLinkHref: '/terms',
   },
 
   benefits: {
-    overline: 'Your membership includes',
-    heading: 'The rational case for $200 a month.',
-    items: [
-      {
-        title: 'Member discounts',
-        body: 'Real savings on software, services, and suppliers you already use, through verified member partners.',
-      },
-      {
-        title: 'Member directory',
-        body: 'Find other members, see what they do, and get in touch without the awkward LinkedIn dance.',
-      },
-      {
-        title: 'Learning sessions',
-        body: 'Monthly sessions on things business owners actually need to know, led by people who have done it.',
-      },
-      {
-        title: 'Co-coaching circles',
-        body: 'An optional monthly drop-in for working through a specific problem with a small group.',
-      },
-      {
-        title: 'Facilitated introductions',
-        body: 'New members can request an introduction to another member. We make the connection.',
-      },
-      {
-        title: 'The online platform',
-        body: 'Five spaces on Circle: Town Centre, Events, Member Benefits, Member Directory, and Resources Hub.',
-      },
-    ],
-    link: { href: '/benefits', label: 'See the full breakdown' },
+    overline: 'What you get',
+    heading: 'More than a membership. A room worth being in.',
+    body: 'Quarterly events, a prize draw, member discounts, co-coaching circles, facilitated introductions, and an online platform that keeps the conversation going between events.',
+    link: { href: '/experience', label: 'See everything that\'s included' },
   },
 
   audience: {
-    heading: 'If any of this sounds familiar, you are in the right place.',
+    heading: 'Sound familiar?',
     groups: [
       {
-        heading: 'You are doing it mostly alone.',
-        body: [
-          'Sole trader or small team. You are the one holding the whole thing together, and most days there is no one to sense-check your thinking with.',
-          'You are not looking for advice. You are looking for someone who gets it.',
-        ],
+        heading: 'You\'re doing it mostly alone.',
+        body: 'Sole trader or small team. You\'re the one holding it all together, and most days there\'s nobody to think out loud with.',
       },
       {
-        heading: 'You have made it work, and that is a little isolating.',
-        body: [
-          'Mid-sized team. You have figured a lot out. That makes it harder, not easier, to find people you can talk to honestly.',
-          'You want peers. Not a mentor programme, not a mastermind group. Just other people who understand the actual job.',
-        ],
+        heading: 'You\'ve made it work. That\'s isolating in its own way.',
+        body: 'Mid-sized team. You\'ve figured a lot out, which makes it harder to find people you can be honest with.',
       },
     ],
-    footer: 'Busy, independent, and pragmatic. You only give your time to something with proven value.',
+    footer: 'Busy, independent, pragmatic. You only give your time to something worth it.',
   },
 
   eventProof: {
     overline: 'Next event',
-    heading: 'Business Heads Sydney.',
-    body: 'Venue and date to be confirmed. Register your interest below and we will be in touch with details.',
-    format: [
-      'Arrival and time to settle in',
-      'A question-and-connection activity, not a pitch round',
-      'The quarterly prize draw',
-      'Open networking until you are ready to leave',
-    ],
-    link: { href: '/events', label: 'Event details' },
+    heading: '1 July. Balmain, Sydney.',
+    body: 'The launch event is at East Village Hotel, Balmain. Tickets are $40. Every ticket comes with a bonus ticket to bring someone along.',
+    link: { href: '/events', label: 'Event details and tickets' },
   },
 
-  foundingOffer: {
+  pricing: {
     overline: 'Founding offer',
     heading: 'Join before 31 August.',
-    body: 'Lock in your founding member rate for the life of your membership. When the founding rate closes, it closes.',
-    cta: 'Join Business Heads',
-    footnote: '$200/month or $2,200/year. No lock-in.',
+    subheading: 'One good introduction. One subscription saved. One conversation that changes your direction. This membership earns its keep.',
+    highlight: 'This membership earns its keep.',
+    foundingDeadline: '31 August 2026',
+    foundingDiscount: '30% off your first year — founding members only.',
+    plans: [
+      {
+        id: 'monthly',
+        name: 'Monthly subscription',
+        price: '$200',
+        priceNote: '+ GST',
+        originalPrice: null,
+        badge: null,
+        description: 'For business owners who want to get a feel for it first.',
+        foundingPrice: '',
+        foundingNote: '',
+        includes: [
+          'One entry per month into the quarterly $10,000 prize draw',
+          'Discounted member tickets to quarterly events',
+          'Full access to the member community',
+          'Invitations to member-only online events',
+          'Member discounts and offers',
+        ],
+        cta: 'Join Business Heads',
+        ctaUrl: JOIN_URL,
+      },
+      {
+        id: 'annual',
+        name: 'Annual subscription',
+        price: '$2,200',
+        priceNote: '+ GST',
+        originalPrice: '$2,400',
+        badge: 'Most popular',
+        description: 'Our most popular option. One month free, and you\'re in for the year.',
+        foundingPrice: '$1,540',
+        foundingNote: '30% off until 31 August. Price locks in for your first year.',
+        includes: [
+          'Twelve entries into the quarterly $10,000 prize draw',
+          'One month free',
+          'Discounted member tickets to quarterly events',
+          'Full access to the member community',
+          'Invitations to member-only online events',
+          'Member discounts and offers',
+        ],
+        cta: 'Join Business Heads',
+        ctaUrl: JOIN_URL,
+      },
+    ],
+    footnote: '$200/month or $2,200/year at full rate. No lock-in. Cancel any time.',
   },
 
   leadCapture: {
-    overline: 'Not ready to join yet?',
+    overline: 'Not ready yet?',
     heading: 'Register your interest.',
-    body: 'No commitment. We will keep you across what is happening and reach out before the founding rate closes.',
+    body: 'No commitment. We\'ll keep you across what\'s happening and reach out before the founding rate closes.',
   },
 
   finalCta: {
-    quote: '"Business Heads. Because running a business should not mean going it alone."',
+    quote: 'Business is better with the right people around you.',
     cta: 'Join Business Heads',
   },
 }

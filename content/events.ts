@@ -1,3 +1,5 @@
+export type EventStatus = 'upcoming' | 'past'
+
 export type EventItem = {
   id: string
   name: string
@@ -6,8 +8,9 @@ export type EventItem = {
   suburb: string
   city: string
   ticketPrice: string
+  bonusTicket?: string
   rsvpUrl: string
-  status: 'upcoming' | 'past'
+  status: EventStatus
   recap?: string
 }
 
@@ -19,26 +22,44 @@ export const events: EventItem[] = [
   {
     id: 'sydney-launch-2026',
     name: 'Business Heads Sydney — Launch Event',
-    date: '[Date to be confirmed]',
-    venue: '[Venue to be confirmed]',
-    suburb: '[Suburb]',
+    date: '1 July 2026',
+    venue: 'East Village Hotel',
+    suburb: 'Balmain',
     city: 'Sydney, NSW',
-    ticketPrice: '$40 per person. Free plus-one for this first event.',
-    rsvpUrl: '[RSVP link to be added — Eventbrite or Circle]',
+    ticketPrice: '$40 per person.',
+    bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
+    rsvpUrl: 'https://www.businessheads.com.au/launch',
     status: 'upcoming',
   },
 ]
 
 export const eventFormat = [
-  { time: 'Arrival', description: 'Doors open. Time to settle in before anything starts.' },
   {
-    time: 'Question & connection',
-    description:
-      'A structured activity around one honest question. Not a pitch round. No agenda.',
+    time: 'Arrival',
+    description: 'Doors open. Time to settle in.',
   },
   {
-    time: 'Quarterly draw',
-    description: 'The $10,000 quarterly prize is drawn live. One member wins.',
+    time: 'The activity',
+    description: 'A prompting topic or facilitated activity. The whole room participates.',
   },
-  { time: 'Open networking', description: 'Unstructured conversation. Leave when you are ready.' },
+  {
+    time: 'The quarterly draw',
+    description: '$10,000 drawn live. One member wins.',
+  },
+  {
+    time: 'Open conversation',
+    description: 'The rest of the evening is yours.',
+  },
 ]
+
+export const eventsHero = {
+  overline: 'Events',
+  heading: 'Quarterly. Sydney.',
+  body: 'One evening, four times a year.',
+}
+
+export const eventsIntro = {
+  heading: 'What to expect.',
+  body: 'Every Business Heads event follows the same format. A facilitated activity that gets the whole room talking about something real, a live prize draw, and open conversation for the rest of the evening. Tickets are $40. Members get in at the member rate.',
+  link: { href: '/experience', label: 'Read more about the experience' },
+}

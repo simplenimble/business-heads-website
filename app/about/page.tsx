@@ -13,28 +13,65 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      {/* ─── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="bg-white px-6 py-24">
-        <div className="max-w-5xl mx-auto">
-          <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
-            {about.hero.overline}
-          </p>
-          <h1 className="font-heading font-semibold text-4xl md:text-6xl text-bh-charcoal leading-tight max-w-3xl">
-            {about.hero.heading}
-          </h1>
-        </div>
-      </section>
+      {/* ─── Hero image — full width ───────────────────────────────────────── */}
+      <div className="w-full">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={about.hero.image}
+          alt="Business Heads community event"
+          className="w-full h-auto block"
+        />
+      </div>
 
-      {/* ─── Origin story ──────────────────────────────────────────────────── */}
+      {/* ─── Story ─────────────────────────────────────────────────────────── */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-3xl mx-auto">
-          <div className="space-y-6">
-            {about.story.map((para) => (
-              <p key={para} className="font-body text-lg text-white/70 leading-relaxed">
-                {para}
-              </p>
+
+          {/* Opening hook — large heading */}
+          <h1 className="font-heading font-semibold text-3xl md:text-5xl text-white leading-tight mb-12">
+            {about.hero.heading}
+          </h1>
+
+          {/* Opening paragraphs */}
+          <div className="space-y-5 mb-12">
+            {about.storyOpening.map((para) => (
+              <p key={para} className="font-body text-lg text-white/70 leading-[1.8]">{para}</p>
             ))}
           </div>
+
+          {/* Three punchy highlight lines */}
+          <div className="border-l-2 border-bh-yellow/50 pl-6 space-y-4 mb-12">
+            {about.storyHighlights.map((line) => (
+              <p key={line} className="font-body text-lg text-white/85 leading-relaxed italic">{line}</p>
+            ))}
+          </div>
+
+          {/* Origin */}
+          <div className="space-y-5 mb-12">
+            {about.storyOrigin.map((para) => (
+              <p key={para} className="font-body text-lg text-white/70 leading-[1.8]">{para}</p>
+            ))}
+          </div>
+
+          {/* "That's what was missing." — emphatic line */}
+          <p className="font-heading font-semibold text-2xl md:text-3xl text-bh-yellow mb-12 leading-tight">
+            {about.storyMissing}
+          </p>
+
+          {/* Community paragraphs */}
+          <div className="space-y-5 mb-10">
+            {about.storyCommunity.map((para) => (
+              <p key={para} className="font-body text-lg text-white/70 leading-[1.8]">{para}</p>
+            ))}
+          </div>
+
+          {/* Growth */}
+          <p className="font-body text-white/50 mb-10 leading-relaxed">{about.storyGrowth}</p>
+
+          {/* Closing statement */}
+          <p className="font-heading font-semibold text-2xl md:text-3xl text-white leading-tight">
+            {about.storyClosing}
+          </p>
         </div>
       </section>
 
@@ -45,11 +82,15 @@ export default function AboutPage() {
             The founders
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            {about.founders.map(({ name, role, bio, imagePlaceholder }) => (
+            {about.founders.map(({ name, role, bio, photo }) => (
               <div key={name}>
-                {/* Photo placeholder */}
-                <div className="w-full aspect-square bg-bh-pink/20 rounded-2xl mb-6 flex items-end p-4">
-                  <p className="font-body text-xs text-bh-charcoal/30 italic">{imagePlaceholder}</p>
+                <div className="w-full aspect-square rounded-2xl mb-6 overflow-hidden bg-bh-pink/10">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={photo}
+                    alt={name}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <p className="font-body text-xs text-bh-blue uppercase tracking-widest mb-1">
                   {role}

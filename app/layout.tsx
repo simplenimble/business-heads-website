@@ -1,22 +1,7 @@
 import type { Metadata } from 'next'
-import { Nunito, Jost } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-
-const headingFont = Nunito({
-  subsets: ['latin'],
-  weight: ['500', '600'],
-  variable: '--font-heading-var',
-  display: 'swap',
-})
-
-const bodyFont = Jost({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-body-var',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.businessheads.com.au'),
@@ -38,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-AU" className={`${headingFont.variable} ${bodyFont.variable}`}>
+    <html lang="en-AU">
       <body className="min-h-screen flex flex-col font-body">
         <Header />
         <main className="flex-1">{children}</main>

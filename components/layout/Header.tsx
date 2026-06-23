@@ -11,7 +11,6 @@ const CIRCLE_LOGIN_URL = 'https://businessheads.circle.so/sign_in'
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/experience', label: 'Experience' },
-  { href: '/benefits', label: 'Benefits' },
   { href: '/events', label: 'Events' },
   { href: '/stories', label: 'Stories' },
   { href: '/about', label: 'About' },
@@ -29,9 +28,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-black/5">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
-        {/* Logo */}
-        <Link href="/" className="font-heading font-semibold text-bh-charcoal text-lg shrink-0">
-          Business Heads
+        {/* Logo — SVG wordmark, standard (blue) */}
+        <Link href="/" className="shrink-0 flex items-center" aria-label="Business Heads home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logos/logo-horizontal.svg"
+            alt="Business Heads"
+            height={38}
+            width={290}
+            className="h-[38px] w-auto"
+          />
         </Link>
 
         {/* Desktop nav */}

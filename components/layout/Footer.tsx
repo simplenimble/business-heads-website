@@ -10,9 +10,18 @@ export function Footer() {
     <footer className="bg-bh-charcoal text-white">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
-          {/* Brand */}
+          {/* Brand — reverse (white) horizontal logo on charcoal */}
           <div className="col-span-2 md:col-span-1">
-            <p className="font-heading font-semibold text-white text-lg mb-3">Business Heads</p>
+            <Link href="/" className="inline-block mb-5" aria-label="Business Heads home">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logos/logo-horizontal-reverse.svg"
+                alt="Business Heads"
+                height={30}
+                width={228}
+                className="h-[30px] w-auto"
+              />
+            </Link>
             <p className="font-body text-sm text-white/40 leading-relaxed max-w-48">
               A community for business owners who help each other win.
             </p>
@@ -20,13 +29,12 @@ export function Footer() {
 
           {/* Explore */}
           <div>
-            <p className="font-heading text-white/30 text-xs uppercase tracking-widest mb-5">
+            <p className="font-body text-white/30 text-xs uppercase tracking-widest mb-5">
               Explore
             </p>
             <ul className="space-y-3">
               {[
                 { href: '/experience', label: 'The Experience' },
-                { href: '/benefits', label: 'Member Benefits' },
                 { href: '/events', label: 'Events' },
                 { href: '/stories', label: 'Member Stories' },
                 { href: '/about', label: 'About' },
@@ -47,7 +55,7 @@ export function Footer() {
 
           {/* Members */}
           <div>
-            <p className="font-heading text-white/30 text-xs uppercase tracking-widest mb-5">
+            <p className="font-body text-white/30 text-xs uppercase tracking-widest mb-5">
               Members
             </p>
             <ul className="space-y-3">
@@ -80,7 +88,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <p className="font-heading text-white/30 text-xs uppercase tracking-widest mb-5">
+            <p className="font-body text-white/30 text-xs uppercase tracking-widest mb-5">
               Legal
             </p>
             <ul className="space-y-3">
@@ -110,7 +118,6 @@ export function Footer() {
             &copy; {year} Business Heads. ABN [to be added].
           </p>
           <div className="flex gap-6">
-            {/* Placeholder social links — update URLs before launch */}
             <a
               href="https://www.linkedin.com/company/business-heads-au"
               className="font-body text-xs text-white/25 hover:text-white/60 transition-colors"

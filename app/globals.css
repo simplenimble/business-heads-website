@@ -1,5 +1,40 @@
 @import "tailwindcss";
 
+/* ─── Brand fonts ──────────────────────────────────────────────────────────
+   All Round Gothic Demi  — all H1/H2/H3 headings (font-weight 300–600)
+   All Round Gothic Bold  — logo/wordmark only      (font-weight 700+)
+   ITC Avant Garde Gothic Book — body copy + sub-headings
+
+   XLight variant not present in supplied folder; feature text (font-light)
+   renders from the Demi file until AllRoundGothic-XLight.otf is added here.
+   To add XLight: copy the file, add a @font-face block with font-weight: 100 300,
+   and font-weight: 400 600 on the Demi block below.
+   ──────────────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('/fonts/AllRoundGothic-Demi.otf') format('opentype');
+  font-weight: 100 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('/fonts/AllRoundGothic-Bold.otf') format('opentype');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvantGardeGothic';
+  src: url('/fonts/AvantGardeGothic-Book.otf') format('opentype');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   /* Brand colours */
   --color-bh-blue: #4f48ff;
@@ -9,13 +44,9 @@
   --color-bh-charcoal: #473f42;
   --color-bh-pink: #f59bb8;
 
-  /* Brand fonts
-     All Round Gothic (headings) → Nunito standin until font files are supplied.
-     Avant Garde ITC Book (body) → Jost standin until font files are supplied.
-     To swap: replace next/font/google in layout.tsx with next/font/local
-     pointing at the actual .woff2 files in /public/fonts/. */
-  --font-heading: var(--font-heading-var), Nunito, ui-rounded, sans-serif;
-  --font-body: var(--font-body-var), Jost, ui-sans-serif, system-ui, sans-serif;
+  /* Brand fonts — loaded via @font-face above */
+  --font-heading: 'AllRoundGothic', ui-rounded, sans-serif;
+  --font-body: 'AvantGardeGothic', 'Avant Garde', ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -27,4 +58,6 @@ body {
   color: #473f42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.0625rem; /* 17px base */
+  line-height: 1.7;
 }
