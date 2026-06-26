@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
+const JOIN_URL = '/join'
 const CIRCLE_LOGIN_URL = 'https://businessheads.circle.so/sign_in'
 
 export function Footer() {

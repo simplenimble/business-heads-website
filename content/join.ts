@@ -2,8 +2,8 @@ const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-hea
 
 export const join = {
   hero: {
-    overline: 'Pricing and joining',
-    heading: 'Join a community for business owners who help each other win.',
+    overline: 'Joining',
+    heading: 'Join a community of business heads.',
   },
 
   pricing: {

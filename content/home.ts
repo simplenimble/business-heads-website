@@ -1,4 +1,4 @@
-const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
+const JOIN_URL = '/join'
 
 export const home = {
   join_url: JOIN_URL,
