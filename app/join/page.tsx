@@ -62,7 +62,7 @@ export default function JoinPage() {
               Monthly subscription
             </h2>
             <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$200</span>
-            <p className="font-body text-sm text-bh-charcoal/45 mb-5">+ GST per month</p>
+            <p className="font-body text-sm text-bh-charcoal/45 mb-5">per month (inc. GST)</p>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
               For business owners who want to get a feel for it first.
             </p>
@@ -98,7 +98,7 @@ export default function JoinPage() {
               Annual subscription
             </h2>
             <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$2,200</span>
-            <p className="font-body text-sm text-bh-charcoal/45 mb-5">+ GST per year</p>
+            <p className="font-body text-sm text-bh-charcoal/45 mb-5">per year (inc. GST)</p>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
               Our most popular option. One month free, and you&rsquo;re in for the year.
             </p>
