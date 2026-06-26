@@ -243,8 +243,8 @@ export default function Home() {
 
                 {/* Founding discount band — annual only */}
                 {plan.foundingNote && (
-                  <div className="rounded-xl bg-bh-blue/8 border border-bh-blue/15 px-4 py-3 mb-6">
-                    <p className="font-body text-sm text-bh-blue font-semibold leading-snug">
+                  <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-6">
+                    <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
                       {plan.foundingNote}
                     </p>
                   </div>
