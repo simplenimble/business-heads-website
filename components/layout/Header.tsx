@@ -65,7 +65,7 @@ export function Header() {
           >
             Member Login
           </a>
-          <Button href={JOIN_URL} variant="primary" size="sm">
+          <Button href="/join" variant="primary" size="sm">
             Join Business Heads
           </Button>
         </div>
@@ -99,7 +99,7 @@ export function Header() {
           <a href={CIRCLE_LOGIN_URL} className="font-body text-sm text-bh-charcoal/40">
             Member Login
           </a>
-          <Button href={JOIN_URL} variant="primary" className="w-full justify-center">
+          <Button href="/join" variant="primary" className="w-full justify-center">
             Join Business Heads
           </Button>
         </div>

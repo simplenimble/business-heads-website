@@ -61,14 +61,10 @@ export default function JoinPage() {
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4">
               Monthly subscription
             </h2>
-            <div className="flex items-baseline gap-2 mb-3">
-              <span className="font-heading font-semibold text-5xl text-bh-charcoal">$200</span>
-            </div>
-            <span className="inline-block bg-bh-yellow text-bh-charcoal font-body text-xs font-semibold px-3 py-1 rounded-full mb-4 w-fit">
-              + GST
-            </span>
+            <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$200</span>
+            <p className="font-body text-sm text-bh-charcoal/45 mb-5">+ GST per month</p>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
-              Perfect for business owners who want to dip their toes in and see what we are about
+              For business owners who want to get a feel for it first.
             </p>
             <p className="font-body text-sm text-bh-charcoal/50 mb-3">Includes:</p>
             <ul className="space-y-3 mb-8 flex-1">
@@ -84,7 +80,7 @@ export default function JoinPage() {
               className="block w-full text-center font-body font-semibold text-white py-3.5 px-6 rounded-full transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#ff452b' }}
             >
-              Purchase Now
+              Join Business Heads
             </a>
           </div>
 
@@ -99,19 +95,17 @@ export default function JoinPage() {
               </span>
             </div>
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4 mt-2">
-              Annual subscription with one month free
+              Annual subscription
             </h2>
-            <div className="flex items-baseline gap-2 mb-1">
-              <span className="font-body text-2xl text-bh-charcoal/30 line-through">$2,400</span>
+            <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$2,200</span>
+            <p className="font-body text-sm text-bh-charcoal/45 mb-5">+ GST per year</p>
+            <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-5">
+              <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
+                30% off until 31 August — pay just $1,540 for your first year.
+              </p>
             </div>
-            <div className="flex items-baseline gap-2 mb-3">
-              <span className="font-heading font-semibold text-5xl text-bh-charcoal">$2,200</span>
-            </div>
-            <span className="inline-block bg-bh-yellow text-bh-charcoal font-body text-xs font-semibold px-3 py-1 rounded-full mb-4 w-fit">
-              + GST
-            </span>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
-              Our most popular option, because this network is worth it and why not get a month free
+              Our most popular option. One month free, and you&rsquo;re in for the year.
             </p>
             <p className="font-body text-sm text-bh-charcoal/50 mb-3">Includes:</p>
             <ul className="space-y-3 mb-8 flex-1">
@@ -127,7 +121,7 @@ export default function JoinPage() {
               className="block w-full text-center font-body font-semibold text-white py-3.5 px-6 rounded-full transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#ff452b' }}
             >
-              Purchase Now
+              Join Business Heads
             </a>
           </div>
         </div>
