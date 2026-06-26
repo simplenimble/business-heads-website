@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { events, eventFormat, eventsHero, eventsIntro } from '@/content/events'
@@ -18,7 +18,7 @@ export default function EventsPage() {
 
   return (
     <>
-      {/* â”€â”€â”€ Hero â€” split layout with dark event photo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Hero */}
       <section className="bg-bh-charcoal overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center">
           <div className="px-6 py-24 md:py-32">
@@ -45,7 +45,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ What to expect â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* What to expect */}
       <section className="bg-gray-50 px-6 py-16">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-start">
           <h2 className="font-heading font-semibold text-2xl md:text-3xl text-bh-charcoal leading-tight">
@@ -65,7 +65,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ Upcoming events â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Upcoming events */}
       {upcoming.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
           <div className="max-w-5xl mx-auto">
@@ -114,7 +114,7 @@ export default function EventsPage() {
         </section>
       )}
 
-      {/* â”€â”€â”€ Format / run of the evening â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Format */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
@@ -142,7 +142,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ Past events â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Past events */}
       {past.length > 0 && (
         <section className="bg-white px-6 py-24">
           <div className="max-w-5xl mx-auto">
@@ -166,22 +166,22 @@ export default function EventsPage() {
         </section>
       )}
 
-      {/* â”€â”€â”€ In Their Words â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* In their words */}
       {testimonials.filter(t => t.type === 'member').length > 0 && (
-        <section className=”bg-bh-charcoal px-6 py-24”>
-          <div className=”max-w-5xl mx-auto”>
-            <p className=”font-body text-bh-yellow text-sm uppercase tracking-widest mb-10”>
+        <section className="bg-bh-charcoal px-6 py-24">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-10">
               In their words
             </p>
-            <div className=”grid md:grid-cols-2 gap-6”>
+            <div className="grid md:grid-cols-2 gap-6">
               {testimonials.filter(t => t.type === 'member').map(({ id, quote, author, business, location }) => (
-                <blockquote key={id} className=”bg-white/8 rounded-2xl p-8 flex flex-col justify-between”>
-                  <p className=”font-body text-white/75 italic leading-relaxed mb-8”>
+                <blockquote key={id} className="bg-white/8 rounded-2xl p-8 flex flex-col justify-between">
+                  <p className="font-body text-white/75 italic leading-relaxed mb-8">
                     &ldquo;{quote}&rdquo;
                   </p>
-                  <cite className=”not-italic”>
-                    <p className=”font-heading font-semibold text-sm text-white”>{author}</p>
-                    <p className=”font-body text-xs text-white/40”>{business}, {location}</p>
+                  <cite className="not-italic">
+                    <p className="font-heading font-semibold text-sm text-white">{author}</p>
+                    <p className="font-body text-xs text-white/40">{business}, {location}</p>
                   </cite>
                 </blockquote>
               ))}
@@ -190,8 +190,8 @@ export default function EventsPage() {
         </section>
       )}
 
-      {/* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
-      <section className=”bg-white border-t border-bh-charcoal/8 px-6 py-20 text-center”>
+      {/* CTA */}
+      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-6">
             Join before 31 August for 30% off your first annual subscription.
@@ -204,4 +204,3 @@ export default function EventsPage() {
     </>
   )
 }
-

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { Button } from '@/components/ui/Button'
 import { about } from '@/content/about'
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      {/* â”€â”€â”€ Hero image â€” full width â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Hero image - full width */}
       <div className="w-full">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -23,11 +23,11 @@ export default function AboutPage() {
         />
       </div>
 
-      {/* â”€â”€â”€ Story â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Story */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-3xl mx-auto">
 
-          {/* Opening hook â€” large heading */}
+          {/* Opening hook - large heading */}
           <h1 className="font-heading font-semibold text-3xl md:text-5xl text-white leading-tight mb-12">
             {about.hero.heading}
           </h1>
@@ -53,7 +53,7 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* "That's what was missing." â€” emphatic line */}
+          {/* Emphatic line */}
           <p className="font-heading font-semibold text-2xl md:text-3xl text-bh-yellow mb-12 leading-tight">
             {about.storyMissing}
           </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ Founders â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Founders */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-10">
@@ -103,7 +103,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ Vision â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* Vision */}
       <section className="bg-bh-blue px-6 py-24">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-6">
@@ -117,7 +117,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* CTA */}
       <section className="bg-white px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <p className="font-body text-bh-charcoal/40 text-sm mb-8">
@@ -131,4 +131,3 @@ export default function AboutPage() {
     </>
   )
 }
-
