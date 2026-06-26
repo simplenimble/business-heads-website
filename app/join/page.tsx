@@ -48,10 +48,10 @@ export default function JoinPage() {
       <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20">
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="font-heading font-semibold text-2xl md:text-3xl text-bh-charcoal leading-tight mb-6">
-            One good introduction. One subscription saved. One conversation that changes your direction.
+            Just one great conversation is enough to change your perspective and direction.
           </p>
-          <p className="font-heading font-semibold text-xl text-bh-charcoal">
-            This membership earns its keep.
+          <p className="font-body text-lg text-bh-charcoal/60">
+            Here&rsquo;s where to find it.
           </p>
         </div>
 

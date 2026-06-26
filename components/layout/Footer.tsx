@@ -36,7 +36,6 @@ export function Footer() {
               {[
                 { href: '/experience', label: 'The Experience' },
                 { href: '/events', label: 'Events' },
-                { href: '/stories', label: 'Member Stories' },
                 { href: '/about', label: 'About' },
                 { href: '/join', label: 'Pricing & Join' },
                 { href: '/faq', label: 'FAQ' },

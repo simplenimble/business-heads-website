@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { events, eventFormat, eventsHero, eventsIntro } from '@/content/events'
+import { testimonials } from '@/content/stories'
 
 const JOIN_URL = '/join'
 
@@ -165,8 +166,32 @@ export default function EventsPage() {
         </section>
       )}
 
+      {/* â”€â”€â”€ In Their Words â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {testimonials.filter(t => t.type === 'member').length > 0 && (
+        <section className=”bg-bh-charcoal px-6 py-24”>
+          <div className=”max-w-5xl mx-auto”>
+            <p className=”font-body text-bh-yellow text-sm uppercase tracking-widest mb-10”>
+              In their words
+            </p>
+            <div className=”grid md:grid-cols-2 gap-6”>
+              {testimonials.filter(t => t.type === 'member').map(({ id, quote, author, business, location }) => (
+                <blockquote key={id} className=”bg-white/8 rounded-2xl p-8 flex flex-col justify-between”>
+                  <p className=”font-body text-white/75 italic leading-relaxed mb-8”>
+                    &ldquo;{quote}&rdquo;
+                  </p>
+                  <cite className=”not-italic”>
+                    <p className=”font-heading font-semibold text-sm text-white”>{author}</p>
+                    <p className=”font-body text-xs text-white/40”>{business}, {location}</p>
+                  </cite>
+                </blockquote>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
-      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20 text-center">
+      <section className=”bg-white border-t border-bh-charcoal/8 px-6 py-20 text-center”>
         <div className="max-w-xl mx-auto">
           <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-6">
             Join before 31 August for 30% off your first annual subscription.
