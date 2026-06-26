@@ -45,7 +45,7 @@ export default function JoinPage() {
       </section>
 
       {/* ─── Pricing ───────────────────────────────────────────────────────── */}
-      <section className="bg-bh-yellow px-6 py-20">
+      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20">
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="font-heading font-semibold text-2xl md:text-3xl text-bh-charcoal leading-tight mb-6">
             One good introduction. One subscription saved. One conversation that changes your direction.
@@ -57,7 +57,7 @@ export default function JoinPage() {
 
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
           {/* Monthly */}
-          <div className="bg-white rounded-2xl p-8 flex flex-col">
+          <div className="bg-white border border-bh-charcoal/10 rounded-2xl p-8 flex flex-col">
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4">
               Monthly subscription
             </h2>
@@ -89,7 +89,7 @@ export default function JoinPage() {
           </div>
 
           {/* Annual — most popular */}
-          <div className="bg-white rounded-2xl p-8 flex flex-col relative">
+          <div className="bg-white border border-bh-charcoal/10 rounded-2xl p-8 flex flex-col relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <span
                 className="font-body text-xs font-bold text-white px-4 py-1.5 rounded-full uppercase tracking-widest"

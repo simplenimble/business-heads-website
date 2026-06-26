@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* ─── Who it's for ──────────────────────────────────────────────────── */}
-      <section className="bg-bh-yellow px-6 py-20">
+      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20">
         <div className="max-w-3xl mx-auto">
           <p className="font-heading font-semibold text-lg text-bh-charcoal/50 mb-8">
             {home.audience.heading}
@@ -175,7 +175,7 @@ export default function Home() {
       </section>
 
       {/* ─── Pricing / Founding offer ──────────────────────────────────────── */}
-      <section className="bg-bh-yellow px-6 py-24">
+      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-24">
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-4">
             {home.pricing.overline}
@@ -190,7 +190,7 @@ export default function Home() {
 
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6 mb-8">
           {home.pricing.plans.map((plan) => (
-            <div key={plan.id} className="bg-white rounded-3xl overflow-hidden flex flex-col relative">
+            <div key={plan.id} className="bg-white border border-bh-charcoal/10 rounded-3xl overflow-hidden flex flex-col relative">
               {/* Most popular badge */}
               {plan.badge && (
                 <div className="absolute -top-px left-1/2 -translate-x-1/2">

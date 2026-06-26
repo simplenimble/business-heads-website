@@ -168,7 +168,7 @@ export default function ExperiencePage() {
       </section>
 
       {/* ─── Between Events — platform + connection, visually linked ──────── */}
-      <section className="bg-bh-yellow px-6 pt-24 pb-24">
+      <section className="bg-white border-t border-bh-charcoal/8 px-6 pt-24 pb-24">
 
         {/* Platform — the Circle spaces */}
         <div className="max-w-5xl mx-auto mb-0">
