@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Button } from '@/components/ui/Button'
 import { testimonials, storiesHero } from '@/content/stories'
 
-const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
+const JOIN_URL = '/join'
 
 export const metadata: Metadata = {
   title: 'Member Stories',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function StoriesPage() {
   return (
     <>
-      {/* ─── Hero — split layout: text left, brand photo right ────────────── */}
+      {/* â”€â”€â”€ Hero â€” split layout: text left, brand photo right â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2">
           <div className="px-6 py-24 flex flex-col justify-center">
@@ -38,7 +38,7 @@ export default function StoriesPage() {
         </div>
       </section>
 
-      {/* ─── Testimonials ──────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ Testimonials â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-gray-50 px-6 py-24">
         <div className="max-w-5xl mx-auto">
           {testimonials.some((t) => t.type === 'early-feedback') && (
@@ -75,7 +75,7 @@ export default function StoriesPage() {
         </div>
       </section>
 
-      {/* ─── CTA ───────────────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-charcoal px-6 py-24 text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="font-heading font-semibold text-3xl text-white mb-6">
@@ -92,3 +92,4 @@ export default function StoriesPage() {
     </>
   )
 }
+

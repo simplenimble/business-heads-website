@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Button } from '@/components/ui/Button'
 import { LeadCaptureForm } from '@/components/ui/LeadCaptureForm'
 import { faqs } from '@/content/faq'
 
-const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
+const JOIN_URL = '/join'
 
 export const metadata: Metadata = {
   title: 'FAQ',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
-      {/* ─── Hero ─────────────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-white px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">FAQ</p>
@@ -24,7 +24,7 @@ export default function FaqPage() {
         </div>
       </section>
 
-      {/* ─── FAQ list ──────────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ FAQ list â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-gray-50 px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <div className="space-y-0">
@@ -43,7 +43,7 @@ export default function FaqPage() {
         </div>
       </section>
 
-      {/* ─── Register interest (for people who read this far) ─────────────── */}
+      {/* â”€â”€â”€ Register interest (for people who read this far) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-md mx-auto text-center">
           <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
@@ -60,7 +60,7 @@ export default function FaqPage() {
         </div>
       </section>
 
-      {/* ─── CTA ───────────────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-white px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <p className="font-body text-bh-charcoal/35 text-sm mb-8">
@@ -74,3 +74,4 @@ export default function FaqPage() {
     </>
   )
 }
+

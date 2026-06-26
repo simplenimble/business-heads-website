@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { experience } from '@/content/experience'
 
-const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
+const JOIN_URL = '/join'
 
 const SPACE_COLORS = [
   { bg: 'bg-bh-blue',     text: 'text-white',        sub: 'text-white/70' },
@@ -32,7 +32,7 @@ export default function ExperiencePage() {
 
   return (
     <>
-      {/* ─── Hero — split with professional conversation photo ──────────────── */}
+      {/* â”€â”€â”€ Hero â€” split with professional conversation photo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-blue overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center">
           <div className="px-6 py-24 md:py-32">
@@ -59,7 +59,7 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      {/* ─── Origin / Why members stay ─────────────────────────────────────── */}
+      {/* â”€â”€â”€ Origin / Why members stay â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
@@ -76,7 +76,7 @@ export default function ExperiencePage() {
             ))}
           </div>
 
-          {/* Feature pull quote — only shown if content provides a third paragraph */}
+          {/* Feature pull quote â€” only shown if content provides a third paragraph */}
           {experience.origin.body[2] && (
             <div className="border-t border-white/15 pt-10">
               <p
@@ -90,10 +90,10 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      {/* ─── Events — split with dark bar photo ────────────────────────────── */}
+      {/* â”€â”€â”€ Events â€” split with dark bar photo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center">
-          {/* Dark bar photo — left */}
+          {/* Dark bar photo â€” left */}
           <div className="relative h-72 lg:h-auto lg:min-h-[600px] hidden lg:block">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -103,7 +103,7 @@ export default function ExperiencePage() {
             />
           </div>
 
-          {/* Text — right */}
+          {/* Text â€” right */}
           <div className="px-6 lg:px-16 py-24">
             <p className="font-body text-bh-blue text-sm uppercase tracking-widest mb-5">
               {experience.events.overline}
@@ -140,7 +140,7 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      {/* ─── Prize draw ────────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ Prize draw â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-blue px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-6">
@@ -167,10 +167,10 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      {/* ─── Between Events — platform + connection, visually linked ──────── */}
+      {/* â”€â”€â”€ Between Events â€” platform + connection, visually linked â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-white border-t border-bh-charcoal/8 px-6 pt-24 pb-24">
 
-        {/* Platform — the Circle spaces */}
+        {/* Platform â€” the Circle spaces */}
         <div className="max-w-5xl mx-auto mb-0">
           <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-5">
             {experience.platform.overline}
@@ -195,7 +195,7 @@ export default function ExperiencePage() {
           <p className="font-body text-sm text-bh-charcoal/35 italic mb-0">{experience.platform.note}</p>
         </div>
 
-        {/* "+" connector — visually joins platform and connection sections */}
+        {/* "+" connector â€” visually joins platform and connection sections */}
         <div className="max-w-5xl mx-auto flex items-center gap-5 py-12">
           <div className="flex-1 h-px bg-bh-charcoal/15" />
           <div className="w-11 h-11 rounded-full border-2 border-bh-charcoal/25 bg-bh-yellow flex items-center justify-center shrink-0">
@@ -204,7 +204,7 @@ export default function ExperiencePage() {
           <div className="flex-1 h-px bg-bh-charcoal/15" />
         </div>
 
-        {/* Connection that goes somewhere — 3 tiles only, no discounts */}
+        {/* Connection that goes somewhere â€” 3 tiles only, no discounts */}
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-5">
             {experience.softBenefits.overline}
@@ -226,7 +226,7 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      {/* ─── Ethos + Join CTA ──────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ Ethos + Join CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-5 leading-tight">
@@ -243,3 +243,4 @@ export default function ExperiencePage() {
     </>
   )
 }
+

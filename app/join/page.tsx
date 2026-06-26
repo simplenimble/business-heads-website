@@ -24,7 +24,7 @@ const ANNUAL_INCLUDES = [
 export const metadata: Metadata = {
   title: 'Pricing & Join',
   description:
-    '$200/month or $2,200/year. One tier. Join before 31 August to lock in your founding member rate for life.',
+    '$200/month or $2,200/year. Join before 31 August for 30% off your first year.',
 }
 
 export default function JoinPage() {

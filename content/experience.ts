@@ -66,9 +66,9 @@ export const experience = {
     body: 'Business Heads runs on Circle. There are five spaces where everyone in the community gets to help shape the community, over time.',
     spaces: [
       {
-        name: 'Town Centre',
+        name: 'Community Feed',
         description:
-          'The main feed. Questions, wins, problems, observations. Where members talk to each other between events.',
+          'Ask questions, share wins, post an offer to the group. Where members stay connected between events.',
       },
       {
         name: 'Events',
@@ -76,9 +76,9 @@ export const experience = {
           'Upcoming event details, registration, and recaps from past evenings.',
       },
       {
-        name: 'Member Discounts',
+        name: 'Member Offers',
         description:
-          'A curated set of discounts on software, services, and suppliers you\'re probably already using.',
+          'Post a deal for fellow members, or access curated discounts from partner suppliers.',
       },
       {
         name: 'Member Directory',

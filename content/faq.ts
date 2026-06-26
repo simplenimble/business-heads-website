@@ -27,7 +27,7 @@ export const faqs: FaqItem[] = [
   {
     question: "What is actually in the online platform?",
     answer:
-      "Five spaces: Town Centre for community conversation, Events for upcoming and past event detail, Member Benefits for your discounts and offers, Member Directory for finding and connecting with other members, and Resources Hub for guides and tools. The value compounds as members post and share. It is shaped by the community, not finished on day one.",
+      "Five spaces: Community Feed for asking questions, sharing wins, and posting offers to the group; Events for upcoming and past event detail; Member Offers for deals from and for members; Member Directory for finding and connecting with other members; and Resources Hub for guides and tools. The value compounds as members post and share.",
   },
   {
     question: "Who else is in this?",
@@ -37,7 +37,7 @@ export const faqs: FaqItem[] = [
   {
     question: "Can I cancel?",
     answer:
-      "Yes. Monthly members can cancel at any time. Annual members commit for the year, but there is no lock-in after that. Founding members lock in their rate for the life of their membership. As long as you stay, you keep the founding rate.",
+      "Yes. Monthly members can cancel at any time. Annual members commit for the year, but there is no lock-in after that.",
   },
   {
     question: "Is this just for Sydney?",
@@ -52,6 +52,6 @@ export const faqs: FaqItem[] = [
   {
     question: "What does membership cost?",
     answer:
-      "$200 per month or $2,200 per year. One tier, one price. Join before 31 August as a founding member and that rate is locked in for the life of your membership.",
+      "$200 per month or $2,200 per year. Join before 31 August for 30% off your first year.",
   },
 ]

@@ -3,7 +3,7 @@ const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-hea
 export const join = {
   hero: {
     overline: 'Pricing and joining',
-    heading: 'One price. One community.',
+    heading: 'Two ways in. One community.',
   },
 
   pricing: {
@@ -32,7 +32,7 @@ export const join = {
 
   foundingOffer: {
     heading: 'Join before 31 August.',
-    body: 'Founding members lock in their rate for the life of their membership. When the founding rate closes, it closes. There is no discount tier planned after that.',
+    body: 'Join before 31 August and get 30% off your first year. After that, the full rate applies.',
     deadline: '31 August 2026',
   },
 

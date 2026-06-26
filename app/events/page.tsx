@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { events, eventFormat, eventsHero, eventsIntro } from '@/content/events'
 
-const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
+const JOIN_URL = '/join'
 
 export const metadata: Metadata = {
   title: 'Events',
@@ -17,7 +17,7 @@ export default function EventsPage() {
 
   return (
     <>
-      {/* ─── Hero — split layout with dark event photo ─────────────────────── */}
+      {/* â”€â”€â”€ Hero â€” split layout with dark event photo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-charcoal overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center">
           <div className="px-6 py-24 md:py-32">
@@ -44,7 +44,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* ─── What to expect ───────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ What to expect â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-gray-50 px-6 py-16">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-start">
           <h2 className="font-heading font-semibold text-2xl md:text-3xl text-bh-charcoal leading-tight">
@@ -64,7 +64,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* ─── Upcoming events ───────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ Upcoming events â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {upcoming.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
           <div className="max-w-5xl mx-auto">
@@ -113,7 +113,7 @@ export default function EventsPage() {
         </section>
       )}
 
-      {/* ─── Format / run of the evening ──────────────────────────────────── */}
+      {/* â”€â”€â”€ Format / run of the evening â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-5xl mx-auto">
           <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
@@ -141,7 +141,7 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* ─── Past events ───────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ Past events â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       {past.length > 0 && (
         <section className="bg-white px-6 py-24">
           <div className="max-w-5xl mx-auto">
@@ -165,7 +165,7 @@ export default function EventsPage() {
         </section>
       )}
 
-      {/* ─── CTA ───────────────────────────────────────────────────────────── */}
+      {/* â”€â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-6">
@@ -179,3 +179,4 @@ export default function EventsPage() {
     </>
   )
 }
+
