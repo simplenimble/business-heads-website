@@ -29,7 +29,7 @@ export const events: EventItem[] = [
     city: 'Sydney, NSW',
     ticketPrice: '$40 per person.',
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
-    eventSpecial: 'Every guest gets a free professional headshot on arrival.',
+    eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $10,000 prize draw — the first draw is at our October event.',
     rsvpUrl: 'https://www.businessheads.com.au/launch',
     status: 'upcoming',
   },
@@ -46,7 +46,7 @@ export const eventFormat = [
   },
   {
     time: 'The quarterly draw',
-    description: '$10,000 drawn live. One member wins.',
+    description: '$10,000 drawn live. One member wins. First draw at our October 2026 event.',
   },
   {
     time: 'Open conversation',

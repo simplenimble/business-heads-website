@@ -37,7 +37,7 @@ export const experience = {
         {
           label: 'The quarterly draw',
           description:
-            '$10,000 drawn live. One member wins. They spend it inside the community.',
+            '$10,000 drawn live. One member wins. They spend it inside the community. First draw at our October 2026 event.',
         },
         {
           label: 'Open conversation',
@@ -55,7 +55,7 @@ export const experience = {
       'Every quarter, $10,000 goes back into the community. One member wins it and spends it with other members. Their win becomes someone else\'s opportunity. The money moves around, not out.',
       'Every member gets an entry into every draw, just for being here.',
     ],
-    footnote: 'Additional ticket entries granted with every event ticket purchase.',
+    footnote: 'Additional ticket entries granted with every event ticket purchase. First draw: October 2026.',
     footnoteLinkLabel: 'See Terms and Conditions',
     footnoteLinkHref: '/terms',
   },

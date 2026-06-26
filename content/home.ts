@@ -21,7 +21,7 @@ export const home = {
     overline: 'The Quarterly Draw',
     heading: '$10,000. Back in the room. Every quarter.',
     body: 'One member wins it. They spend it with other members. The money moves around, not out.',
-    footnote: 'Every member gets a ticket to every draw. Additional ticket entries granted with every event ticket purchase.',
+    footnote: 'Every member gets a ticket to every draw. Additional ticket entries granted with every event ticket purchase. First draw: October 2026.',
     footnoteLinkLabel: 'See Terms and Conditions',
     footnoteLinkHref: '/terms',
   },
@@ -94,7 +94,7 @@ export const home = {
         foundingPrice: '',
         foundingNote: '30% off until 31 August — pay just $1,540 for your first year.',
         includes: [
-          'Twelve entries into the quarterly $10,000 prize draw',
+          'Five entries per quarterly draw (20 per year)',
           'One month free',
           'Discounted member tickets to quarterly events',
           'Full access to the member community',

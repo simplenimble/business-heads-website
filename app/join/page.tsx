@@ -13,7 +13,7 @@ const MONTHLY_INCLUDES = [
 ]
 
 const ANNUAL_INCLUDES = [
-  'Twelve entries into our $10k prize pool each quarter',
+  'Five entries per quarterly draw (20 per year)',
   'One month free',
   'Discount member tickets to our network events',
   'Full member access to our member built community',
