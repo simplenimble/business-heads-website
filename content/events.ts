@@ -9,6 +9,7 @@ export type EventItem = {
   city: string
   ticketPrice: string
   bonusTicket?: string
+  eventSpecial?: string
   rsvpUrl: string
   status: EventStatus
   recap?: string
@@ -28,6 +29,7 @@ export const events: EventItem[] = [
     city: 'Sydney, NSW',
     ticketPrice: '$40 per person.',
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
+    eventSpecial: 'Every guest gets a free professional headshot on arrival.',
     rsvpUrl: 'https://www.businessheads.com.au/launch',
     status: 'upcoming',
   },

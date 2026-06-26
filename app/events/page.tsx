@@ -105,6 +105,16 @@ export default function EventsPage() {
                     )}
                   </div>
                 </div>
+                {event.eventSpecial && (
+                  <div className="bg-bh-yellow/15 rounded-xl px-5 py-4 mb-8">
+                    <p className="font-body text-xs text-bh-yellow/60 uppercase tracking-widest mb-1">
+                      On the night
+                    </p>
+                    <p className="font-body text-sm text-white/90 leading-relaxed">
+                      {event.eventSpecial}
+                    </p>
+                  </div>
+                )}
                 <Button href={event.rsvpUrl} variant="white" size="md">
                   RSVP for this event
                 </Button>
