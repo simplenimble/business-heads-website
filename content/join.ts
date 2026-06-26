@@ -22,7 +22,7 @@ export const join = {
     included: [
       'Quarterly in-person events (Sydney)',
       'Access to the full online platform (Circle)',
-      'Member directory and facilitated introductions',
+      'Member directory — find and connect with other members, plus facilitated introductions',
       'Monthly co-coaching circles',
       'Learning sessions',
       'Member discounts (powered by Rewards Gateway)',

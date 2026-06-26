@@ -83,7 +83,7 @@ export const experience = {
       {
         name: 'Member Directory',
         description:
-          'Find people, see what they do, get in touch. Grows as the community does.',
+          'Find members, see what they\'re working on, and reach out directly. Grows as the community does.',
       },
       {
         name: 'Resources Hub',
