@@ -60,6 +60,6 @@ export const eventsHero = {
 
 export const eventsIntro = {
   heading: 'What to expect.',
-  body: 'Every Business Heads event follows the same format. A facilitated activity that gets the whole room talking about something real, a live prize draw, lucky door prizes, and open conversation. We\'ll also throw in something extra at every event — something that will help you and your business. Think a professional headshot, a 5-minute brand consult, and more. Tickets are $40. Members get in at the member rate.',
+  body: 'Every Business Heads event follows the same format. A facilitated activity that gets the whole room talking about something real, a live prize draw, lucky door prizes, and open conversation. We\'ll also throw in something extra at every event — something that will help you and your business. Think a professional headshot, a 5-minute brand consult, a business card audit, personality testing, and more. Tickets are $40. Members get in at the member rate.',
   link: { href: '/experience', label: 'Read more about the experience' },
 }
