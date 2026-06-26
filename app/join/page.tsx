@@ -5,20 +5,20 @@ import { join } from '@/content/join'
 const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
 
 const MONTHLY_INCLUDES = [
-  'One entry per month into our $10k prize pool (up to 3 per quarter)',
-  'Discount member tickets to our network events',
-  'Full member access to our member built community',
+  'One entry per month into the quarterly $10,000 prize draw',
+  'Discounted member tickets to quarterly events',
+  'Full access to the member community',
   'Invitations to member-only online events',
-  'Cash savings and discounts with exclusive member benefits',
+  'Member discounts and offers',
 ]
 
 const ANNUAL_INCLUDES = [
-  'Five entries per quarterly draw (20 per year)',
+  'Five entries per quarterly $10,000 prize draw (20 per year)',
   'One month free',
-  'Discount member tickets to our network events',
-  'Full member access to our member built community',
+  'Discounted member tickets to quarterly events',
+  'Full access to the member community',
   'Invitations to member-only online events',
-  'Cash savings and discounts with exclusive member benefits',
+  'Member discounts and offers',
 ]
 
 export const metadata: Metadata = {

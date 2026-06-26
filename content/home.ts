@@ -94,7 +94,7 @@ export const home = {
         foundingPrice: '',
         foundingNote: '30% off until 31 August — pay just $1,540 for your first year.',
         includes: [
-          'Five entries per quarterly draw (20 per year)',
+          'Five entries per quarterly $10,000 prize draw (20 per year)',
           'One month free',
           'Discounted member tickets to quarterly events',
           'Full access to the member community',
