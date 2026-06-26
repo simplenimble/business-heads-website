@@ -12,7 +12,7 @@ type ButtonProps = {
 }
 
 const BASE =
-  'inline-flex items-center justify-center font-heading font-semibold rounded-full transition-all'
+  'inline-flex items-center justify-center font-body font-semibold rounded-full transition-all'
 
 const VARIANTS = {
   primary: 'bg-bh-blue text-white hover:opacity-90 active:scale-[0.98]',
