@@ -99,6 +99,11 @@ export default function JoinPage() {
             </h2>
             <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$2,200</span>
             <p className="font-body text-sm text-bh-charcoal/45 mb-5">per year (inc. GST)</p>
+            <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-5">
+              <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
+                30% off until 31 August — pay just $1,540 for your first year.
+              </p>
+            </div>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
               Our most popular option. One month free, and you&rsquo;re in for the year.
             </p>
