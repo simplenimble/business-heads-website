@@ -10,7 +10,7 @@ const SPACE_COLORS = [
   { bg: 'bg-bh-red',      text: 'text-white',        sub: 'text-white/70' },
   { bg: 'bg-bh-green',    text: 'text-white',        sub: 'text-white/70' },
   { bg: 'bg-bh-charcoal', text: 'text-white',        sub: 'text-white/70' },
-  { bg: 'bg-white',       text: 'text-bh-charcoal',  sub: 'text-bh-charcoal/60' },
+  { bg: 'bg-gray-100',    text: 'text-bh-charcoal',  sub: 'text-bh-charcoal/60' },
 ]
 
 const BENEFIT_COLORS = [
