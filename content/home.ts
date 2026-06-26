@@ -92,7 +92,7 @@ export const home = {
         badge: 'Most popular',
         description: 'Our most popular option. One month free, and you\'re in for the year.',
         foundingPrice: '',
-        foundingNote: '30% off until 31 August — pay just $1,680 for your first year.',
+        foundingNote: '30% off until 31 August — pay just $1,540 for your first year.',
         includes: [
           'Twelve entries into the quarterly $10,000 prize draw',
           'One month free',
