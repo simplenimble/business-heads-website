@@ -117,7 +117,7 @@ export default function JoinPage() {
               ))}
             </ul>
             <a
-              href={JOIN_URL}
+              href="/api/checkout?plan=annual"
               className="block w-full text-center font-body font-semibold text-white py-3.5 px-6 rounded-full transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#ff452b' }}
             >
