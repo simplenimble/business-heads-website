@@ -27,7 +27,10 @@ export async function GET(req: NextRequest) {
     line_items: [{ price: priceId, quantity: 1 }],
     success_url: `${origin}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${origin}/checkout/joining-business-heads`,
-    ...(applyPromo ? { discounts: [{ promotion_code: ANNUAL_PROMO_ID }] } : {}),
+    // Stripe disallows allow_promotion_codes alongside discounts
+    ...(applyPromo
+      ? { discounts: [{ promotion_code: ANNUAL_PROMO_ID }] }
+      : { allow_promotion_codes: true }),
   })
 
   return NextResponse.redirect(session.url!)
