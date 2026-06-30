@@ -12,6 +12,21 @@ export const metadata: Metadata = {
     'Upcoming Business Heads events in Sydney. Quarterly evenings for business owners who want conversation, not pitch rounds.',
 }
 
+const MONTHS: Record<string, number> = {
+  January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
+  July: 6, August: 7, September: 8, October: 9, November: 10, December: 11,
+}
+
+function isEventToday(dateStr: string): boolean {
+  const [day, month, year] = dateStr.split(' ')
+  const today = new Date()
+  return (
+    today.getDate() === parseInt(day) &&
+    today.getMonth() === MONTHS[month] &&
+    today.getFullYear() === parseInt(year)
+  )
+}
+
 export default function EventsPage() {
   const upcoming = events.filter((e) => e.status === 'upcoming')
   const past = events.filter((e) => e.status === 'past')
@@ -69,11 +84,11 @@ export default function EventsPage() {
       {upcoming.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
           <div className="max-w-5xl mx-auto">
-            <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-8">
-              Upcoming
-            </p>
-            {upcoming.map((event) => (
+              {upcoming.map((event) => (
               <div key={event.id} className="bg-white/10 rounded-2xl p-8 mb-6 last:mb-0">
+                <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-3">
+                  {isEventToday(event.date) ? 'Happening Today' : 'Upcoming'}
+                </p>
                 <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-6">
                   {event.name}
                 </h2>

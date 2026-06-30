@@ -43,7 +43,7 @@ export default function JoinPage() {
       </section>
 
       {/* ─── Pricing ───────────────────────────────────────────────────────── */}
-      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20">
+      <section className="border-t border-bh-charcoal/8 px-6 py-20" style={{ backgroundColor: 'rgba(79, 72, 255, 0.07)' }}>
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="font-heading font-semibold text-2xl md:text-3xl text-bh-charcoal leading-tight mb-6">
             Just one great conversation is enough to change your perspective and direction.
