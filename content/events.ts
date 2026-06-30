@@ -30,7 +30,7 @@ export const events: EventItem[] = [
     ticketPrice: '$40 per person.',
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
     eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $10,000 prize draw — the first draw is at our October event.',
-    rsvpUrl: 'https://www.businessheads.com.au/launch',
+    rsvpUrl: 'https://www.eventbrite.com/e/1986505346968?aff=oddtdtcreator',
     status: 'upcoming',
   },
 ]
