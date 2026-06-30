@@ -23,6 +23,6 @@ body {
   color: #473f42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.0625rem; /* 17px base */
-  line-height: 1.7;
+  font-size: 1rem; /* 16px base */
+  line-height: 1.65;
 }

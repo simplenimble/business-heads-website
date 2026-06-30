@@ -66,7 +66,7 @@ export const home = {
       {
         id: 'monthly',
         name: 'Monthly subscription',
-        price: '$200',
+        price: '$220',
         priceNote: 'per month (inc. GST)',
         originalPrice: null,
         badge: null,
@@ -86,13 +86,13 @@ export const home = {
       {
         id: 'annual',
         name: 'Annual subscription',
-        price: '$2,200',
+        price: '$2,400',
         priceNote: 'per year (inc. GST)',
         originalPrice: null,
         badge: 'Most popular',
         description: 'Our most popular option. One month free, and you\'re in for the year.',
         foundingPrice: '',
-        foundingNote: '30% off until 31 August — pay just $1,540 for your first year.',
+        foundingNote: '30% off until 31 August — pay just $1,680 for your first year.',
         includes: [
           'Five entries per quarterly $10,000 prize draw (20 per year)',
           'One month free',
@@ -105,7 +105,7 @@ export const home = {
         ctaUrl: JOIN_URL,
       },
     ],
-    footnote: '$200/month or $2,200/year at full rate. No lock-in. Cancel any time.',
+    footnote: '$220/month or $2,400/year at full rate. No lock-in. Cancel any time.',
   },
 
   leadCapture: {

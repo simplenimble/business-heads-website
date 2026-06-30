@@ -106,12 +106,12 @@ export default function TermsPage() {
                     <tbody>
                       <tr className="border-t border-bh-charcoal/8">
                         <td className="px-5 py-3.5 text-bh-charcoal">Monthly membership</td>
-                        <td className="px-5 py-3.5 text-bh-charcoal/70">$200 per month</td>
+                        <td className="px-5 py-3.5 text-bh-charcoal/70">$220 per month</td>
                         <td className="px-5 py-3.5 text-bh-charcoal/70">Automatically renews monthly</td>
                       </tr>
                       <tr className="border-t border-bh-charcoal/8">
                         <td className="px-5 py-3.5 text-bh-charcoal">Annual membership</td>
-                        <td className="px-5 py-3.5 text-bh-charcoal/70">$2,200 per year</td>
+                        <td className="px-5 py-3.5 text-bh-charcoal/70">$2,400 per year</td>
                         <td className="px-5 py-3.5 text-bh-charcoal/70">Automatically renews annually</td>
                       </tr>
                     </tbody>
