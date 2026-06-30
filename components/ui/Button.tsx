@@ -43,7 +43,7 @@ export function Button({
 
   if (href) {
     if (href.startsWith('http') || href.startsWith('https')) {
-      return <a href={href} className={classes}>{children}</a>
+      return <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>{children}</a>
     }
     return <Link href={href} className={classes}>{children}</Link>
   }
