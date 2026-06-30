@@ -24,7 +24,7 @@ const ANNUAL_INCLUDES = [
 export const metadata: Metadata = {
   title: 'Pricing & Join',
   description:
-    '$200/month or $2,200/year. Join before 31 August for 30% off your first year.',
+    '$220/month or $2,400/year. Join before 31 August for 30% off your first year.',
 }
 
 export default function JoinPage() {
@@ -61,7 +61,7 @@ export default function JoinPage() {
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4">
               Monthly subscription
             </h2>
-            <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$200</span>
+            <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$220</span>
             <p className="font-body text-sm text-bh-charcoal/45 mb-5">per month (inc. GST)</p>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
               For business owners who want to get a feel for it first.
@@ -97,11 +97,11 @@ export default function JoinPage() {
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4 mt-2">
               Annual subscription
             </h2>
-            <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$2,200</span>
+            <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$2,400</span>
             <p className="font-body text-sm text-bh-charcoal/45 mb-5">per year (inc. GST)</p>
             <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-5">
               <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
-                30% off until 31 August — pay just $1,540 for your first year.
+                30% off until 31 August — pay just $1,680 for your first year.
               </p>
             </div>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">

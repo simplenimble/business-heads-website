@@ -9,13 +9,13 @@ export const join = {
   pricing: {
     monthly: {
       label: 'Monthly',
-      price: '$200',
+      price: '$220',
       period: '/month',
       note: 'Cancel any time.',
     },
     annual: {
       label: 'Annual',
-      price: '$2,200',
+      price: '$2,400',
       period: '/year',
       note: 'Two months free.',
     },

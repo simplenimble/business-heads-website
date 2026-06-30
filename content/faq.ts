@@ -52,6 +52,6 @@ export const faqs: FaqItem[] = [
   {
     question: "What does membership cost?",
     answer:
-      "$200 per month or $2,200 per year. Join before 31 August for 30% off your first year.",
+      "$220 per month or $2,400 per year. Join before 31 August for 30% off your first year.",
   },
 ]

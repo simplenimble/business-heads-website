@@ -1,7 +1,7 @@
 export const benefits = {
   hero: {
     overline: 'Member Benefits',
-    heading: 'The rational case for $200 a month.',
+    heading: 'The rational case for $220 a month.',
     body: 'Someone already interested in the community arrives here wanting the numbers to add up. Here they are.',
   },
 
