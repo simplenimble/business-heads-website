@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import { LeadCaptureForm } from '@/components/ui/LeadCaptureForm'
 import { join } from '@/content/join'
 
-const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
-
 const MONTHLY_INCLUDES = [
   'One entry per month into the quarterly $10,000 prize draw',
   'Discounted member tickets to quarterly events',
@@ -76,7 +74,7 @@ export default function JoinPage() {
               ))}
             </ul>
             <a
-              href={JOIN_URL}
+              href="/api/checkout?plan=monthly"
               className="block w-full text-center font-body font-semibold text-white py-3.5 px-6 rounded-full transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#ff452b' }}
             >
@@ -135,7 +133,7 @@ export default function JoinPage() {
           </h2>
           <p className="font-body text-xl text-white/60 mb-10">{foundingOffer.body}</p>
           <a
-            href={JOIN_URL}
+            href="/api/checkout?plan=annual"
             className="inline-block font-body font-semibold text-white py-4 px-10 rounded-full transition-opacity hover:opacity-90"
             style={{ backgroundColor: '#ff452b' }}
           >
