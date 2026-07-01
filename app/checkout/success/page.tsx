@@ -13,8 +13,17 @@ export default function CheckoutSuccessPage() {
         <h1 className="font-heading font-semibold text-4xl md:text-5xl text-white leading-tight mb-6">
           You&rsquo;re in.
         </h1>
-        <p className="font-body text-xl text-white/70 mb-10 leading-relaxed">
-          Welcome to Business Heads. Check your email — your account details and next steps are on their way.
+        <p className="font-body text-xl text-white/70 mb-5 leading-relaxed">
+          Welcome to Business Heads.
+        </p>
+        <p className="font-body text-lg text-white/70 mb-5 leading-relaxed">
+          We&rsquo;ll personally invite you to Circle, our community platform, within a few minutes. Keep an eye on your inbox.
+        </p>
+        <p className="font-body text-lg text-white/70 mb-10 leading-relaxed">
+          In the meantime, if you have any questions, reply to this page or email us at{' '}
+          <a href="mailto:hello@businessheads.com.au" className="underline underline-offset-2 hover:opacity-80">
+            hello@businessheads.com.au
+          </a>.
         </p>
         <Link
           href="/"

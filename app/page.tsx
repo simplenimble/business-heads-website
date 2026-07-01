@@ -3,6 +3,22 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { LeadCaptureForm } from '@/components/ui/LeadCaptureForm'
 import { home } from '@/content/home'
+import { events } from '@/content/events'
+
+const MONTHS: Record<string, number> = {
+  January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
+  July: 6, August: 7, September: 8, October: 9, November: 10, December: 11,
+}
+
+function isEventToday(dateStr: string): boolean {
+  const [day, month, year] = dateStr.split(' ')
+  const today = new Date()
+  return (
+    today.getDate() === parseInt(day) &&
+    today.getMonth() === MONTHS[month] &&
+    today.getFullYear() === parseInt(year)
+  )
+}
 
 export const metadata: Metadata = {
   title: 'Business Heads | A Community for Business Owners Who Help Each Other Win',
@@ -11,6 +27,9 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const nextEvent = events.find((e) => e.status === 'upcoming')
+  const eventOverline = nextEvent && isEventToday(nextEvent.date) ? 'Happening Today' : home.eventProof.overline
+
   return (
     <>
       {/* ─── Hero ─────────────────────────────────────────────────────────── */}
@@ -132,20 +151,20 @@ export default function Home() {
       </section>
 
       {/* ─── Who it's for ──────────────────────────────────────────────────── */}
-      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20">
+      <section className="bg-bh-charcoal border-t border-white/8 px-6 py-20">
         <div className="max-w-3xl mx-auto">
-          <p className="font-heading font-semibold text-lg text-bh-charcoal/50 mb-8">
+          <p className="font-heading font-semibold text-lg text-white/50 mb-8">
             {home.audience.heading}
           </p>
-          <div className="space-y-0 divide-y divide-bh-charcoal/10">
+          <div className="space-y-0 divide-y divide-white/10">
             {home.audience.groups.map(({ heading, body }) => (
               <div key={heading} className="py-7 grid md:grid-cols-[280px_1fr] gap-4 md:gap-10 items-baseline">
-                <h3 className="font-heading font-semibold text-xl text-bh-charcoal leading-snug">{heading}</h3>
-                <p className="font-body text-bh-charcoal/65 leading-[1.75]">{body}</p>
+                <h3 className="font-heading font-semibold text-xl text-white leading-snug">{heading}</h3>
+                <p className="font-body text-white/65 leading-[1.75]">{body}</p>
               </div>
             ))}
           </div>
-          <p className="font-body text-sm text-bh-charcoal/40 italic mt-8">{home.audience.footer}</p>
+          <p className="font-body text-sm text-white/40 italic mt-8">{home.audience.footer}</p>
         </div>
       </section>
 
@@ -158,7 +177,7 @@ export default function Home() {
           >
             <div>
               <p className="font-body text-bh-yellow text-xs uppercase tracking-widest mb-3">
-                {home.eventProof.overline}
+                {eventOverline}
               </p>
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight">
                 {home.eventProof.heading}
@@ -175,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* ─── Pricing / Founding offer ──────────────────────────────────────── */}
-      <section className="bg-white border-t border-bh-charcoal/8 px-6 py-24">
+      <section className="border-t border-bh-charcoal/8 px-6 py-24" style={{ backgroundColor: 'rgba(79, 72, 255, 0.07)' }}>
         <div className="max-w-3xl mx-auto text-center mb-14">
           <p className="font-body text-bh-charcoal/50 text-sm uppercase tracking-widest mb-4">
             {home.pricing.overline}

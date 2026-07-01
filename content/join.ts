@@ -39,10 +39,10 @@ export const join = {
   afterJoining: {
     heading: 'What happens after you click join',
     steps: [
-      'You will be taken to the Business Heads checkout on Circle.',
-      'Complete your payment and account setup there.',
-      'You will receive a welcome message with access to the community platform.',
-      'If you would like a facilitated introduction, let us know what you are working on.',
+      "You'll pay securely through Stripe. Quick, no fuss.",
+      "You'll land on a confirmation page. You're in.",
+      "We'll personally invite you to Circle, our community platform, so keep an eye on your inbox.",
+      "Want a facilitated introduction? Tell us what you're working on.",
     ],
     note: 'The handoff to Circle is intentional. The community lives there, not here. This site markets it. Circle is where it happens.',
   },
