@@ -41,7 +41,8 @@ export const join = {
     steps: [
       "You'll pay securely through Stripe. Quick, no fuss.",
       "You'll land on a confirmation page. You're in.",
-      "We'll personally invite you to Circle, our community platform, so keep an eye on your inbox.",
+      "You'll receive an invitation to Circle, our community platform, via your email address.",
+      "You'll then be asked to create your community profile. Set it up and explore the platform.",
       "Want a facilitated introduction? Tell us what you're working on.",
     ],
     note: 'The handoff to Circle is intentional. The community lives there, not here. This site markets it. Circle is where it happens.',
