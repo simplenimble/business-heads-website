@@ -17,10 +17,10 @@ export default function CheckoutSuccessPage() {
           Welcome to Business Heads.
         </p>
         <p className="font-body text-lg text-white/70 mb-5 leading-relaxed">
-          We&rsquo;ll personally invite you to Circle, our community platform, within a few minutes. Keep an eye on your inbox.
+          You&rsquo;ll receive an invitation to Circle, our community platform, shortly. Keep an eye on your inbox.
         </p>
         <p className="font-body text-lg text-white/70 mb-10 leading-relaxed">
-          In the meantime, if you have any questions, reply to this page or email us at{' '}
+          In the meantime, if you have any questions, email us at{' '}
           <a href="mailto:hello@businessheads.com.au" className="underline underline-offset-2 hover:opacity-80">
             hello@businessheads.com.au
           </a>.
