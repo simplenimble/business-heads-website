@@ -3,22 +3,6 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { LeadCaptureForm } from '@/components/ui/LeadCaptureForm'
 import { home } from '@/content/home'
-import { events } from '@/content/events'
-
-const MONTHS: Record<string, number> = {
-  January: 0, February: 1, March: 2, April: 3, May: 4, June: 5,
-  July: 6, August: 7, September: 8, October: 9, November: 10, December: 11,
-}
-
-function isEventToday(dateStr: string): boolean {
-  const [day, month, year] = dateStr.split(' ')
-  const today = new Date()
-  return (
-    today.getDate() === parseInt(day) &&
-    today.getMonth() === MONTHS[month] &&
-    today.getFullYear() === parseInt(year)
-  )
-}
 
 export const metadata: Metadata = {
   title: 'Business Heads | A Community for Business Owners Who Help Each Other Win',
@@ -27,9 +11,6 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  const nextEvent = events.find((e) => e.status === 'upcoming')
-  const eventOverline = nextEvent && isEventToday(nextEvent.date) ? 'Happening Today' : home.eventProof.overline
-
   return (
     <>
       {/* ─── Hero ─────────────────────────────────────────────────────────── */}
@@ -177,7 +158,7 @@ export default function Home() {
           >
             <div>
               <p className="font-body text-bh-yellow text-xs uppercase tracking-widest mb-3">
-                {eventOverline}
+                {home.eventProof.overline}
               </p>
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight">
                 {home.eventProof.heading}

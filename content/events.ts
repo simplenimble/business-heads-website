@@ -7,12 +7,19 @@ export type EventItem = {
   venue: string
   suburb: string
   city: string
-  ticketPrice: string
+  ticketPrice?: string
   bonusTicket?: string
   eventSpecial?: string
-  rsvpUrl: string
+  rsvpUrl?: string
   status: EventStatus
   recap?: string
+}
+
+export type UpcomingEventCard = {
+  id: string
+  label: string
+  heading: string
+  body: string
 }
 
 /* Update this file with real event details as they are confirmed.
@@ -30,8 +37,31 @@ export const events: EventItem[] = [
     ticketPrice: '$40 per person.',
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
     eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $10,000 prize draw — the first draw is at our October event.',
-    rsvpUrl: 'https://www.eventbrite.com/e/1986505346968?aff=oddtdtcreator',
-    status: 'upcoming',
+    status: 'past',
+    recap: 'Stay tuned for the pictures.',
+  },
+]
+
+/* Tentative upcoming events shown as an auto-swiping carousel on the events page.
+   Update dates/details here as they're confirmed. */
+export const upcomingEventCards: UpcomingEventCard[] = [
+  {
+    id: 'online-aug-2026',
+    label: 'Members only',
+    heading: 'Online. August 5.',
+    body: 'Our first members-only online session. Details coming soon.',
+  },
+  {
+    id: 'online-sep-2026',
+    label: 'Members only',
+    heading: 'Online. September 2.',
+    body: 'Another hour with people who get it. More details soon.',
+  },
+  {
+    id: 'in-person-oct-2026',
+    label: 'In person',
+    heading: 'October 7. Location TBC.',
+    body: 'The quarterly event. The prize draw. The room worth being in.',
   },
 ]
 

@@ -49,10 +49,10 @@ export const home = {
   },
 
   eventProof: {
-    overline: 'Next event',
-    heading: '1 July. Balmain, Sydney.',
-    body: 'The launch event is at East Village Hotel, Balmain. Tickets are $40. Every ticket comes with a bonus ticket to bring someone along.',
-    link: { href: '/events', label: 'Event details and tickets' },
+    overline: 'Members only',
+    heading: 'Online. August 5.',
+    body: 'The July launch has wrapped — stay tuned for the pictures. Our first members-only online session is tentatively scheduled next.',
+    link: { href: '/events', label: 'See what\'s next' },
   },
 
   pricing: {
