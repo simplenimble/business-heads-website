@@ -69,9 +69,9 @@ export default function EventsPage() {
       {past.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-heading font-semibold text-3xl text-white mb-6">
+            <p className="font-body font-semibold text-bh-yellow text-sm uppercase tracking-widest mb-10">
               Past events
-            </h2>
+            </p>
             {past.map((event) => (
               <div key={event.id} className="bg-white/10 rounded-2xl p-8 mb-6 last:mb-0">
                 <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-6">
@@ -109,12 +109,12 @@ export default function EventsPage() {
       {upcomingEventCards.length > 0 && (
         <section className="bg-white px-6 py-24">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-5">
+            <p className="font-body font-semibold text-bh-blue text-sm uppercase tracking-widest mb-5">
               What&rsquo;s next
-            </h2>
-            <p className="font-body text-lg text-bh-charcoal/60 leading-relaxed mb-6">
-              More events on the way.
             </p>
+            <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-10">
+              More events on the way.
+            </h2>
             <UpcomingEventsCarousel cards={upcomingEventCards} />
           </div>
         </section>
