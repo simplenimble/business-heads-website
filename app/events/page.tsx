@@ -69,7 +69,7 @@ export default function EventsPage() {
       {past.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-heading font-semibold text-3xl text-white mb-10">
+            <h2 className="font-heading font-semibold text-3xl text-white mb-6">
               Past events
             </h2>
             {past.map((event) => (
@@ -112,7 +112,7 @@ export default function EventsPage() {
             <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-5">
               What&rsquo;s next
             </h2>
-            <p className="font-body text-lg text-bh-charcoal/60 leading-relaxed mb-10">
+            <p className="font-body text-lg text-bh-charcoal/60 leading-relaxed mb-6">
               More events on the way.
             </p>
             <UpcomingEventsCarousel cards={upcomingEventCards} />
