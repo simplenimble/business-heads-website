@@ -65,15 +65,15 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* Concluded events */}
+      {/* Past events */}
       {past.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
           <div className="max-w-5xl mx-auto">
+            <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-5">
+              Past events
+            </p>
             {past.map((event) => (
               <div key={event.id} className="bg-white/10 rounded-2xl p-8 mb-6 last:mb-0">
-                <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-3">
-                  Concluded
-                </p>
                 <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-6">
                   {event.name}
                 </h2>
