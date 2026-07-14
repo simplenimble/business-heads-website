@@ -13,6 +13,7 @@ export type EventItem = {
   rsvpUrl?: string
   status: EventStatus
   recap?: string
+  photos?: string[]
 }
 
 export type UpcomingEventCard = {
@@ -38,7 +39,16 @@ export const events: EventItem[] = [
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
     eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $10,000 prize draw — the first draw is at our October event.',
     status: 'past',
-    recap: 'Stay tuned for the pictures.',
+    photos: [
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_60.jpg',
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_83.jpg',
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_126.jpg',
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_136.jpg',
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_158.jpg',
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_174.jpg',
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_235.jpg',
+      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_259.jpg',
+    ],
   },
 ]
 

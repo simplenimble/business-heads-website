@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { events, upcomingEventCards, eventFormat, eventsHero, eventsIntro } from '@/content/events'
 import { testimonials } from '@/content/stories'
 import { UpcomingEventsCarousel } from '@/components/events/UpcomingEventsCarousel'
+import { PastEventPhotoCarousel } from '@/components/events/PastEventPhotoCarousel'
 import { Button } from '@/components/ui/Button'
 
 const JOIN_URL = '/join'
@@ -98,6 +99,9 @@ export default function EventsPage() {
                   <p className="font-body text-sm text-bh-yellow/85 leading-relaxed">
                     {event.recap}
                   </p>
+                )}
+                {event.photos && event.photos.length > 0 && (
+                  <PastEventPhotoCarousel photos={event.photos} eventName={event.name} />
                 )}
               </div>
             ))}
