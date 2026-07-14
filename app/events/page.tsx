@@ -108,14 +108,6 @@ export default function EventsPage() {
                       <p>Oscar Colman Portrait Studio</p>
                       <p>
                         <a
-                          href="mailto:oscar@oscarcolman.com"
-                          className="hover:text-white/70 transition-colors"
-                        >
-                          oscar@oscarcolman.com
-                        </a>
-                      </p>
-                      <p>
-                        <a
                           href="https://oscarcolman.com"
                           target="_blank"
                           rel="noopener noreferrer"
