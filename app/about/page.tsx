@@ -100,6 +100,20 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-14 text-center font-body text-xs text-bh-charcoal/40 leading-relaxed">
+            <p>Founder portraits by Oscar Colman</p>
+            <p>
+              <a
+                href="https://oscarcolman.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-bh-charcoal/70 transition-colors"
+              >
+                oscarcolman.com
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 

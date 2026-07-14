@@ -101,7 +101,31 @@ export default function EventsPage() {
                   </p>
                 )}
                 {event.photos && event.photos.length > 0 && (
-                  <PastEventPhotoCarousel photos={event.photos} eventName={event.name} />
+                  <>
+                    <PastEventPhotoCarousel photos={event.photos} eventName={event.name} />
+                    <div className="mt-6 text-center font-body text-xs text-white/40 leading-relaxed">
+                      <p>Photography by Oscar Colman</p>
+                      <p>Oscar Colman Portrait Studio</p>
+                      <p>
+                        <a
+                          href="mailto:oscar@oscarcolman.com"
+                          className="hover:text-white/70 transition-colors"
+                        >
+                          oscar@oscarcolman.com
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="https://oscarcolman.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-white/70 transition-colors"
+                        >
+                          oscarcolman.com
+                        </a>
+                      </p>
+                    </div>
+                  </>
                 )}
               </div>
             ))}
