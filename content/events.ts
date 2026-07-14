@@ -18,7 +18,7 @@ export type EventItem = {
 
 export type UpcomingEventCard = {
   id: string
-  label: string
+  label?: string
   heading: string
   body: string
 }
@@ -61,9 +61,8 @@ export const events: EventItem[] = [
 export const upcomingEventCards: UpcomingEventCard[] = [
   {
     id: 'online-aug-2026',
-    label: 'Members only',
     heading: 'Online. August 2026.',
-    body: 'Our first members-only online session. Details coming soon.',
+    body: 'Our first online event is coming in August. Date to be confirmed, stay tuned!',
   },
   {
     id: 'online-sep-2026',

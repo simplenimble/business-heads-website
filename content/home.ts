@@ -49,9 +49,8 @@ export const home = {
   },
 
   eventProof: {
-    overline: 'Members only',
-    heading: 'Online. August 5.',
-    body: 'The July launch has wrapped — stay tuned for the pictures. Our first members-only online session is tentatively scheduled next.',
+    heading: 'Online. August 2026.',
+    body: 'Our first online event is coming in August. Date to be confirmed, stay tuned!',
     link: { href: '/events', label: 'See what\'s next' },
   },
 

@@ -24,9 +24,11 @@ export function UpcomingEventsCarousel({ cards }: { cards: UpcomingEventCard[] }
 
   return (
     <div className="bg-bh-charcoal rounded-3xl px-10 py-9">
-      <p className="font-body text-bh-yellow text-xs uppercase tracking-widest mb-3">
-        {card.label}
-      </p>
+      {card.label && (
+        <p className="font-body text-bh-yellow text-xs uppercase tracking-widest mb-3">
+          {card.label}
+        </p>
+      )}
       <h3 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight min-h-[2.5em] md:min-h-[2em]">
         {card.heading}
       </h3>

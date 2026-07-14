@@ -157,9 +157,6 @@ export default function Home() {
             className="group flex items-center justify-between gap-8 bg-bh-charcoal rounded-3xl px-10 py-9 hover:bg-bh-blue transition-colors duration-200"
           >
             <div>
-              <p className="font-body text-bh-yellow text-xs uppercase tracking-widest mb-3">
-                {home.eventProof.overline}
-              </p>
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight">
                 {home.eventProof.heading}
               </h2>
