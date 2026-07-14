@@ -43,7 +43,6 @@ export const events: EventItem[] = [
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_60.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_83.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_126.jpg',
-      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_134.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_136.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_158.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_174.jpg',
@@ -51,7 +50,6 @@ export const events: EventItem[] = [
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_218.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_232.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_235.jpg',
-      '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_253.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_258.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_259.jpg',
     ],
@@ -64,7 +62,7 @@ export const upcomingEventCards: UpcomingEventCard[] = [
   {
     id: 'online-aug-2026',
     label: 'Members only',
-    heading: 'Online. August 5.',
+    heading: 'Online. August 2026.',
     body: 'Our first members-only online session. Details coming soon.',
   },
   {
