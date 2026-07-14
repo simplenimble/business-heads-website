@@ -1,11 +1,14 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type SyntheticEvent } from 'react'
 
 const AUTO_ADVANCE_MS = 4000
+const DEFAULT_ASPECT = 3 / 2
+const MAX_HEIGHT = 520
 
 export function PastEventPhotoCarousel({ photos, eventName }: { photos: string[]; eventName: string }) {
   const [index, setIndex] = useState(0)
+  const [aspectRatios, setAspectRatios] = useState<Record<number, number>>({})
 
   useEffect(() => {
     if (photos.length <= 1) return
@@ -20,19 +23,43 @@ export function PastEventPhotoCarousel({ photos, eventName }: { photos: string[]
   const goPrev = () => setIndex((i) => (i - 1 + photos.length) % photos.length)
   const goNext = () => setIndex((i) => (i + 1) % photos.length)
 
+  const handleLoad = (i: number) => (e: SyntheticEvent<HTMLImageElement>) => {
+    const { naturalWidth, naturalHeight } = e.currentTarget
+    if (!naturalWidth || !naturalHeight) return
+    const ratio = naturalWidth / naturalHeight
+    setAspectRatios((prev) => (prev[i] === ratio ? prev : { ...prev, [i]: ratio }))
+  }
+
+  const aspectRatio = aspectRatios[index] ?? DEFAULT_ASPECT
+
   return (
     <div className="mt-8">
-      <div className="relative h-[400px] rounded-2xl overflow-hidden">
+      <div
+        className="relative w-full rounded-2xl overflow-hidden bg-black"
+        style={{ aspectRatio, maxHeight: MAX_HEIGHT }}
+      >
         {photos.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <div
             key={src}
-            src={src}
-            alt={`${eventName} photo ${i + 1} of ${photos.length}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
-              i === index ? 'opacity-100' : 'opacity-0'
-            }`}
-          />
+            className="absolute inset-0 transition-opacity duration-700 ease-in-out"
+            style={{ opacity: i === index ? 1 : 0 }}
+          >
+            {/* Blurred backdrop fills any letterboxing so there are no harsh bars */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={src}
+              alt=""
+              aria-hidden="true"
+              className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl brightness-50"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={src}
+              alt={`${eventName} photo ${i + 1} of ${photos.length}`}
+              onLoad={handleLoad(i)}
+              className="relative w-full h-full object-contain"
+            />
+          </div>
         ))}
 
         {photos.length > 1 && (
