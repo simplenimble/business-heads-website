@@ -64,7 +64,7 @@ export function WebinarPopup() {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4"
       onClick={handleClose}
     >
       <div
@@ -73,43 +73,43 @@ export function WebinarPopup() {
         aria-modal="true"
         aria-labelledby="webinar-popup-heading"
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-md rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(1,41,93,0.25)]"
+        className="relative w-full max-w-lg rounded-3xl overflow-hidden border-[3px] border-bh-yellow shadow-[0_30px_90px_rgba(0,0,0,0.5)]"
       >
         <button
           ref={closeButtonRef}
           type="button"
           onClick={handleClose}
           aria-label="Close"
-          className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/15 text-white flex items-center justify-center hover:bg-white/25 transition-colors text-lg"
+          className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/15 text-white flex items-center justify-center hover:bg-white/25 transition-colors text-xl"
         >
           &times;
         </button>
 
         {/* Hero */}
-        <div className="bg-[#01295D] px-8 pt-8 pb-6">
-          <div className="flex justify-center mb-5">
-            <div className="bg-white rounded-full px-4 py-2 flex items-center gap-2.5">
+        <div className="bg-[#01295D] px-10 pt-10 pb-8">
+          <div className="flex justify-center mb-6">
+            <div className="bg-white rounded-full px-5 py-3 flex items-center gap-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://i.ibb.co/mVfwXFwh/bramelle-partners-logo.png"
                 alt="Bramelle Partners"
-                className="h-4 w-auto block"
+                className="h-6 w-auto block"
               />
-              <span className="text-[#01295D]/35 text-sm">&times;</span>
+              <span className="text-[#01295D]/35 text-base">&times;</span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://i.ibb.co/vCWFWvr4/business-heads-logo.png"
                 alt="Business Heads"
-                className="h-3 w-auto block"
+                className="h-5 w-auto block"
               />
             </div>
           </div>
-          <p className="font-body text-bh-yellow text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="font-body text-bh-yellow text-xs font-bold uppercase tracking-widest mb-4">
             You&rsquo;re invited
           </p>
           <h2
             id="webinar-popup-heading"
-            className="font-heading font-extrabold text-2xl text-white leading-tight mb-1"
+            className="font-heading font-extrabold text-3xl text-white leading-tight mb-1"
           >
             Off the record: Getting real value from your frequent flyer points
           </h2>
@@ -117,13 +117,13 @@ export function WebinarPopup() {
 
         {/* Detail strip */}
         <div className="bg-[#011b3d] grid grid-cols-2">
-          <div className="px-6 py-4 border-r border-white/10">
+          <div className="px-8 py-5 border-r border-white/10">
             <p className="font-body text-[11px] uppercase tracking-widest text-white/55 font-bold mb-1">
               Date
             </p>
             <p className="font-body text-sm text-white/90 font-bold">Thu 20 Aug 2026</p>
           </div>
-          <div className="px-6 py-4">
+          <div className="px-8 py-5">
             <p className="font-body text-[11px] uppercase tracking-widest text-white/55 font-bold mb-1">
               Time
             </p>
@@ -132,7 +132,7 @@ export function WebinarPopup() {
         </div>
 
         {/* CTA */}
-        <div className="bg-[#f5f8fc] text-center px-8 py-7">
+        <div className="bg-[#f5f8fc] text-center px-10 py-9">
           <Link
             href={REGISTER_URL}
             onClick={handleClose}
