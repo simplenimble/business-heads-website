@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { events, upcomingEventCards, eventFormat, eventsHero, eventsIntro } from '@/content/events'
 import { testimonials } from '@/content/stories'
-import { UpcomingEventsCarousel } from '@/components/events/UpcomingEventsCarousel'
+import { UpcomingEventsTabs } from '@/components/events/UpcomingEventsTabs'
 import { PastEventPhotoCarousel } from '@/components/events/PastEventPhotoCarousel'
 import { Button } from '@/components/ui/Button'
 
@@ -76,7 +76,7 @@ export default function EventsPage() {
             <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-10">
               More events on the way.
             </h2>
-            <UpcomingEventsCarousel cards={upcomingEventCards} />
+            <UpcomingEventsTabs cards={upcomingEventCards} />
           </div>
         </section>
       )}

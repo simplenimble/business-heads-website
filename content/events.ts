@@ -18,6 +18,7 @@ export type EventItem = {
 
 export type UpcomingEventCard = {
   id: string
+  tabLabel: string
   label?: string
   date?: string
   time?: string
@@ -61,11 +62,12 @@ export const events: EventItem[] = [
   },
 ]
 
-/* Tentative upcoming events shown as an auto-swiping carousel on the events page.
+/* Tentative upcoming events shown as tabs (Aug–Dec) on the events page.
    Update dates/details here as they're confirmed. */
 export const upcomingEventCards: UpcomingEventCard[] = [
   {
     id: 'webinar-aug-2026',
+    tabLabel: 'Aug',
     label: 'Webinar',
     date: 'August 20',
     time: '12:00 PM – 1:00 PM',
@@ -76,6 +78,7 @@ export const upcomingEventCards: UpcomingEventCard[] = [
   },
   {
     id: 'online-sep-2026',
+    tabLabel: 'Sep',
     label: 'Online',
     date: 'September 24',
     heading: 'September 24. Online.',
@@ -83,6 +86,7 @@ export const upcomingEventCards: UpcomingEventCard[] = [
   },
   {
     id: 'in-person-oct-2026',
+    tabLabel: 'Oct',
     label: 'In person',
     date: 'October',
     heading: 'October. In person.',
@@ -90,6 +94,7 @@ export const upcomingEventCards: UpcomingEventCard[] = [
   },
   {
     id: 'online-nov-2026',
+    tabLabel: 'Nov',
     label: 'Online',
     date: 'November',
     heading: 'November. Online.',
@@ -97,6 +102,7 @@ export const upcomingEventCards: UpcomingEventCard[] = [
   },
   {
     id: 'in-person-dec-2026',
+    tabLabel: 'Dec',
     label: 'In person',
     date: 'December',
     heading: 'December. In person.',
