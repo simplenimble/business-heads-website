@@ -126,7 +126,7 @@ export function WebinarPopup() {
         </div>
 
         {/* CTA */}
-        <div className="bg-[#f5f8fc] text-center px-10 py-9">
+        <div className="bg-[#f5f8fc] text-center px-10 py-5">
           <Link
             href={REGISTER_URL}
             onClick={handleClose}
@@ -134,6 +134,9 @@ export function WebinarPopup() {
           >
             REGISTER NOW
           </Link>
+          <p className="font-body text-xs text-gray-400 mt-3">
+            Free to attend &middot; Live via Microsoft Teams
+          </p>
         </div>
       </div>
     </div>
