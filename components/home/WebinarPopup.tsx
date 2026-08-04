@@ -3,9 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
-const STORAGE_KEY = 'bh-webinar-popup-dismissed-at'
 const SHOW_DELAY_MS = 2500
-const SUPPRESS_MS = 24 * 60 * 60 * 1000
 const REGISTER_URL = '/events/frequent-flyer-webinar'
 
 export function WebinarPopup() {
@@ -14,15 +12,11 @@ export function WebinarPopup() {
   const closeButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
-    const dismissedAt = Number(window.localStorage.getItem(STORAGE_KEY) ?? 0)
-    if (Date.now() - dismissedAt < SUPPRESS_MS) return
-
     const timer = window.setTimeout(() => setOpen(true), SHOW_DELAY_MS)
     return () => window.clearTimeout(timer)
   }, [])
 
   const handleClose = () => {
-    window.localStorage.setItem(STORAGE_KEY, String(Date.now()))
     setOpen(false)
   }
 
