@@ -82,19 +82,19 @@ export function WebinarPopup() {
         {/* Hero */}
         <div className="bg-[#01295D] px-10 pt-10 pb-8">
           <div className="flex justify-center mb-6">
-            <div className="bg-white rounded-full px-5 py-3 flex items-center gap-3">
+            <div className="bg-white rounded-full px-7 py-4 flex items-center gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://i.ibb.co/mVfwXFwh/bramelle-partners-logo.png"
                 alt="Bramelle Partners"
-                className="h-6 w-auto block"
+                className="h-8 w-auto block"
               />
-              <span className="text-[#01295D]/35 text-base">&times;</span>
+              <span className="text-[#01295D]/35 text-lg">&times;</span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://i.ibb.co/vCWFWvr4/business-heads-logo.png"
                 alt="Business Heads"
-                className="h-5 w-auto block"
+                className="h-7 w-auto block"
               />
             </div>
           </div>
@@ -130,7 +130,7 @@ export function WebinarPopup() {
           <Link
             href={REGISTER_URL}
             onClick={handleClose}
-            className="inline-block bg-[#f06925] text-white font-body font-bold text-sm tracking-widest px-9 py-3.5 rounded-full hover:-translate-y-0.5 transition-transform"
+            className="cta-glow inline-block bg-[#f06925] text-white font-body font-bold text-base tracking-widest px-14 py-5 rounded-full hover:-translate-y-0.5 transition-transform"
           >
             REGISTER NOW
           </Link>
