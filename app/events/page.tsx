@@ -66,6 +66,21 @@ export default function EventsPage() {
         </div>
       </section>
 
+      {/* What's next */}
+      {upcomingEventCards.length > 0 && (
+        <section className="bg-white px-6 py-24">
+          <div className="max-w-5xl mx-auto">
+            <p className="font-body font-semibold text-bh-blue text-sm uppercase tracking-widest mb-5">
+              What&rsquo;s next
+            </p>
+            <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-10">
+              More events on the way.
+            </h2>
+            <UpcomingEventsCarousel cards={upcomingEventCards} />
+          </div>
+        </section>
+      )}
+
       {/* Past events */}
       {past.length > 0 && (
         <section className="bg-bh-blue px-6 py-24">
@@ -121,21 +136,6 @@ export default function EventsPage() {
                 )}
               </div>
             ))}
-          </div>
-        </section>
-      )}
-
-      {/* What's next */}
-      {upcomingEventCards.length > 0 && (
-        <section className="bg-white px-6 py-24">
-          <div className="max-w-5xl mx-auto">
-            <p className="font-body font-semibold text-bh-blue text-sm uppercase tracking-widest mb-5">
-              What&rsquo;s next
-            </p>
-            <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-10">
-              More events on the way.
-            </h2>
-            <UpcomingEventsCarousel cards={upcomingEventCards} />
           </div>
         </section>
       )}

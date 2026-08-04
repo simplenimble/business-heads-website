@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import type { UpcomingEventCard } from '@/content/events'
+import { Button } from '@/components/ui/Button'
 
 const AUTO_SWIPE_MS = 5000
 
@@ -29,14 +30,29 @@ export function UpcomingEventsCarousel({ cards }: { cards: UpcomingEventCard[] }
           {card.label}
         </p>
       )}
+      {(card.date || card.time) && (
+        <p className="font-body text-white/40 text-sm mb-2">
+          {[card.date, card.time].filter(Boolean).join(' · ')}
+        </p>
+      )}
       <h3 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight min-h-[2.5em] md:min-h-[2em]">
         {card.heading}
       </h3>
-      <p className="font-body text-white/55 leading-relaxed max-w-xl mb-8">
+      <p className="font-body text-white/55 leading-relaxed max-w-xl">
         {card.body}
       </p>
+      {card.subtext && (
+        <p className="font-body text-sm text-bh-yellow/70 italic mt-2">
+          {card.subtext}
+        </p>
+      )}
+      {card.ctaUrl && (
+        <Button href={card.ctaUrl} variant="primary" size="sm" className="mt-6">
+          {card.ctaLabel ?? 'Learn more'}
+        </Button>
+      )}
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 mt-8">
         <button
           type="button"
           onClick={goPrev}

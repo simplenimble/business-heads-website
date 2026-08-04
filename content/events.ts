@@ -19,8 +19,13 @@ export type EventItem = {
 export type UpcomingEventCard = {
   id: string
   label?: string
+  date?: string
+  time?: string
   heading: string
   body: string
+  subtext?: string
+  ctaLabel?: string
+  ctaUrl?: string
 }
 
 /* Update this file with real event details as they are confirmed.
@@ -60,21 +65,44 @@ export const events: EventItem[] = [
    Update dates/details here as they're confirmed. */
 export const upcomingEventCards: UpcomingEventCard[] = [
   {
-    id: 'online-aug-2026',
-    heading: 'Online. August 2026.',
-    body: 'Our first online event is coming in August. Date to be confirmed, stay tuned!',
+    id: 'webinar-aug-2026',
+    label: 'Webinar',
+    date: 'August 20',
+    time: '12:00 PM – 1:00 PM',
+    heading: 'Off the record: Getting real value from your frequent flyer points',
+    body: 'With Brad Seeto.',
+    ctaLabel: 'Register now',
+    // TODO: swap in the real registration link once Nicoli sends it through.
+    ctaUrl: '#',
   },
   {
     id: 'online-sep-2026',
-    label: 'Members only',
-    heading: 'Online. September 2.',
-    body: 'Another hour with people who get it. More details soon.',
+    label: 'Online',
+    date: 'September 24',
+    heading: 'September 24. Online.',
+    body: 'Topic to be determined.',
   },
   {
     id: 'in-person-oct-2026',
     label: 'In person',
-    heading: 'October 7. Location TBC.',
-    body: 'The quarterly event. The prize draw. The room worth being in.',
+    date: 'October',
+    heading: 'October. In person.',
+    body: 'Venue to be determined.',
+  },
+  {
+    id: 'online-nov-2026',
+    label: 'Online',
+    date: 'November',
+    heading: 'November. Online.',
+    body: 'Community poll topic.',
+  },
+  {
+    id: 'in-person-dec-2026',
+    label: 'In person',
+    date: 'December',
+    heading: 'December. In person.',
+    body: 'Holiday Casual Drinks. Venue to be determined.',
+    subtext: 'Christmas Drinks – Casual / Social Catch ups',
   },
 ]
 
