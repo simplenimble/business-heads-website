@@ -72,8 +72,7 @@ export const upcomingEventCards: UpcomingEventCard[] = [
     heading: 'Off the record: Getting real value from your frequent flyer points',
     body: 'With Brad Seeto.',
     ctaLabel: 'Register now',
-    // TODO: swap in the real registration link once Nicoli sends it through.
-    ctaUrl: '#',
+    ctaUrl: '/events/frequent-flyer-webinar',
   },
   {
     id: 'online-sep-2026',

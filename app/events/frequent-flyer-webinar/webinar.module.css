@@ -1,0 +1,347 @@
+.page {
+  --bh-blue: #4f48ff;
+  --bh-yellow: #fdce00;
+  --bh-navy: #01295d;
+  --bh-navy-deep: #011b3d;
+  --bh-orange: #f06925;
+  --bh-text: #473f42;
+  --bh-text-soft: #8a8386;
+  --bh-bg-content: #f5f8fc;
+  --bh-bg-footer: #f9f4f5;
+
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #eef0ff 0%, #f6f7ff 400px, #ffffff 400px);
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--bh-text);
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 20px 64px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(1, 41, 93, 0.12);
+}
+
+.stripe {
+  display: flex;
+  height: 8px;
+}
+.stripe span {
+  flex: 1;
+}
+.s1 {
+  background: var(--bh-blue);
+}
+.s2 {
+  background: var(--bh-yellow);
+}
+
+/* HERO */
+.hero {
+  background: var(--bh-navy);
+  padding: 48px 48px 44px;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+  animation: fadeUp 0.7s ease-out 0.1s both;
+}
+.logoPill {
+  background: #fff;
+  border-radius: 32px;
+  padding: 12px 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logoPill img {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+.bhLogo {
+  height: 17px;
+}
+.logoDivider {
+  color: rgba(1, 41, 93, 0.35);
+  font-size: 16px;
+}
+
+.eyebrow {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--bh-yellow);
+  font-weight: 700;
+  margin: 0 0 18px;
+  animation: fadeUp 0.7s ease-out 0.2s both;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 16px;
+  animation: fadeUp 0.7s ease-out 0.3s both;
+}
+.heading .muted {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.heroSub {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 520px;
+  margin: 0 auto;
+  animation: fadeUp 0.7s ease-out 0.4s both;
+}
+
+/* DETAIL STRIP */
+.details {
+  background: var(--bh-navy-deep);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  animation: fadeUp 0.8s ease-out 0.55s both;
+}
+.detailCell {
+  padding: 22px 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.details .detailCell:nth-child(2n) {
+  border-right: none;
+}
+.details .detailCell:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+.detailLabel {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.detailValue {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  margin: 0;
+}
+.detailSub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 4px 0 0;
+}
+
+/* CONTENT */
+.content {
+  background: var(--bh-bg-content);
+  padding: 40px 48px 8px;
+}
+.intro {
+  border-left: 4px solid var(--bh-navy);
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+.rule {
+  border-top: 2px solid rgba(240, 105, 37, 0.25);
+  margin: 0 0 26px;
+}
+.sectionLabel {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--bh-navy);
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+.coverList {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+.coverList li {
+  display: flex;
+  gap: 12px;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+.dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.c1 {
+  background: var(--bh-yellow);
+}
+.c2 {
+  background: var(--bh-orange);
+}
+.c3 {
+  background: #46c3f1;
+}
+.c4 {
+  background: #18b465;
+}
+
+/* CTA */
+.ctaBlock {
+  text-align: center;
+  padding: 8px 48px 40px;
+  background: var(--bh-bg-content);
+}
+.ctaBtn {
+  display: inline-block;
+  background: var(--bh-orange);
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 17px 44px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 0 0 rgba(240, 105, 37, 0.35);
+  animation: glow 2.4s ease-in-out 1.2s infinite;
+  transition: transform 0.15s ease;
+}
+.ctaBtn:hover {
+  transform: translateY(-2px);
+}
+.ctaNote {
+  font-size: 13px;
+  color: var(--bh-text-soft);
+  line-height: 1.6;
+  margin: 16px 0 0;
+}
+
+/* ABOUT */
+.about {
+  background: var(--bh-bg-content);
+  padding: 0 48px 36px;
+}
+.aboutInner {
+  border-left: 4px solid var(--bh-orange);
+  padding-left: 18px;
+}
+.aboutLabel {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--bh-navy);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.aboutText {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #5a5652;
+  margin: 0;
+}
+.aboutText a {
+  color: var(--bh-orange);
+  font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--bh-bg-footer);
+  padding: 28px 48px 36px;
+  text-align: center;
+}
+.footerBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.footerBrand img {
+  height: 22px;
+}
+.footerBrand span {
+  font-size: 13px;
+  color: var(--bh-navy);
+  font-weight: 700;
+}
+.footerText {
+  font-size: 12.5px;
+  color: var(--bh-text-soft);
+  line-height: 1.7;
+  margin: 0;
+}
+.footerText a {
+  color: var(--bh-navy);
+  text-decoration: underline;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(240, 105, 37, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(240, 105, 37, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 24px 12px 48px;
+  }
+  .hero {
+    padding: 36px 24px 32px;
+  }
+  .heading {
+    font-size: 27px;
+  }
+  .details {
+    grid-template-columns: 1fr;
+  }
+  .detailCell {
+    border-right: none !important;
+  }
+  .content,
+  .ctaBlock,
+  .about,
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
