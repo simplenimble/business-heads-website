@@ -5,6 +5,15 @@ import Link from 'next/link'
 
 const SHOW_DELAY_MS = 2500
 const REGISTER_URL = '/events/frequent-flyer-webinar'
+const EVENT_URL = `https://www.businessheads.com.au${REGISTER_URL}`
+const FORWARD_SUBJECT = "Thought you'd want to see this: frequent flyer points webinar"
+const FORWARD_BODY = `Hey, thought this might be useful for you.
+
+Off the record: Getting real value from your frequent flyer points
+Thu 20 Aug 2026, 12:00-1:00PM AEST, hosted by Brad Seeto (Bramelle Partners)
+
+Register here: ${EVENT_URL}`
+const FORWARD_MAILTO = `mailto:?subject=${encodeURIComponent(FORWARD_SUBJECT)}&body=${encodeURIComponent(FORWARD_BODY)}`
 
 export function WebinarPopup() {
   const [open, setOpen] = useState(false)
@@ -126,17 +135,25 @@ export function WebinarPopup() {
         </div>
 
         {/* CTA */}
-        <div className="bg-[#f5f8fc] text-center px-10 py-5">
-          <Link
-            href={REGISTER_URL}
-            onClick={handleClose}
-            className="cta-glow inline-block bg-[#f06925] text-white font-body font-bold text-base tracking-widest px-14 py-5 rounded-full hover:-translate-y-0.5 transition-transform"
-          >
-            REGISTER NOW
-          </Link>
-          <p className="font-body text-xs text-gray-400 mt-3">
+        <div className="bg-[#f5f8fc] text-center px-10 py-6">
+          <p className="font-body text-xs text-gray-400 mb-4">
             Free to attend &middot; Live via Microsoft Teams
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link
+              href={REGISTER_URL}
+              onClick={handleClose}
+              className="cta-glow inline-block whitespace-nowrap bg-[#f06925] text-white font-body font-bold text-base tracking-widest px-14 py-5 rounded-full hover:-translate-y-0.5 transition-transform"
+            >
+              REGISTER NOW
+            </Link>
+            <a
+              href={FORWARD_MAILTO}
+              className="inline-block whitespace-nowrap bg-transparent text-[#01295D] border-2 border-[#01295D] font-body font-bold text-xs tracking-wide px-6 py-5 rounded-full hover:bg-[#01295D]/5 transition-colors"
+            >
+              FORWARD TO A FRIEND
+            </a>
+          </div>
         </div>
       </div>
     </div>
