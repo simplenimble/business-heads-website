@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | Business Heads',
   },
   description:
-    'Business Heads is for business owners who want genuine peer connection, not another pitch-fest. $10,000 back to the community every quarter. Based in Sydney, Australia.',
+    'Business Heads is for business owners who want genuine peer connection, not another pitch-fest. $5,000 back to the community every quarter. Based in Sydney, Australia.',
   openGraph: {
     type: 'website',
     locale: 'en_AU',

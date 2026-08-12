@@ -26,7 +26,7 @@ export const join = {
       'Monthly co-coaching circles',
       'Learning sessions',
       'Member discounts (powered by Rewards Gateway)',
-      'Entries in the quarterly $10,000 prize draw',
+      'Entries in the quarterly $5,000 prize draw',
     ],
   },
 

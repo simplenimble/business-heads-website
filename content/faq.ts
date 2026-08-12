@@ -15,9 +15,9 @@ export const faqs: FaqItem[] = [
       "That is exactly why it is built this way. One in-person event per quarter in Sydney. The online platform is there when you want it, not a daily obligation. You will get as much as you put in, and a quarterly event is a low bar for something that might actually help you think more clearly about your business.",
   },
   {
-    question: "How does the $10,000 prize actually work? Is it real cash?",
+    question: "How does the $5,000 prize actually work?",
     answer:
-      "Every quarter, Business Heads draws $10,000 from membership revenue and gives it back to the community. The winner receives that amount to spend on member businesses. If nothing in the community fits, they receive $3,000 cash instead. The draw is weighted by attendance. More events attended means more entries. It is not a raffle. It is proof the model gives back more than it takes.",
+      "Every quarter, Business Heads draws $5,000 from membership revenue and gives it back to the community. The winner spends it with other members. If nothing in the community fits, they can take $1,500 cash instead, no conditions attached. It is not a raffle. It is proof the model gives back more than it takes.",
   },
   {
     question: "What happens if I can't make an event?",

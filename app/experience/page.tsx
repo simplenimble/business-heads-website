@@ -130,6 +130,14 @@ export default function ExperiencePage() {
                     <div>
                       <p className="font-heading font-semibold text-bh-charcoal text-sm mb-0.5">{step.label}</p>
                       <p className="font-body text-sm text-bh-charcoal/55 leading-relaxed">{step.description}</p>
+                      {step.note && (
+                        <p className="font-body text-xs text-bh-charcoal/40 italic mt-1">
+                          {step.note}{' '}
+                          {step.noteLinkHref && step.noteLinkLabel && (
+                            <Link href={step.noteLinkHref} className="underline underline-offset-2">{step.noteLinkLabel}</Link>
+                          )}
+                        </p>
+                      )}
                     </div>
                   </li>
                 ))}

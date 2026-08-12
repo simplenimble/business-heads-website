@@ -37,7 +37,10 @@ export const experience = {
         {
           label: 'The quarterly draw',
           description:
-            '$10,000 drawn live. One member wins. They spend it inside the community. First draw at our October 2026 event.',
+            'Drawn live. One member wins. They spend it inside the community. First draw: October 2026, $5,000.',
+          note: 'Winners may choose a $1,500 cash alternative.',
+          noteLinkLabel: 'See Competition Rules',
+          noteLinkHref: '/terms',
         },
         {
           label: 'Open conversation',
@@ -50,13 +53,14 @@ export const experience = {
 
   prize: {
     overline: 'The Quarterly Draw',
-    heading: '$10,000. Back in the room. Every quarter.',
+    heading: 'The quarterly draw',
     body: [
-      'Every quarter, $10,000 goes back into the community. One member wins it and spends it with other members. Their win becomes someone else\'s opportunity. The money moves around, not out.',
-      'Every member gets an entry into every draw, just for being here.',
+      'Every quarter, the pot goes back into the community. One member wins it and spends it with other members. Their win becomes someone else\'s opportunity. The money moves around, not out.',
+      'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
+      'First draw: October 2026, $5,000.',
     ],
-    footnote: 'Additional ticket entries granted with every event ticket purchase. First draw: October 2026.',
-    footnoteLinkLabel: 'See Terms and Conditions',
+    footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
+    footnoteLinkLabel: 'See Competition Rules',
     footnoteLinkHref: '/terms',
   },
 

@@ -3,7 +3,7 @@ import { LeadCaptureForm } from '@/components/ui/LeadCaptureForm'
 import { join } from '@/content/join'
 
 const MONTHLY_INCLUDES = [
-  'One entry per month into the quarterly $10,000 prize draw',
+  'One entry every month into the quarterly member draw',
   'Discounted member tickets to quarterly events',
   'Full access to the member community',
   'Invitations to member-only online events',
@@ -11,7 +11,7 @@ const MONTHLY_INCLUDES = [
 ]
 
 const ANNUAL_INCLUDES = [
-  'Five entries per quarterly $10,000 prize draw (20 per year)',
+  'Five entries into every quarterly draw (20 a year)',
   'One month free',
   'Discounted member tickets to quarterly events',
   'Full access to the member community',

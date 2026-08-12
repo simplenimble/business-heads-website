@@ -8,7 +8,7 @@ import { home } from '@/content/home'
 export const metadata: Metadata = {
   title: 'Business Heads | A Community for Business Owners Who Help Each Other Win',
   description:
-    'Not a referral machine. Not a pitch-fest. A community that genuinely pays its members back. $10,000 back to the community every quarter. Sydney, Australia.',
+    'Not a referral machine. Not a pitch-fest. A community that genuinely pays its members back. $5,000 back to the community every quarter. Sydney, Australia.',
 }
 
 export default function Home() {
@@ -101,10 +101,13 @@ export default function Home() {
               <p className="font-body text-lg text-white/65 leading-[1.8] mb-6">
                 {home.prize.body}
               </p>
+              <p className="font-body text-sm text-white/35 italic leading-relaxed mb-2">
+                {home.prize.footnote}
+              </p>
               <p className="font-body text-sm text-white/35 italic leading-relaxed">
-                {home.prize.footnote}{' '}
-                <Link href={home.prize.footnoteLinkHref} className="underline underline-offset-2">
-                  {home.prize.footnoteLinkLabel}
+                {home.prize.legalNote}{' '}
+                <Link href={home.prize.legalNoteLinkHref} className="underline underline-offset-2">
+                  {home.prize.legalNoteLinkLabel}
                 </Link>
               </p>
             </div>

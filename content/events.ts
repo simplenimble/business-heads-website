@@ -43,7 +43,7 @@ export const events: EventItem[] = [
     city: 'Sydney, NSW',
     ticketPrice: '$40 per person.',
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
-    eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $10,000 prize draw — the first draw is at our October event.',
+    eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $5,000 prize draw — the first draw is at our October event.',
     status: 'past',
     photos: [
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_60.jpg',
@@ -122,7 +122,10 @@ export const eventFormat = [
   },
   {
     time: 'The quarterly draw',
-    description: '$10,000 drawn live. One member wins. First draw at our October 2026 event.',
+    description: 'Drawn live at every quarterly event. One member wins, and spends it inside the community. First draw: October 2026, $5,000.',
+    note: 'Winners may choose a $1,500 cash alternative.',
+    noteLinkLabel: 'See Competition Rules',
+    noteLinkHref: '/terms',
   },
   {
     time: 'Open conversation',

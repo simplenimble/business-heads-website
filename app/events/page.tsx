@@ -150,7 +150,7 @@ export default function EventsPage() {
             What happens on the night.
           </h2>
           <div className="max-w-xl">
-            {eventFormat.map(({ time, description }, i) => (
+            {eventFormat.map(({ time, description, note, noteLinkLabel, noteLinkHref }, i) => (
               <div
                 key={time}
                 className={`flex gap-6 pb-8 ${i < eventFormat.length - 1 ? 'border-b border-white/10 mb-8' : ''}`}
@@ -161,6 +161,14 @@ export default function EventsPage() {
                 <div>
                   <p className="font-heading font-semibold text-white mb-2">{time}</p>
                   <p className="font-body text-sm text-white/55 leading-relaxed">{description}</p>
+                  {note && (
+                    <p className="font-body text-xs text-white/30 italic mt-2 leading-relaxed">
+                      {note}{' '}
+                      {noteLinkHref && noteLinkLabel && (
+                        <Link href={noteLinkHref} className="underline underline-offset-2">{noteLinkLabel}</Link>
+                      )}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
