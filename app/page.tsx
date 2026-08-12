@@ -163,13 +163,15 @@ export default function Home() {
             className="group flex items-center justify-between gap-8 bg-bh-charcoal rounded-3xl px-10 py-9 hover:bg-bh-blue transition-colors duration-200"
           >
             <div>
-              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight">
+              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight max-w-xl">
                 {home.eventProof.heading}
               </h2>
-              <p className="font-body text-white/55 leading-relaxed max-w-xl">
-                {home.eventProof.body}{' '}
-                <span className="text-white font-semibold">{home.eventProof.cta}</span>
+              <p className="font-body text-white/55 leading-relaxed max-w-xl mb-5">
+                {home.eventProof.body}
               </p>
+              <span className="cta-glow inline-block bg-[#f06925] text-white font-body font-bold text-sm tracking-wide px-6 py-2.5 rounded-full">
+                {home.eventProof.cta}
+              </span>
             </div>
             <div className="shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/40 group-hover:text-white group-hover:border-white/60 transition-colors text-lg">
               →

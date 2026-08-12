@@ -50,9 +50,9 @@ export const home = {
   },
 
   eventProof: {
-    heading: 'Thu 20 Aug — Off the record.',
+    heading: 'Thu 20 Aug — Off the record: Getting real value from your frequent flyer points',
     body: 'Live webinar with Brad Seeto, 12:00–1:00PM AEST.',
-    cta: 'Register now.',
+    cta: 'Learn more & register',
     link: { href: '/events/frequent-flyer-webinar', label: 'See what\'s next' },
   },
 
