@@ -50,9 +50,9 @@ export const home = {
   },
 
   eventProof: {
-    heading: 'Online. August 2026.',
-    body: 'Our first online event is coming in August. Date to be confirmed, stay tuned!',
-    link: { href: '/events', label: 'See what\'s next' },
+    heading: 'Thu 20 Aug — Off the record.',
+    body: 'Live webinar with Brad Seeto (Bramelle Partners), 12:00–1:00PM AEST. Register now.',
+    link: { href: '/events/frequent-flyer-webinar', label: 'See what\'s next' },
   },
 
   pricing: {
