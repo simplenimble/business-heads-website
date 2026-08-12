@@ -167,7 +167,8 @@ export default function Home() {
                 {home.eventProof.heading}
               </h2>
               <p className="font-body text-white/55 leading-relaxed max-w-xl">
-                {home.eventProof.body}
+                {home.eventProof.body}{' '}
+                <span className="text-white font-semibold">{home.eventProof.cta}</span>
               </p>
             </div>
             <div className="shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/40 group-hover:text-white group-hover:border-white/60 transition-colors text-lg">

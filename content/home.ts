@@ -51,7 +51,8 @@ export const home = {
 
   eventProof: {
     heading: 'Thu 20 Aug — Off the record.',
-    body: 'Live webinar with Brad Seeto (Bramelle Partners), 12:00–1:00PM AEST. Register now.',
+    body: 'Live webinar with Brad Seeto, 12:00–1:00PM AEST.',
+    cta: 'Register now.',
     link: { href: '/events/frequent-flyer-webinar', label: 'See what\'s next' },
   },
 
