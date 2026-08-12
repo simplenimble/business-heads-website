@@ -131,10 +131,10 @@ export default function ExperiencePage() {
                       <p className="font-heading font-semibold text-bh-charcoal text-sm mb-0.5">{step.label}</p>
                       <p className="font-body text-sm text-bh-charcoal/55 leading-relaxed">{step.description}</p>
                       {step.note && (
-                        <p className="font-body text-xs text-bh-charcoal/40 italic mt-1">
+                        <p className="font-body text-xs text-bh-charcoal/70 italic mt-1">
                           {step.note}{' '}
                           {step.noteLinkHref && step.noteLinkLabel && (
-                            <Link href={step.noteLinkHref} className="underline underline-offset-2">{step.noteLinkLabel}</Link>
+                            <Link href={step.noteLinkHref} className="text-bh-blue underline underline-offset-2">{step.noteLinkLabel}</Link>
                           )}
                         </p>
                       )}
@@ -157,20 +157,16 @@ export default function ExperiencePage() {
           <h2 className="font-heading font-semibold text-3xl md:text-5xl text-white mb-10 leading-tight max-w-2xl">
             {experience.prize.heading}
           </h2>
-          <div className="grid md:grid-cols-2 gap-10 border-t border-white/15 pt-10">
-            <div className="space-y-5">
-              {experience.prize.body.map((para) => (
-                <p key={para} className="font-body text-white/65 leading-[1.8]">{para}</p>
-              ))}
-            </div>
-            <div className="flex md:items-end">
-              <p className="font-body text-sm text-white/30 italic">
-                {experience.prize.footnote}{' '}
-                <Link href={experience.prize.footnoteLinkHref} className="underline underline-offset-2">
-                  {experience.prize.footnoteLinkLabel}
-                </Link>
-              </p>
-            </div>
+          <div className="max-w-2xl border-t border-white/15 pt-10 space-y-5">
+            {experience.prize.body.map((para) => (
+              <p key={para} className="font-body text-white/65 leading-[1.8]">{para}</p>
+            ))}
+            <p className="font-body text-sm text-white/70 italic">
+              {experience.prize.footnote}{' '}
+              <Link href={experience.prize.footnoteLinkHref} className="text-bh-yellow underline underline-offset-2">
+                {experience.prize.footnoteLinkLabel}
+              </Link>
+            </p>
           </div>
         </div>
       </section>

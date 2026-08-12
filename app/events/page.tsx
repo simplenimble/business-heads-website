@@ -162,10 +162,10 @@ export default function EventsPage() {
                   <p className="font-heading font-semibold text-white mb-2">{time}</p>
                   <p className="font-body text-sm text-white/55 leading-relaxed">{description}</p>
                   {note && (
-                    <p className="font-body text-xs text-white/30 italic mt-2 leading-relaxed">
+                    <p className="font-body text-xs text-white/70 italic mt-2 leading-relaxed">
                       {note}{' '}
                       {noteLinkHref && noteLinkLabel && (
-                        <Link href={noteLinkHref} className="underline underline-offset-2">{noteLinkLabel}</Link>
+                        <Link href={noteLinkHref} className="text-bh-yellow underline underline-offset-2">{noteLinkLabel}</Link>
                       )}
                     </p>
                   )}
