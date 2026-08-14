@@ -24,7 +24,7 @@ export const home = {
     footnote: 'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry. First draw: October 2026, $5,000.',
     legalNote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
     legalNoteLinkLabel: 'See Competition Rules',
-    legalNoteLinkHref: '/terms',
+    legalNoteLinkHref: '/competition-rules',
   },
 
   benefits: {

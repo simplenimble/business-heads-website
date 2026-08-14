@@ -107,6 +107,14 @@ export function Footer() {
                   Membership Terms
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/competition-rules"
+                  className="font-body text-sm text-white/50 hover:text-white transition-colors"
+                >
+                  Competition Rules
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -125,7 +125,7 @@ export const eventFormat = [
     description: 'Drawn live at every quarterly event. One member wins, and spends it inside the community. First draw: October 2026, $5,000.',
     note: 'Winners may choose a $1,500 cash alternative.',
     noteLinkLabel: 'See Competition Rules',
-    noteLinkHref: '/terms',
+    noteLinkHref: '/competition-rules',
   },
   {
     time: 'Open conversation',

@@ -40,7 +40,7 @@ export const experience = {
             'Drawn live. One member wins. They spend it inside the community. First draw: October 2026, $5,000.',
           note: 'Winners may choose a $1,500 cash alternative.',
           noteLinkLabel: 'See Competition Rules',
-          noteLinkHref: '/terms',
+          noteLinkHref: '/competition-rules',
         },
         {
           label: 'Open conversation',
@@ -61,7 +61,7 @@ export const experience = {
     ],
     footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
     footnoteLinkLabel: 'See Competition Rules',
-    footnoteLinkHref: '/terms',
+    footnoteLinkHref: '/competition-rules',
   },
 
   platform: {
