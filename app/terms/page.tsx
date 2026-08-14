@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Membership Terms & Conditions | Business Heads',
+  title: 'Membership Terms & Conditions',
   description: 'Business Heads membership terms and conditions. Effective 1 July 2026.',
 }
 

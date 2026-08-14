@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Competition Rules and Conditions of Entry | Business Heads',
+  title: 'Competition Rules and Conditions of Entry',
   description: 'Business Heads Giveaway competition rules and conditions of entry for the quarterly prize draw. Effective 1 July 2026.',
 }
 
