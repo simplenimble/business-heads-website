@@ -94,9 +94,8 @@ export const upcomingEventCards: UpcomingEventCard[] = [
     id: 'online-sep-2026',
     tabLabel: 'Sep',
     label: 'Online',
-    date: 'September 24',
-    heading: 'September 24. Online.',
-    body: 'Topic to be determined.',
+    heading: 'Off The Records: AI for Business',
+    body: 'Live webinar with a possible AI agency and consulting firm collaboration. Date and time to be confirmed.',
   },
   {
     id: 'in-person-oct-2026',
