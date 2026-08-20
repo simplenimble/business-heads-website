@@ -3,8 +3,7 @@ import Link from 'next/link'
 import { events, upcomingEventCards, eventFormat, eventsHero, eventsIntro } from '@/content/events'
 import { testimonials } from '@/content/stories'
 import { UpcomingEventsTabs } from '@/components/events/UpcomingEventsTabs'
-import { PastEventPhotoCarousel } from '@/components/events/PastEventPhotoCarousel'
-import { PastEventsMonthPills } from '@/components/events/PastEventsMonthPills'
+import { PastEventsTabs } from '@/components/events/PastEventsTabs'
 import { Button } from '@/components/ui/Button'
 
 const JOIN_URL = '/join'
@@ -89,64 +88,7 @@ export default function EventsPage() {
             <p className="font-body font-semibold text-bh-yellow text-sm uppercase tracking-widest mb-10">
               Past events
             </p>
-            <PastEventsMonthPills />
-            {past.map((event) => (
-              <div key={event.id} className="bg-white/10 rounded-2xl p-8 mb-6 last:mb-0">
-                <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-6">
-                  {event.name}
-                </h2>
-                <div className="grid sm:grid-cols-2 gap-6 mb-8">
-                  <div>
-                    <p className="font-body text-xs text-white/40 uppercase tracking-widest mb-1">
-                      Date
-                    </p>
-                    <p className="font-body text-white/80">{event.date}</p>
-                  </div>
-                  {event.venue ? (
-                    <div>
-                      <p className="font-body text-xs text-white/40 uppercase tracking-widest mb-1">
-                        Venue
-                      </p>
-                      <p className="font-body text-white/80">
-                        {event.venue}, {event.suburb}
-                      </p>
-                      <p className="font-body text-sm text-white/40">{event.city}</p>
-                    </div>
-                  ) : event.host ? (
-                    <div>
-                      <p className="font-body text-xs text-white/40 uppercase tracking-widest mb-1">
-                        Host
-                      </p>
-                      <p className="font-body text-white/80">{event.host}</p>
-                    </div>
-                  ) : null}
-                </div>
-                {event.recap && (
-                  <p className="font-body text-sm text-bh-yellow/85 leading-relaxed">
-                    {event.recap}
-                  </p>
-                )}
-                {event.photos && event.photos.length > 0 && (
-                  <>
-                    <PastEventPhotoCarousel photos={event.photos} eventName={event.name} />
-                    <div className="mt-6 text-center font-body text-xs text-white/40 leading-relaxed">
-                      <p>Photography by Oscar Colman</p>
-                      <p>Oscar Colman Portrait Studio</p>
-                      <p>
-                        <a
-                          href="https://oscarcolman.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-white/70 transition-colors"
-                        >
-                          oscarcolman.com
-                        </a>
-                      </p>
-                    </div>
-                  </>
-                )}
-              </div>
-            ))}
+            <PastEventsTabs events={past} />
           </div>
         </section>
       )}

@@ -4,6 +4,7 @@ export type EventItem = {
   id: string
   name: string
   date: string
+  month: string
   venue?: string
   suburb?: string
   city?: string
@@ -15,6 +16,11 @@ export type EventItem = {
   status: EventStatus
   recap?: string
   photos?: string[]
+  photoCredit?: {
+    name: string
+    studio?: string
+    url?: string
+  }
 }
 
 export type UpcomingEventCard = {
@@ -39,6 +45,7 @@ export const events: EventItem[] = [
     id: 'sydney-launch-2026',
     name: 'Business Heads Sydney — Launch Event',
     date: '1 July 2026',
+    month: 'Jul',
     venue: 'East Village Hotel',
     suburb: 'Balmain',
     city: 'Sydney, NSW',
@@ -46,6 +53,11 @@ export const events: EventItem[] = [
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
     eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $5,000 prize draw — the first draw is at our October event.',
     status: 'past',
+    photoCredit: {
+      name: 'Oscar Colman',
+      studio: 'Oscar Colman Portrait Studio',
+      url: 'https://oscarcolman.com',
+    },
     photos: [
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_60.jpg',
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_83.jpg',
@@ -65,6 +77,7 @@ export const events: EventItem[] = [
     id: 'webinar-aug-2026',
     name: 'Off the record: Getting real value from your frequent flyer points',
     date: '20 August 2026',
+    month: 'Aug',
     host: 'Brad Seeto, Bramelle Partners',
     status: 'past',
     photos: [
