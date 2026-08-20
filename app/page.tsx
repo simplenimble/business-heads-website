@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { LeadCaptureForm } from '@/components/ui/LeadCaptureForm'
-import { WebinarPopup } from '@/components/home/WebinarPopup'
 import { home } from '@/content/home'
 
 export const metadata: Metadata = {
@@ -14,8 +13,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <WebinarPopup />
-
       {/* ─── Hero ─────────────────────────────────────────────────────────── */}
       <section className="bg-bh-blue overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center">

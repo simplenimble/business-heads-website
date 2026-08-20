@@ -4,9 +4,10 @@ export type EventItem = {
   id: string
   name: string
   date: string
-  venue: string
-  suburb: string
-  city: string
+  venue?: string
+  suburb?: string
+  city?: string
+  host?: string
   ticketPrice?: string
   bonusTicket?: string
   eventSpecial?: string
@@ -60,22 +61,22 @@ export const events: EventItem[] = [
       '/images/events/2026-07-01-launch/20260701_Business_Heads_Networking-East_Village_Hotel_Balmain_259.jpg',
     ],
   },
+  {
+    id: 'webinar-aug-2026',
+    name: 'Off the record: Getting real value from your frequent flyer points',
+    date: '20 August 2026',
+    host: 'Brad Seeto, Bramelle Partners',
+    status: 'past',
+    photos: [
+      '/images/August webinar.png',
+      '/images/august webinar 2.png',
+    ],
+  },
 ]
 
 /* Tentative upcoming events shown as tabs (Aug–Dec) on the events page.
    Update dates/details here as they're confirmed. */
 export const upcomingEventCards: UpcomingEventCard[] = [
-  {
-    id: 'webinar-aug-2026',
-    tabLabel: 'Aug',
-    label: 'Webinar',
-    date: 'August 20',
-    time: '12:00 PM – 1:00 PM',
-    heading: 'Off the record: Getting real value from your frequent flyer points',
-    body: 'With Brad Seeto.',
-    ctaLabel: 'Register now',
-    ctaUrl: '/events/frequent-flyer-webinar',
-  },
   {
     id: 'online-sep-2026',
     tabLabel: 'Sep',
