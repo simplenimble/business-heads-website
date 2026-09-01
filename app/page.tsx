@@ -290,18 +290,22 @@ export default function Home() {
       {/* ─── Firm Partnership teaser ─────────────────────────────────────────── */}
       <section className="bg-white px-6 py-12">
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 bg-bh-charcoal rounded-3xl px-10 py-9">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 bg-white border border-bh-charcoal/10 rounded-2xl px-10 py-9">
             <div>
-              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight max-w-xl">
+              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-bh-charcoal mb-3 leading-tight max-w-xl">
                 {home.firmPartnership.heading}
               </h2>
-              <p className="font-body text-white/55 leading-relaxed max-w-xl">
+              <p className="font-body text-bh-charcoal/60 leading-relaxed max-w-xl">
                 {home.firmPartnership.subtext}
               </p>
             </div>
-            <Button href={home.firmPartnership.href} variant="white" size="md" className="shrink-0">
+            <Link
+              href={home.firmPartnership.href}
+              className="shrink-0 inline-block text-center font-body font-semibold text-white py-3.5 px-8 rounded-full transition-opacity hover:opacity-90"
+              style={{ backgroundColor: '#ff452b' }}
+            >
               {home.firmPartnership.cta}
-            </Button>
+            </Link>
           </div>
         </div>
       </section>

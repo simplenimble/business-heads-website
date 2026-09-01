@@ -175,14 +175,6 @@ export default function JoinPage() {
             </a>
           </div>
         </div>
-
-        <div className="max-w-5xl mx-auto mt-8">
-          <div className="bg-bh-yellow rounded-2xl px-6 py-5 text-center">
-            <p className="font-body text-bh-charcoal font-semibold leading-snug">
-              From here, Business Heads events are invitation only. Partnership is how your clients get in.
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* ─── Founding offer ────────────────────────────────────────────────── */}
