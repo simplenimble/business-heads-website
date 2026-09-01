@@ -147,7 +147,7 @@ export default function JoinPage() {
               Firm Partnership
             </h2>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
-              Business Heads puts the right business owners in the same room four times a year, and online in the months between. This is an invitation for your firm to host a room of its own.
+              An invitation for your firm to host a room of its own.
             </p>
             <p className="font-body text-base text-bh-charcoal/35 line-through mb-1">$9,000 per year</p>
             <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$6,300</span>
@@ -161,7 +161,7 @@ export default function JoinPage() {
                 <li key={item.title} className="flex items-start gap-2">
                   <span className="text-bh-blue shrink-0 mt-0.5 font-bold">&#10003;</span>
                   <span className="font-body text-sm text-bh-charcoal/70 leading-snug">
-                    <span className="font-semibold text-bh-charcoal">{item.title}</span> — {item.description}
+                    {item.title} — {item.description}
                   </span>
                 </li>
               ))}
