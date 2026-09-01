@@ -20,21 +20,9 @@ const ANNUAL_INCLUDES = [
 ]
 
 const FIRM_INCLUDES = [
-  {
-    title: 'Three Business Heads memberships for your firm',
-    description:
-      'One for you, two for whoever else you choose. Ten events a year, all included: four in person, six online in the months between. Plus the member platform and directory.',
-  },
-  {
-    title: 'Two events curated for your clients',
-    description:
-      'Up to thirty of your clients, nobody else in the room. We cover the venue, the food and the drinks, so it is free for everyone you invite. Co-branded with your firm and lightly structured so people actually talk. You host.',
-  },
-  {
-    title: 'Twenty half-price memberships to hand out',
-    description:
-      'Choose twenty clients. They join Business Heads for $1,200 in their first year, half the standard rate, because they came through you.',
-  },
+  'Three Business Heads memberships for your firm — one for you, two for whoever else you choose. Includes all ten events a year, the member platform, and entries into the quarterly prize draw.',
+  'Two curated events for your clients — up to thirty clients, venue, food and drinks covered, co-branded with your firm. You host.',
+  'Twenty half-price memberships to hand out — choose twenty clients to join at half price, $1,200 in their first year.',
 ]
 
 export const metadata: Metadata = {
@@ -146,23 +134,21 @@ export default function JoinPage() {
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4">
               Firm Partnership
             </h2>
-            <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
-              An invitation for your firm to host a room of its own.
-            </p>
             <p className="font-body text-base text-bh-charcoal/35 line-through mb-1">$9,000 per year</p>
             <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$6,300</span>
             <p className="font-body text-sm text-bh-charcoal/45 mb-3">per year</p>
             <span className="inline-block self-start font-body text-xs font-bold text-bh-charcoal px-3 py-1 rounded-full uppercase tracking-widest bg-bh-yellow mb-6">
               Founding rate, 30% off
             </span>
+            <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
+              An invitation for your firm to host a room of its own.
+            </p>
             <p className="font-body text-sm text-bh-charcoal/50 mb-3">What your firm gets:</p>
             <ul className="space-y-3 mb-8 flex-1">
               {FIRM_INCLUDES.map((item) => (
-                <li key={item.title} className="flex items-start gap-2">
+                <li key={item} className="flex items-start gap-2">
                   <span className="text-bh-blue shrink-0 mt-0.5 font-bold">&#10003;</span>
-                  <span className="font-body text-sm text-bh-charcoal/70 leading-snug">
-                    {item.title} — {item.description}
-                  </span>
+                  <span className="font-body text-sm text-bh-charcoal/70 leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
