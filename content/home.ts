@@ -52,7 +52,7 @@ export const home = {
 
   eventProof: {
     heading: 'September — Off The Records: AI for Business',
-    body: 'Live webinar with a possible AI agency and consulting firm collaboration. Date and time to be confirmed.',
+    body: 'Live webinar on AI for Businesses. Speaker: Adam Dong from Horizon AI. Date and time to be confirmed.',
     cta: 'Learn more',
     link: { href: '/events', label: 'See what\'s next' },
   },
