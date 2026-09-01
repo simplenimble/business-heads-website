@@ -110,6 +110,13 @@ export const home = {
     footnote: '$220/month or $2,400/year at full rate. No lock-in. Cancel any time.',
   },
 
+  firmPartnership: {
+    heading: 'Give your clients the best two hours they will have in business this year. And put your name on it.',
+    subtext: 'This is an invitation for your firm to host a room of its own.',
+    cta: 'Learn more',
+    href: '/join#firm-partnership',
+  },
+
   leadCapture: {
     overline: 'Not ready yet?',
     heading: 'Register your interest.',

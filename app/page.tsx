@@ -287,6 +287,25 @@ export default function Home() {
         </p>
       </section>
 
+      {/* ─── Firm Partnership teaser ─────────────────────────────────────────── */}
+      <section className="bg-white px-6 py-12">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 bg-bh-charcoal rounded-3xl px-10 py-9">
+            <div>
+              <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight max-w-xl">
+                {home.firmPartnership.heading}
+              </h2>
+              <p className="font-body text-white/55 leading-relaxed max-w-xl">
+                {home.firmPartnership.subtext}
+              </p>
+            </div>
+            <Button href={home.firmPartnership.href} variant="white" size="md" className="shrink-0">
+              {home.firmPartnership.cta}
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* ─── Lead capture ──────────────────────────────────────────────────── */}
       <section className="bg-bh-charcoal px-6 py-24">
         <div className="max-w-md mx-auto text-center">

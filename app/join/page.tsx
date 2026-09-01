@@ -19,6 +19,24 @@ const ANNUAL_INCLUDES = [
   'Member discounts and offers',
 ]
 
+const FIRM_INCLUDES = [
+  {
+    title: 'Three Business Heads memberships for your firm',
+    description:
+      'One for you, two for whoever else you choose. Ten events a year, all included: four in person, six online in the months between. Plus the member platform and directory.',
+  },
+  {
+    title: 'Two events curated for your clients',
+    description:
+      'Up to thirty of your clients, nobody else in the room. We cover the venue, the food and the drinks, so it is free for everyone you invite. Co-branded with your firm and lightly structured so people actually talk. You host.',
+  },
+  {
+    title: 'Twenty half-price memberships to hand out',
+    description:
+      'Choose twenty clients. They join Business Heads for $1,200 in their first year, half the standard rate, because they came through you.',
+  },
+]
+
 export const metadata: Metadata = {
   title: 'Pricing & Join',
   description:
@@ -53,7 +71,7 @@ export default function JoinPage() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
           {/* Monthly */}
           <div className="bg-white border border-bh-charcoal/10 rounded-2xl p-8 flex flex-col">
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4">
@@ -121,6 +139,48 @@ export default function JoinPage() {
             >
               Pay now
             </a>
+          </div>
+
+          {/* Firm Partnership */}
+          <div id="firm-partnership" className="bg-white border border-bh-charcoal/10 rounded-2xl p-8 flex flex-col scroll-mt-24">
+            <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4">
+              Firm Partnership
+            </h2>
+            <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
+              Business Heads puts the right business owners in the same room four times a year, and online in the months between. This is an invitation for your firm to host a room of its own.
+            </p>
+            <p className="font-body text-base text-bh-charcoal/35 line-through mb-1">$9,000 per year</p>
+            <span className="font-heading font-semibold text-5xl text-bh-charcoal mb-1" style={{ lineHeight: 1 }}>$6,300</span>
+            <p className="font-body text-sm text-bh-charcoal/45 mb-3">per year</p>
+            <span className="inline-block self-start font-body text-xs font-bold text-bh-charcoal px-3 py-1 rounded-full uppercase tracking-widest bg-bh-yellow mb-6">
+              Founding rate, 30% off
+            </span>
+            <p className="font-body text-sm text-bh-charcoal/50 mb-3">What your firm gets:</p>
+            <ul className="space-y-3 mb-8 flex-1">
+              {FIRM_INCLUDES.map((item) => (
+                <li key={item.title} className="flex items-start gap-2">
+                  <span className="text-bh-blue shrink-0 mt-0.5 font-bold">&#10003;</span>
+                  <span className="font-body text-sm text-bh-charcoal/70 leading-snug">
+                    <span className="font-semibold text-bh-charcoal">{item.title}</span> — {item.description}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href="mailto:hello@businessheads.com.au?subject=Firm%20Partnership%20enquiry"
+              className="block w-full text-center font-body font-semibold text-white py-3.5 px-6 rounded-full transition-opacity hover:opacity-90"
+              style={{ backgroundColor: '#ff452b' }}
+            >
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto mt-8">
+          <div className="bg-bh-yellow rounded-2xl px-6 py-5 text-center">
+            <p className="font-body text-bh-charcoal font-semibold leading-snug">
+              From here, Business Heads events are invitation only. Partnership is how your clients get in.
+            </p>
           </div>
         </div>
       </section>
