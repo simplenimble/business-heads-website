@@ -3,6 +3,7 @@ import Stripe from 'stripe'
 
 const MONTHLY_PRICE_ID = 'price_1TK7813M9uP4QmlUv31g9KCt'
 const ANNUAL_PRICE_ID = 'price_1TnsA03M9uP4QmlUVkTShwAy'
+const FIRM_PRICE_ID = 'price_1UB3Rg3M9uP4QmlU439smpW2'
 const ANNUAL_PROMO_ID = 'promo_1TnsHo3M9uP4QmlUcZs6cfyQ'
 
 // 31 August 2026, 1:59 PM UTC
@@ -13,13 +14,14 @@ export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
   const plan = searchParams.get('plan')
 
-  if (plan !== 'annual' && plan !== 'monthly') {
+  if (plan !== 'annual' && plan !== 'monthly' && plan !== 'firm') {
     return NextResponse.json({ error: 'Invalid plan' }, { status: 400 })
   }
 
   const origin = process.env.NEXT_PUBLIC_BASE_URL ?? `https://${req.headers.get('host')}`
 
-  const priceId = plan === 'annual' ? ANNUAL_PRICE_ID : MONTHLY_PRICE_ID
+  const priceId =
+    plan === 'annual' ? ANNUAL_PRICE_ID : plan === 'firm' ? FIRM_PRICE_ID : MONTHLY_PRICE_ID
   const applyPromo = plan === 'annual' && new Date() < FOUNDING_OFFER_EXPIRY
 
   const session = await stripe.checkout.sessions.create({

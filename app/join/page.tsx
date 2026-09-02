@@ -159,6 +159,12 @@ export default function JoinPage() {
             >
               Enquire
             </a>
+            <a
+              href="/api/checkout?plan=firm"
+              className="block w-full text-center font-body text-sm text-bh-charcoal/50 hover:text-bh-charcoal underline underline-offset-2 mt-3"
+            >
+              Already sure? Purchase here
+            </a>
           </div>
         </div>
       </section>
