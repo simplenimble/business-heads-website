@@ -130,7 +130,7 @@ export default function JoinPage() {
           </div>
 
           {/* Firm Partnership */}
-          <div id="firm-partnership" className="bg-white border border-bh-charcoal/10 rounded-2xl p-8 flex flex-col scroll-mt-24">
+          <div id="firm-partnership" className="relative bg-white border border-bh-charcoal/10 rounded-2xl p-8 flex flex-col scroll-mt-24">
             <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4">
               Firm Partnership
             </h2>
@@ -161,7 +161,7 @@ export default function JoinPage() {
             </a>
             <a
               href="/api/checkout?plan=firm"
-              className="block w-full text-center font-body text-sm text-bh-charcoal/50 hover:text-bh-charcoal underline underline-offset-2 mt-3"
+              className="absolute left-8 right-8 top-full mt-3 text-center font-body text-sm text-bh-charcoal/50 hover:text-bh-charcoal underline underline-offset-2"
             >
               Already sure? Purchase here
             </a>
