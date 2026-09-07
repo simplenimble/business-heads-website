@@ -93,13 +93,17 @@ export function WebinarPopup() {
           <div className="flex justify-center mb-6">
             <div className="bg-white rounded-full px-7 py-4 flex items-center gap-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logos/logo-horizontal.svg" alt="Business Heads" className="h-7 w-auto block" />
-              <span className="text-bh-horizon-navy/35 text-lg">&times;</span>
+              <img
+                src="/logos/logo-horizontal.svg"
+                alt="Business Heads"
+                className="h-5 w-auto shrink-0 block"
+              />
+              <span className="text-bh-horizon-navy/35 text-lg shrink-0">&times;</span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logos/horizon-ai-wordmark-navy.png"
                 alt="Horizon AI"
-                className="h-6 w-auto block"
+                className="h-5 w-[140px] object-contain object-left shrink-0 block"
               />
             </div>
           </div>

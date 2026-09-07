@@ -10,6 +10,7 @@
   --color-bh-pink: #f59bb8;
   --color-bh-horizon-navy: #071126;
   --color-bh-horizon-blue: #2453ee;
+  --color-bh-sky: #46c3f1;
 
   /* Fonts — Inter loaded via Google Fonts in layout.tsx */
   --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
