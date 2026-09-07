@@ -51,7 +51,7 @@ export const events: EventItem[] = [
     city: 'Sydney, NSW',
     ticketPrice: '$40 per person.',
     bonusTicket: 'For this launch event, every ticket comes with a bonus ticket to bring someone along.',
-    eventSpecial: 'Over $3,000 in lucky door prizes, free professional headshots on arrival, and food and drink provided. Note: the launch event does not include the $5,000 prize draw — the first draw is at our October event.',
+    eventSpecial: 'Over $3,000 in lucky door prizes on the night, free professional headshots on arrival, and food and drink provided.',
     status: 'past',
     photoCredit: {
       name: 'Oscar Colman',
@@ -124,7 +124,15 @@ export const upcomingEventCards: UpcomingEventCard[] = [
   },
 ]
 
-export const eventFormat = [
+type FormatStep = {
+  time: string
+  description: string
+  note?: string
+  noteLinkLabel?: string
+  noteLinkHref?: string
+}
+
+export const eventFormat: FormatStep[] = [
   {
     time: 'Arrival',
     description: 'Doors open. Time to settle in.',
@@ -134,11 +142,8 @@ export const eventFormat = [
     description: 'A prompting topic or facilitated activity. The whole room participates.',
   },
   {
-    time: 'The quarterly draw',
-    description: 'Drawn live at every quarterly event. One member wins, and spends it inside the community. First draw: October 2026, $5,000.',
-    note: 'Winners may choose a $1,500 cash alternative.',
-    noteLinkLabel: 'See Competition Rules',
-    noteLinkHref: '/competition-rules',
+    time: 'Lucky door prizes',
+    description: 'Prizes offered by members, drawn on the night.',
   },
   {
     time: 'Open conversation',
@@ -154,6 +159,6 @@ export const eventsHero = {
 
 export const eventsIntro = {
   heading: 'What to expect.',
-  body: 'Every Business Heads event follows the same format. A facilitated activity that gets the whole room talking about something real, a live prize draw, lucky door prizes, and open conversation. We\'ll also throw in something extra at every event — something that will help you and your business. Think a professional headshot, a 5-minute brand consult, a business card audit, personality testing, and more. Tickets are $40. Members get in at the member rate.',
+  body: 'Every Business Heads event follows the same format. A facilitated activity that gets the whole room talking about something real, lucky door prizes, and open conversation. We\'ll also throw in something extra at every event — something that will help you and your business. Think a professional headshot, a 5-minute brand consult, a business card audit, personality testing, and more. Tickets are $40. Members get in at the member rate.',
   link: { href: '/experience', label: 'Read more about the experience' },
 }

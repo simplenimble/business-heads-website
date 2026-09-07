@@ -53,8 +53,7 @@ export default function FaqPage() {
             Register your interest.
           </h2>
           <p className="font-body text-white/50 mb-10 text-sm">
-            No commitment. We will keep you across what is happening and reach out before the
-            founding rate closes.
+            No commitment. We will keep you across what is happening.
           </p>
           <LeadCaptureForm />
         </div>
@@ -64,7 +63,7 @@ export default function FaqPage() {
       <section className="bg-white px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <p className="font-body text-bh-charcoal/35 text-sm mb-8">
-            Ready to join before 31 August?
+            Ready for the founding member rate?
           </p>
           <Button href={JOIN_URL} variant="primary" size="lg">
             Join Business Heads

@@ -135,7 +135,7 @@ export default function AboutPage() {
       <section className="bg-white px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <p className="font-body text-bh-charcoal/40 text-sm mb-8">
-            Join before 31 August and lock in your founding member rate.
+            Lock in your founding member rate.
           </p>
           <Button href={JOIN_URL} variant="primary" size="lg">
             Join Business Heads

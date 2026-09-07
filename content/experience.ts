@@ -1,3 +1,11 @@
+type ExperienceFormatStep = {
+  label: string
+  description: string
+  note?: string
+  noteLinkLabel?: string
+  noteLinkHref?: string
+}
+
 export const experience = {
   hero: {
     overline: 'The Experience',
@@ -35,18 +43,14 @@ export const experience = {
             'A prompting topic or facilitated activity that engages the whole room. This is where the good conversations start.',
         },
         {
-          label: 'The quarterly draw',
-          description:
-            'Drawn live. One member wins. They spend it inside the community. First draw: October 2026, $5,000.',
-          note: 'Winners may choose a $1,500 cash alternative.',
-          noteLinkLabel: 'See Competition Rules',
-          noteLinkHref: '/competition-rules',
+          label: 'Lucky door prizes',
+          description: 'Prizes offered by members, drawn on the night.',
         },
         {
           label: 'Open conversation',
           description: 'The rest of the evening is yours. Stay as long as you want.',
         },
-      ],
+      ] as ExperienceFormatStep[],
     },
     detail: 'Tickets sold separately to Business Heads membership. Tickets are $40 per person.',
   },
@@ -57,7 +61,7 @@ export const experience = {
     body: [
       'Every quarter, the pot goes back into the community. One member wins it and spends it with other members. Their win becomes someone else\'s opportunity. The money moves around, not out.',
       'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
-      'First draw: October 2026, $5,000.',
+      'The first $5,000 draw runs once our founding member group is in place.',
     ],
     footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
     footnoteLinkLabel: 'See Competition Rules',

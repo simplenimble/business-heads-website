@@ -157,7 +157,7 @@ export default function EventsPage() {
       <section className="bg-white border-t border-bh-charcoal/8 px-6 py-20 text-center">
         <div className="max-w-xl mx-auto">
           <h2 className="font-heading font-semibold text-3xl text-bh-charcoal mb-6">
-            Join before 31 August for 30% off your first annual subscription.
+            Founding members get 30% off their first annual subscription.
           </h2>
           <Button href={JOIN_URL} variant="primary">
             Join Business Heads

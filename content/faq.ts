@@ -17,7 +17,7 @@ export const faqs: FaqItem[] = [
   {
     question: "How does the $5,000 prize actually work?",
     answer:
-      "Every quarter, Business Heads draws $5,000 from membership revenue and gives it back to the community. The winner spends it with other members. If nothing in the community fits, they can take $1,500 cash instead, no conditions attached. It is not a raffle. It is proof the model gives back more than it takes.",
+      "Every quarter, Business Heads draws $5,000 from membership revenue and gives it back to the community. The winner spends it with other members. If nothing in the community fits, they can take $1,500 cash instead, no conditions attached. It is not a raffle. It is proof the model gives back more than it takes. The first draw runs once our founding member group is in place.",
   },
   {
     question: "What happens if I can't make an event?",
@@ -52,6 +52,6 @@ export const faqs: FaqItem[] = [
   {
     question: "What does membership cost?",
     answer:
-      "$220 per month or $2,400 per year. Join before 31 August for 30% off your first year.",
+      "$220 per month or $2,400 per year. Founding members get 30% off their first year.",
   },
 ]

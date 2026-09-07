@@ -7,7 +7,7 @@ import { home } from '@/content/home'
 export const metadata: Metadata = {
   title: 'Business Heads | A Community for Business Owners Who Help Each Other Win',
   description:
-    'Not a referral machine. Not a pitch-fest. A community that genuinely pays its members back. $5,000 back to the community every quarter. Sydney, Australia.',
+    'Not a referral machine. Not a pitch-fest. A community that genuinely pays its members back. $5,000 back to the community each quarter once we launch. Sydney, Australia.',
 }
 
 export default function Home() {

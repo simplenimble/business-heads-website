@@ -28,7 +28,7 @@ const FIRM_INCLUDES = [
 export const metadata: Metadata = {
   title: 'Pricing & Join',
   description:
-    '$220/month or $2,400/year. Join before 31 August for 30% off your first year.',
+    '$220/month or $2,400/year. Founding members get 30% off their first year.',
 }
 
 export default function JoinPage() {
@@ -105,7 +105,7 @@ export default function JoinPage() {
             <p className="font-body text-sm text-bh-charcoal/45 mb-5">per year (inc. GST)</p>
             <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-5">
               <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
-                30% off until 31 August — pay just $1,680 for your first year.
+                Founding member rate. 30% off your first year, so you pay $1,680.
               </p>
             </div>
             <p className="font-body text-sm text-bh-charcoal/55 mb-6 leading-relaxed">
@@ -183,9 +183,6 @@ export default function JoinPage() {
           >
             Join Business Heads
           </a>
-          <p className="font-body text-sm text-white/30 mt-4">
-            Deadline: {foundingOffer.deadline}
-          </p>
         </div>
       </section>
 
@@ -219,7 +216,7 @@ export default function JoinPage() {
             Register your interest.
           </h2>
           <p className="font-body text-white/50 mb-10 text-sm">
-            No commitment. We will be in touch before the founding rate closes.
+            No commitment. We will be in touch.
           </p>
           <LeadCaptureForm />
         </div>

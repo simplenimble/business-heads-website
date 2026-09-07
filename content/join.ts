@@ -31,9 +31,8 @@ export const join = {
   },
 
   foundingOffer: {
-    heading: 'Join before 31 August.',
-    body: 'Join before 31 August and get 30% off your first year. After that, the full rate applies.',
-    deadline: '31 August 2026',
+    heading: 'Founding member rate.',
+    body: 'Join at the founding member rate and get 30% off your first year. Full rate applies from your second year.',
   },
 
   afterJoining: {

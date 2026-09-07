@@ -22,7 +22,7 @@ export const home = {
     heading: 'The money stays in the room.',
     body: 'One member wins the quarterly draw. They spend it with other members. Their win becomes someone else\'s work. The money moves around, not out.',
     footnote: 'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
-    firstDrawLine: 'First draw: October 2026, $5,000.',
+    firstDrawLine: 'The first $5,000 draw runs once our founding member group is in place.',
     legalNote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
     legalNoteLinkLabel: 'See Competition Rules',
     legalNoteLinkHref: '/competition-rules',
@@ -59,10 +59,9 @@ export const home = {
 
   pricing: {
     overline: 'Founding offer',
-    heading: 'Join before 31 August.',
+    heading: 'Founding member rate.',
     subheading: 'One good introduction. One subscription saved. One conversation that changes your direction. This membership earns its keep.',
     highlight: 'This membership earns its keep.',
-    foundingDeadline: '31 August 2026',
     foundingDiscount: '30% off your first year — founding members only.',
     plans: [
       {
@@ -94,7 +93,7 @@ export const home = {
         badge: 'Most popular',
         description: 'Our most popular option. One month free, and you\'re in for the year.',
         foundingPrice: '',
-        foundingNote: '30% off until 31 August — pay just $1,680 for your first year.',
+        foundingNote: 'Founding member rate. 30% off your first year, so you pay $1,680.',
         includes: [
           'Five entries into every quarterly draw (20 a year)',
           'One month free',
@@ -120,7 +119,7 @@ export const home = {
   leadCapture: {
     overline: 'Not ready yet?',
     heading: 'Register your interest.',
-    body: 'No commitment. We\'ll keep you across what\'s happening and reach out before the founding rate closes.',
+    body: 'No commitment. We\'ll keep you across what\'s happening.',
   },
 
   finalCta: {
