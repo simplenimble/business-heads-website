@@ -1,8 +1,5 @@
 import type { Metadata } from 'next'
 
-// 31 August 2026, 1:59 PM UTC — mirrors the API route logic
-const FOUNDING_OFFER_EXPIRY = new Date('2026-08-31T13:59:00Z')
-
 const MONTHLY_INCLUDES = [
   'One entry every month into the quarterly member draw',
   'Discounted member tickets to quarterly events',
@@ -27,8 +24,6 @@ export const metadata: Metadata = {
 }
 
 export default function JoiningCheckoutPage() {
-  const showFoundingOffer = new Date() < FOUNDING_OFFER_EXPIRY
-
   return (
     <section className="bg-white px-6 py-20">
       <div className="max-w-3xl mx-auto text-center mb-14">
@@ -90,13 +85,11 @@ export default function JoiningCheckoutPage() {
             $2,400
           </span>
           <p className="font-body text-sm text-bh-charcoal/45 mb-5">per year (inc. GST)</p>
-          {showFoundingOffer && (
-            <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-5">
-              <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
-                30% off until 31 August — pay just $1,680 for your first year.
-              </p>
-            </div>
-          )}
+          <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-5">
+            <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
+              Founding member rate. 30% off your first year, so you pay $1,680.
+            </p>
+          </div>
           <ul className="space-y-3 mb-8 flex-1">
             {ANNUAL_INCLUDES.map((item) => (
               <li key={item} className="flex items-start gap-2">

@@ -6,9 +6,6 @@ const ANNUAL_PRICE_ID = 'price_1TnsA03M9uP4QmlUVkTShwAy'
 const FIRM_PRICE_ID = 'price_1UB3Rg3M9uP4QmlU439smpW2'
 const ANNUAL_PROMO_ID = 'promo_1TnsHo3M9uP4QmlUcZs6cfyQ'
 
-// 31 August 2026, 1:59 PM UTC
-const FOUNDING_OFFER_EXPIRY = new Date('2026-08-31T13:59:00Z')
-
 export async function GET(req: NextRequest) {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
   const { searchParams } = req.nextUrl
@@ -22,7 +19,7 @@ export async function GET(req: NextRequest) {
 
   const priceId =
     plan === 'annual' ? ANNUAL_PRICE_ID : plan === 'firm' ? FIRM_PRICE_ID : MONTHLY_PRICE_ID
-  const applyPromo = plan === 'annual' && new Date() < FOUNDING_OFFER_EXPIRY
+  const applyPromo = plan === 'annual'
 
   const session = await stripe.checkout.sessions.create({
     mode: 'subscription',
