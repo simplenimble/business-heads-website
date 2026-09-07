@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, type KeyboardEvent } from 'react'
+import Link from 'next/link'
 import type { EventItem } from '@/content/events'
 import { PastEventPhotoCarousel } from './PastEventPhotoCarousel'
 
@@ -96,6 +97,14 @@ export function PastEventsTabs({ events }: { events: EventItem[] }) {
               <p className="font-body text-sm text-bh-yellow/85 leading-relaxed">
                 {event.recap}
               </p>
+            )}
+            {event.detailsUrl && (
+              <Link
+                href={event.detailsUrl}
+                className="font-body text-sm text-bh-yellow underline underline-offset-2 hover:text-bh-yellow/80 transition-colors"
+              >
+                View the original invite
+              </Link>
             )}
             {event.photos && event.photos.length > 0 && (
               <>

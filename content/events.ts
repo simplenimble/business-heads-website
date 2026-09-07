@@ -13,6 +13,7 @@ export type EventItem = {
   bonusTicket?: string
   eventSpecial?: string
   rsvpUrl?: string
+  detailsUrl?: string
   status: EventStatus
   recap?: string
   photos?: string[]
@@ -79,6 +80,7 @@ export const events: EventItem[] = [
     date: '20 August 2026',
     month: 'Aug',
     host: 'Brad Seeto, Bramelle Partners',
+    detailsUrl: '/events/frequent-flyer-webinar',
     status: 'past',
     photos: [
       '/images/August webinar.png',
@@ -94,8 +96,13 @@ export const upcomingEventCards: UpcomingEventCard[] = [
     id: 'online-sep-2026',
     tabLabel: 'Sep',
     label: 'Online',
-    heading: 'Off The Records: AI for Business',
-    body: 'Live webinar on AI for Businesses. Speaker: Adam Dong from Horizon AI. Date and time to be confirmed.',
+    date: 'Thursday 24 September 2026',
+    time: '11:00am–12:00pm AEST',
+    heading: 'Off the record: Can AI give you half your week back?',
+    body: 'Adam Dong, Director of Horizon AI, on getting AI to do actual work, not just answer questions.',
+    subtext: 'Free. Live on Microsoft Teams.',
+    ctaLabel: 'Register now',
+    ctaUrl: '/events/ai-webinar',
   },
   {
     id: 'in-person-oct-2026',

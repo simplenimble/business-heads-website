@@ -6,8 +6,8 @@ const REGISTER_URL =
 const MAILING_LIST_URL =
   'https://06722179.sibforms.com/serve/MUIFANCtc32ZHuQbvQ-aUhQ6gYBcgZ_DWuCX1uVYOu2fVqxdyqIf8QVPCalxRUr2CJ-o1Ui40RtYBwNmPxv_deXqmvQbCFugxnP4GYckVrif-YhPtxE4zw0HlLaBv3w4UZCe0o84AVUllGf-ZNnZ_uRaSb_N5TmrU36Smu9PmCTXLKJ7a7Ztt4JeP3pfbxWOAuJ7-j3PBDIh6ef5Cw=='
 
-const PAGE_TITLE =
-  'Off the record: Getting real value from your frequent flyer points | Bramelle Partners x Business Heads'
+const PAGE_TITLE = 'Off the record: Getting real value from your frequent flyer points'
+const SOCIAL_TITLE = `${PAGE_TITLE} | Bramelle Partners x Business Heads`
 const PAGE_DESCRIPTION =
   'A free live webinar for business owners on getting real value from frequent flyer points. Thursday 20 August 2026, 12:00-1:00PM AEST, hosted by Brad Seeto.'
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   openGraph: {
-    title: PAGE_TITLE,
+    title: SOCIAL_TITLE,
     description: PAGE_DESCRIPTION,
     url: 'https://www.businessheads.com.au/events/frequent-flyer-webinar',
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: PAGE_TITLE,
+    title: SOCIAL_TITLE,
     description: PAGE_DESCRIPTION,
     images: ['/images/og-frequent-flyer-webinar.png'],
   },

@@ -8,6 +8,8 @@
   --color-bh-green: #18b465;
   --color-bh-charcoal: #473f42;
   --color-bh-pink: #f59bb8;
+  --color-bh-horizon-navy: #071126;
+  --color-bh-horizon-blue: #2453ee;
 
   /* Fonts — Inter loaded via Google Fonts in layout.tsx */
   --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
@@ -59,8 +61,22 @@ body {
   animation: cta-glow 2.4s ease-in-out infinite;
 }
 
+@keyframes cta-glow-blue {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(79, 72, 255, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(79, 72, 255, 0);
+  }
+}
+
+.cta-glow-blue {
+  animation: cta-glow-blue 2.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .cta-glow {
+  .cta-glow,
+  .cta-glow-blue {
     animation: none;
   }
 }

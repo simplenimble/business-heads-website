@@ -51,10 +51,10 @@ export const home = {
   },
 
   eventProof: {
-    heading: 'September — Off The Records: AI for Business',
-    body: 'Live webinar on AI for Businesses. Speaker: Adam Dong from Horizon AI. Date and time to be confirmed.',
-    cta: 'Learn more',
-    link: { href: '/events', label: 'See what\'s next' },
+    heading: 'Off the record: Can AI give you half your week back?',
+    body: 'Adam Dong, Director of Horizon AI. Thursday 24 September 2026, 11:00am–12:00pm AEST. Live on Microsoft Teams. Free.',
+    cta: 'Register now',
+    link: { href: '/events/ai-webinar', label: 'See the full agenda' },
   },
 
   pricing: {
