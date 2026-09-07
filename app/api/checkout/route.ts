@@ -4,7 +4,7 @@ import Stripe from 'stripe'
 const MONTHLY_PRICE_ID = 'price_1TK7813M9uP4QmlUv31g9KCt'
 const ANNUAL_PRICE_ID = 'price_1TnsA03M9uP4QmlUVkTShwAy'
 const FIRM_PRICE_ID = 'price_1UB3Rg3M9uP4QmlU439smpW2'
-const ANNUAL_PROMO_ID = 'promo_1TnsHo3M9uP4QmlUcZs6cfyQ'
+const ANNUAL_PROMO_ID = 'promo_1UCrDW3M9uP4QmlUCKeq43sf'
 
 export async function GET(req: NextRequest) {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
