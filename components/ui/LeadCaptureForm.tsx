@@ -37,7 +37,7 @@ export function LeadCaptureForm({ dark = true }: Props) {
           Got it. Thank you.
         </p>
         <p className={`font-body text-sm ${dark ? 'text-white/60' : 'text-bh-charcoal/60'}`}>
-          We will be in touch before the founding rate closes.
+          We will be in touch soon.
         </p>
       </div>
     )
