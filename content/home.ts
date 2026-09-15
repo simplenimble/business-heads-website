@@ -20,12 +20,10 @@ export const home = {
   prize: {
     overline: 'The Quarterly Draw',
     heading: 'The money stays in the room.',
-    body: 'One member wins the quarterly draw. They spend it with other members. Their win becomes someone else\'s work. The money moves around, not out.',
+    body: 'One member will win the quarterly draw. They spend it with other members. Their win becomes someone else\'s work. The money moves around, not out.',
     footnote: 'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
     firstDrawLine: 'The first $5,000 draw runs once our founding member group is in place.',
     legalNote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
-    legalNoteLinkLabel: 'See Competition Rules',
-    legalNoteLinkHref: '/competition-rules',
   },
 
   benefits: {

@@ -101,17 +101,14 @@ export default function Home() {
               <p className="font-body text-lg text-white/65 leading-[1.8] mb-6">
                 {home.prize.body}
               </p>
+              <p className="font-body text-lg text-white/65 leading-[1.8] mb-6">
+                {home.prize.firstDrawLine}
+              </p>
               <p className="font-body text-sm text-white/70 italic leading-relaxed mb-2">
                 {home.prize.footnote}
               </p>
-              <p className="font-body text-sm text-white/70 italic leading-relaxed mb-2">
-                {home.prize.firstDrawLine}
-              </p>
               <p className="font-body text-sm text-white/70 italic leading-relaxed">
-                {home.prize.legalNote}{' '}
-                <Link href={home.prize.legalNoteLinkHref} className="text-bh-yellow underline underline-offset-2">
-                  {home.prize.legalNoteLinkLabel}
-                </Link>
+                {home.prize.legalNote}
               </p>
             </div>
           </div>

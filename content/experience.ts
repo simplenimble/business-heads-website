@@ -59,13 +59,11 @@ export const experience = {
     overline: 'The Quarterly Draw',
     heading: 'The quarterly draw',
     body: [
-      'Every quarter, the pot goes back into the community. One member wins it and spends it with other members. Their win becomes someone else\'s opportunity. The money moves around, not out.',
-      'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
+      'Every quarter, the pot will go back into the community. One member wins it and spends it with other members. Their win becomes someone else\'s opportunity. The money moves around, not out.',
       'The first $5,000 draw runs once our founding member group is in place.',
+      'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
     ],
     footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
-    footnoteLinkLabel: 'See Competition Rules',
-    footnoteLinkHref: '/competition-rules',
   },
 
   platform: {
