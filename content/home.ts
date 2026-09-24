@@ -49,10 +49,10 @@ export const home = {
   },
 
   eventProof: {
-    heading: 'Off the record: Can AI give you half your week back?',
-    body: 'Adam Dong, Director of Horizon AI. Thursday 24 September 2026, 11:00am–12:00pm AEST. Live on Microsoft Teams. Free.',
-    cta: 'Register now',
-    link: { href: '/events/ai-webinar', label: 'See the full agenda' },
+    heading: 'October In Person Event, Sydney',
+    body: 'Tuesday 27 October 2026. In person in Sydney. Venue and format to be announced shortly.',
+    cta: 'Find out more',
+    link: { href: '/events', label: 'Find out more' },
   },
 
   pricing: {
