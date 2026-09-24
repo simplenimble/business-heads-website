@@ -49,8 +49,8 @@ export const home = {
   },
 
   eventProof: {
-    heading: 'October In Person Event, Sydney',
-    body: 'Tuesday 27 October 2026. In person in Sydney. Venue and format to be announced shortly.',
+    heading: 'Business Heads in Sydney',
+    body: 'Tuesday 27 October 2026. In person. Venue and format announced soon.',
     cta: 'Find out more',
     link: { href: '/events', label: 'Find out more' },
   },
