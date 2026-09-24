@@ -109,9 +109,9 @@ export const upcomingEventCards: UpcomingEventCard[] = [
     id: 'in-person-oct-2026',
     tabLabel: 'Oct',
     label: 'In person',
-    date: 'October',
-    heading: 'October. In person.',
-    body: 'Venue to be determined.',
+    date: 'Tuesday 27 October 2026',
+    heading: 'October In Person Event, Sydney',
+    body: 'In person in Sydney. Venue and format to be announced shortly.',
   },
   {
     id: 'online-nov-2026',
