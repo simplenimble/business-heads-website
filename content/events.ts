@@ -83,27 +83,28 @@ export const events: EventItem[] = [
     detailsUrl: '/events/frequent-flyer-webinar',
     status: 'past',
     photos: [
-      '/images/August webinar.png',
-      '/images/august webinar 2.png',
+      '/images/august-webinar-1.png',
+      '/images/august-webinar-2.png',
+    ],
+  },
+  {
+    id: 'webinar-sep-2026',
+    name: 'Off the record: Can AI give you half your week back?',
+    date: '24 September 2026',
+    month: 'Sep',
+    host: 'Adam Dong, Director of Horizon AI',
+    detailsUrl: '/events/ai-webinar',
+    status: 'past',
+    photos: [
+      '/images/september-webinar-1.png',
+      '/images/september-webinar-2.png',
     ],
   },
 ]
 
-/* Tentative upcoming events shown as tabs (Aug–Dec) on the events page.
+/* Tentative upcoming events shown as tabs (Oct–Dec) on the events page.
    Update dates/details here as they're confirmed. */
 export const upcomingEventCards: UpcomingEventCard[] = [
-  {
-    id: 'online-sep-2026',
-    tabLabel: 'Sep',
-    label: 'Online',
-    date: 'Thursday 24 September 2026',
-    time: '11:00am–12:00pm AEST',
-    heading: 'Off the record: Can AI give you half your week back?',
-    body: 'Adam Dong, Director of Horizon AI, on getting AI to do actual work, not just answer questions.',
-    subtext: 'Free. Live on Microsoft Teams.',
-    ctaLabel: 'Register now',
-    ctaUrl: '/events/ai-webinar',
-  },
   {
     id: 'in-person-oct-2026',
     tabLabel: 'Oct',
