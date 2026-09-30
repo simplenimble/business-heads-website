@@ -37,6 +37,7 @@ export const home = {
       {
         title: 'Four evenings a year with people who get it',
         body: 'Quarterly events in Sydney, each with a topic or activity that gets the whole room talking about real things.',
+        link: { href: '/events', label: 'See upcoming events' },
       },
       {
         title: 'Introductions to the right people',
@@ -48,7 +49,8 @@ export const home = {
       },
       {
         title: 'Sessions on what you need to know',
-        body: 'Monthly sessions led by people who have done it. Topics come from members, and when something keeps coming up, it becomes a session. Coming soon.',
+        body: 'Monthly sessions led by people who have done it. Topics come from members, and when something keeps coming up, it becomes a session.',
+        link: { href: '/events', label: 'See upcoming sessions' },
       },
       {
         title: 'Savings on what you already buy',

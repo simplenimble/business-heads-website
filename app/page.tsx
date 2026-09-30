@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 // Same brand tile colours as the Experience page's Circle spaces.
 const BENEFIT_TILE_COLORS = [
-  { bg: 'bg-bh-blue',     text: 'text-white',       sub: 'text-white/75',        num: 'text-white/50',        tag: 'bg-white/20 text-white' },
-  { bg: 'bg-bh-red',      text: 'text-white',       sub: 'text-white/75',        num: 'text-white/50',        tag: 'bg-white/20 text-white' },
-  { bg: 'bg-bh-green',    text: 'text-white',       sub: 'text-white/75',        num: 'text-white/50',        tag: 'bg-white/20 text-white' },
-  { bg: 'bg-bh-charcoal', text: 'text-white',       sub: 'text-white/75',        num: 'text-bh-yellow',       tag: 'bg-bh-yellow text-bh-charcoal' },
-  { bg: 'bg-bh-yellow',   text: 'text-bh-charcoal', sub: 'text-bh-charcoal/70',  num: 'text-bh-charcoal/45',  tag: 'bg-bh-charcoal text-white' },
-  { bg: 'bg-gray-100',    text: 'text-bh-charcoal', sub: 'text-bh-charcoal/65',  num: 'text-bh-blue',         tag: 'bg-bh-blue text-white' },
+  { bg: 'bg-bh-blue',     text: 'text-white',       sub: 'text-white/75',        num: 'text-white/50' },
+  { bg: 'bg-bh-red',      text: 'text-white',       sub: 'text-white/75',        num: 'text-white/50' },
+  { bg: 'bg-bh-green',    text: 'text-white',       sub: 'text-white/75',        num: 'text-white/50' },
+  { bg: 'bg-bh-charcoal', text: 'text-white',       sub: 'text-white/75',        num: 'text-bh-yellow' },
+  { bg: 'bg-bh-yellow',   text: 'text-bh-charcoal', sub: 'text-bh-charcoal/70',  num: 'text-bh-charcoal/45' },
+  { bg: 'bg-gray-100',    text: 'text-bh-charcoal', sub: 'text-bh-charcoal/65',  num: 'text-bh-blue' },
 ]
 
 export default function Home() {
@@ -142,20 +142,18 @@ export default function Home() {
           </div>
         </div>
         <div className="max-w-5xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4 mt-14">
-          {home.benefits.items.map(({ title, body }, i) => {
+          {home.benefits.items.map((item, i) => {
             const c = BENEFIT_TILE_COLORS[i % BENEFIT_TILE_COLORS.length]
-            // "Coming soon." at the end of an item's copy becomes a tag.
-            const comingSoon = /\s*Coming soon\.?$/.test(body)
-            const text = body.replace(/\s*Coming soon\.?$/, '')
+            const link = 'link' in item ? item.link : null
             return (
-              <div key={title} className={`${c.bg} rounded-2xl p-7 flex flex-col`}>
+              <div key={item.title} className={`${c.bg} rounded-2xl p-7 flex flex-col`}>
                 <span className={`font-heading font-semibold text-sm ${c.num} mb-4`}>{String(i + 1).padStart(2, '0')}</span>
-                <h3 className={`font-heading font-semibold text-lg ${c.text} mb-3 leading-snug`}>{title}</h3>
-                <p className={`font-body text-sm ${c.sub} leading-[1.75]`}>{text}</p>
-                {comingSoon && (
-                  <span className={`self-start mt-4 font-body text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full ${c.tag}`}>
-                    Coming soon
-                  </span>
+                <h3 className={`font-heading font-semibold text-lg ${c.text} mb-3 leading-snug`}>{item.title}</h3>
+                <p className={`font-body text-sm ${c.sub} leading-[1.75]`}>{item.body}</p>
+                {link && (
+                  <Link href={link.href} className={`mt-auto pt-5 font-body text-sm font-semibold ${c.text} hover:underline underline-offset-2`}>
+                    {link.label} &rarr;
+                  </Link>
                 )}
               </div>
             )

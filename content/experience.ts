@@ -15,12 +15,12 @@ export const experience = {
 
   origin: {
     overline: 'Why Business Heads exists',
-    heading: 'One good conversation can change how you see your business.',
+    heading: 'One good conversation changes things.',
     body: [
-      'Most business owners have a question they have been carrying around for months. Pricing, hiring, a client who is hard work, whether to grow or stay small. It is hard to think through on your own, and friends and family can only help so much.',
-      'At Business Heads you are in a room with people who have been there. Chances are someone has already worked it out. You go home with a plan, or at least a better question.',
+      'Most business owners are carrying a question they cannot quite answer. Pricing, hiring, a difficult client, whether to grow. Networking events rarely help. You circulate, grab a drink, and nobody says anything real.',
+      'Business Heads grew out of a different need. A few of us wanted people to think out loud with: people who understood the pressure, would push back on our thinking, and had been through something similar.',
     ],
-    credit: 'Members bring the topics. We look after the room.',
+    credit: 'You bring the question. The room brings the experience.',
   },
 
   events: {
