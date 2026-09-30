@@ -19,7 +19,7 @@ const ANNUAL_INCLUDES = [
 
 export const metadata: Metadata = {
   title: 'Join Business Heads',
-  description: 'Choose your Business Heads membership — monthly or annual.',
+  description: 'Choose your Business Heads membership: monthly or annual.',
   robots: { index: false },
 }
 

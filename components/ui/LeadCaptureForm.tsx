@@ -6,9 +6,10 @@ type Status = 'idle' | 'loading' | 'success' | 'error'
 
 type Props = {
   dark?: boolean  // true = dark/charcoal background (default), false = light/yellow background
+  buttonLabel?: string
 }
 
-export function LeadCaptureForm({ dark = true }: Props) {
+export function LeadCaptureForm({ dark = true, buttonLabel = 'Register your interest' }: Props) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [businessName, setBusinessName] = useState('')
@@ -100,7 +101,7 @@ export function LeadCaptureForm({ dark = true }: Props) {
         disabled={status === 'loading'}
         className="w-full rounded-full bg-bh-blue text-white font-heading font-semibold py-3 text-base hover:opacity-90 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {status === 'loading' ? 'Registering...' : 'Register your interest'}
+        {status === 'loading' ? 'Registering...' : buttonLabel}
       </button>
     </form>
   )

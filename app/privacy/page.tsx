@@ -52,7 +52,7 @@ export default function PrivacyPage() {
                     {[
                       ['Member profile', 'First name, last name, business name, job title, LinkedIn URL, profile photo, bio, industry, location', 'Member directory, platform access, community participation', 'Deleted within 30 days of membership ending'],
                       ['Contact details', 'Email address, phone number (if provided)', 'Membership admin, communications, direct marketing with consent', 'Up to 2 years after membership ends, then deleted or de-identified'],
-                      ['Payment and billing', 'Billing address, ABN, transaction records. Card numbers processed by Stripe — not held by Business Heads.', 'Processing payments, financial records', '7 years (ATO)'],
+                      ['Payment and billing', 'Billing address, ABN, transaction records. Card numbers processed by Stripe, not held by Business Heads.', 'Processing payments, financial records', '7 years (ATO)'],
                       ['Event registration', 'Name, contact details, dietary or accessibility requirements (if provided), ticket records', 'Event administration and attendance', '2 years from event'],
                       ['Competition entries', 'Name, contact details, membership status, qualifying transaction records', 'Administering the draw, verifying eligibility, notifying winners', '7 years (members)'],
                       ['LinkedIn data', 'Name, photo, job title and employer, where you choose to link your LinkedIn profile', 'Pre-populating member profile, member directory', 'Treated as member profile data'],

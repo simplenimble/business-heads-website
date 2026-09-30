@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: '/images/og-frequent-flyer-webinar.png',
         width: 1200,
         height: 630,
-        alt: 'Off the record: Getting real value from your frequent flyer points — Bramelle Partners x Business Heads',
+        alt: 'Off the record: Getting real value from your frequent flyer points | Bramelle Partners x Business Heads',
       },
     ],
   },

@@ -30,12 +30,12 @@ export const testimonials: Testimonial[] = [
   {
     id: 'placeholder-3',
     quote:
-      'Placeholder — add a third member testimonial here post-launch. Ideally addresses the time hesitation: something specific they got out of it that justified showing up.',
+      'Placeholder: add a third member testimonial here post-launch. Ideally addresses the time hesitation: something specific they got out of it that justified showing up.',
     author: 'Name',
     business: 'Business',
     location: 'Sydney',
     type: 'early-feedback',
-    photoPlaceholder: '[Photo pending — confirm with Nica]',
+    photoPlaceholder: '[Photo pending: confirm with Nica]',
   },
 ]
 

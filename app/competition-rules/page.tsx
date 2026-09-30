@@ -288,7 +288,7 @@ export default function CompetitionRulesPage() {
 
             <div>
               <h2 className="font-heading font-semibold text-xl text-bh-charcoal mb-4 mt-2">
-                Schedule 1 — Summary of Key Dates and Prize Information
+                Schedule 1: Summary of Key Dates and Prize Information
               </h2>
               <div className="space-y-4">
                 <p>This Schedule provides a reference summary of the recurring promotional structure. Specific dates for each cycle will be published at www.businessheads.com.au.</p>

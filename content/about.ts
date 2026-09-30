@@ -25,7 +25,7 @@ export const about = {
   storyMissing: "That's what was missing.",
 
   storyCommunity: [
-    "Business Heads is a community for small and medium business owners — and for anyone who's ever lost sleep over someone else's business — who want real connection, and everything that quietly comes with it.",
+    "Business Heads is a community for small and medium business owners, and for anyone who's ever lost sleep over someone else's business, who want real connection, and everything that quietly comes with it.",
     "The introduction that changes your business. The group discount that saves money you didn't know you were spending. The conversation that saves you six months of trial and error.",
   ],
 

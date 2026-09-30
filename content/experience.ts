@@ -10,37 +10,36 @@ export const experience = {
   hero: {
     overline: 'The Experience',
     heading: 'What happens at Business Heads.',
-    body: 'Show up. Talk to people who get it. Leave with something useful.',
+    body: 'What it is like to be part of it, and why it is worth your time.',
   },
 
   origin: {
-    overline: 'Why members stay',
-    heading: 'One good conversation changes things.',
+    overline: 'Why Business Heads exists',
+    heading: 'One good conversation can change how you see your business.',
     body: [
-      'You\'ve been to those events. You know the ones. You circulate, you grab a drink, you leave wondering whether you\'d have been more productive at home. Nobody says anything real. Nobody *asks* anything real.',
-      'Business Heads grew out of a different need. A few of us wanted someone to think out loud with. People who understood the pressure, who\'d push back on our thinking, who\'d been through something similar and come out the other side with a perspective worth hearing.',
+      'Business owners do better when they help each other out.',
+      'It might be a question you have been sitting on for months, and a member who has already worked it out. You leave with a plan.',
     ],
+    credit: 'Members bring the topics. We look after the room.',
   },
 
   events: {
     overline: 'Quarterly, Sydney',
-    heading: 'One evening worth showing up for.',
+    heading: 'Four evenings a year with people who get it.',
     body: [
-      'You\'ve done the networking events. You know how they go. You arrive, you scan the room, you have four surface-level conversations and leave wondering why you came.',
-      'Business Heads is one evening, four times a year. There\'s a prompt or activity that gets the whole room talking about something real. A roomful of people who run businesses, being honest about what that\'s like.',
-      'You\'ll leave having talked to people you\'d genuinely want to talk to again.',
+      'Each evening has a topic or activity that gets the whole room talking about something real, like what is working, what is stuck and what you would do differently.',
+      'You will leave having talked properly with people you would like to talk to again.',
     ],
     format: {
       heading: 'How the evening runs',
       steps: [
         {
           label: 'Doors open',
-          description: 'Time to arrive, get a drink, settle in.',
+          description: 'Arrive, get a drink and settle in.',
         },
         {
           label: 'The activity',
-          description:
-            'A prompting topic or facilitated activity that engages the whole room. This is where the good conversations start.',
+          description: 'A topic or facilitated activity that involves the whole room. This is where the good conversations start.',
         },
         {
           label: 'Lucky door prizes',
@@ -48,93 +47,85 @@ export const experience = {
         },
         {
           label: 'Open conversation',
-          description: 'The rest of the evening is yours. Stay as long as you want.',
+          description: 'The rest of the evening is yours. Stay as long as you like.',
         },
       ] as ExperienceFormatStep[],
     },
-    detail: 'Tickets sold separately to Business Heads membership. Tickets are $40 per person.',
+    detail: 'Tickets are sold separately to membership. Tickets are $40 per person.',
   },
 
   prize: {
     overline: 'The Quarterly Draw',
-    heading: 'The quarterly draw',
+    heading: '$5,000 goes back to the community each quarter.',
     body: [
-      'Every quarter, the pot will go back into the community. One member wins it and spends it with other members. Their win becomes someone else\'s opportunity. The money moves around, not out.',
-      'The first $5,000 draw runs once our founding member group is in place.',
-      'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
+      'Each quarter, one member wins $5,000 to spend with other members. That win becomes work for another member\'s business, so the money keeps circulating inside the community.',
+      'Every member is entered into every draw, and buying an event ticket earns you another entry.',
     ],
+    clarification: 'The first draw runs once our founding member group is in place.',
     footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
+    footnoteLinkLabel: 'See Competition Terms',
+    footnoteLinkHref: '/competition-terms',
   },
 
   platform: {
     overline: 'Between events',
-    heading: 'The conversation doesn\'t stop when the evening does.',
-    body: 'Business Heads runs on Circle. There are five spaces where everyone in the community gets to help shape the community, over time.',
+    heading: 'The conversation carries on after the evening ends.',
+    body: 'Business Heads runs on Circle. There are five spaces, and members decide what goes in them.',
     spaces: [
       {
         name: 'Community Feed',
-        description:
-          'Ask questions, share wins, post an offer to the group. Where members stay connected between events.',
+        description: 'Ask questions, share wins and post an offer to the group. This is where members stay in touch between events.',
       },
       {
         name: 'Events',
-        description:
-          'Upcoming event details, registration, and recaps from past evenings.',
+        description: 'Upcoming event details, registration, and recaps from past evenings.',
       },
       {
         name: 'Member Offers',
-        description:
-          'Post a deal for fellow members, or access curated discounts from partner suppliers.',
+        description: 'Post a deal for fellow members, or use curated discounts from partner suppliers.',
       },
       {
         name: 'Member Directory',
-        description:
-          'Find members, see what they\'re working on, and reach out directly. Grows as the community does.',
+        description: 'Find members, see what they are working on and reach out directly. It grows as the community does.',
       },
       {
         name: 'Resources Hub',
-        description:
-          'Guides, templates, and things that have genuinely helped other members.',
+        description: 'Guides, templates and tips that have helped other members.',
       },
     ],
-    note: 'The more people put in, the more everyone gets out.',
+    note: 'The more members put in, the more everyone gets out.',
   },
 
   softBenefits: {
-    overline: 'The stuff that\'s harder to put in a spreadsheet',
-    heading: 'Connection that goes somewhere.',
+    overline: 'What is yours when you join',
+    heading: 'Connections that lead somewhere.',
     items: [
       {
         id: 'introductions',
-        heading: 'Facilitated introductions',
-        body: 'When you join, tell us what you\'re working on. We\'ll connect you with someone in the community who\'s relevant. Someone at Business Heads actually thinks about who you should meet. You take it from there.',
+        heading: 'Introductions to the right people',
+        body: 'When you join, tell us what you are working on. We will introduce you to a member who can help, and you take it from there.',
       },
       {
         id: 'coaching',
-        heading: 'Co-coaching circles',
-        body: 'Once a month, a small group of members works through something real together. You bring a problem. So does everyone else. Structured enough to be useful. Informal enough to be honest. You\'ll leave with a perspective you didn\'t have walking in.',
+        heading: 'Your own advisory board',
+        body: 'Once a month, a small group of members works through something real together. You bring a problem and so does everyone else. It is structured enough to be useful and relaxed enough to be honest. You will leave with a perspective you did not have when you arrived.',
       },
       {
         id: 'learning',
-        heading: 'Learning sessions',
-        body: 'Monthly sessions on things you actually need to know. Led by people who\'ve done it. Topics come from what members are working on, so the sessions stay useful. Coming soon.',
-      },
-      {
-        id: 'discounts',
-        heading: 'Member discounts',
-        body: 'Real savings on software, services, and suppliers you\'re already using. The engine underneath is Rewards Gateway, one of Australia\'s larger member benefits providers.',
+        heading: 'Sessions on what you need to know',
+        body: 'Monthly sessions led by people who have done it. Topics come from members, and when something keeps coming up in the community, it becomes a session. Coming soon.',
       },
     ],
   },
 
   ethos: {
-    heading: 'A room where you can be a person, not a pitch.',
-    body: 'No quotas. No elevator pitches. No expectation that you show up with an agenda. Just bring something real to say.',
+    heading: 'Come as you are and talk about what is really going on.',
+    body: 'Bring a question, a problem or a win, and the room takes it from there. Members set the topics, and you decide how much you share.',
   },
 
   cta: {
-    heading: 'Come to the first one.',
-    body: 'The launch event is in Sydney on 1 July. Tickets are $40. If you\'re on the fence, this is the lowest-risk way to find out whether this is your room.',
+    heading: 'Come along to the next one.',
+    body: 'The next event is in Sydney on Tuesday 27 October 2026. Tickets are $40, sold separately to membership, so it is an easy way to see if Business Heads suits you.',
     cta: 'Join Business Heads',
   },
 }

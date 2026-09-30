@@ -10,7 +10,7 @@ export function Footer() {
     <footer className="bg-bh-charcoal text-white">
       <div className="max-w-7xl mx-auto px-6 pt-16 pb-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
-          {/* Brand — reverse (white) horizontal logo on charcoal */}
+          {/* Brand - reverse (white) horizontal logo on charcoal */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block mb-5" aria-label="Business Heads home">
               {/* eslint-disable-next-line @next/next/no-img-element */}

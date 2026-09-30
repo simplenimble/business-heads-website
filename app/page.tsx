@@ -31,7 +31,7 @@ export default function Home() {
                 {home.hero.cta}
               </Button>
               <Button href="/experience" variant="ghost" size="lg">
-                Learn more
+                {home.hero.secondaryCta}
               </Button>
             </div>
           </div>
@@ -74,9 +74,11 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <p className="font-body text-lg text-white/65 leading-[1.8] mb-6">
-              {home.people.body}
-            </p>
+            {home.people.body.map((para) => (
+              <p key={para} className="font-body text-lg text-white/65 leading-[1.8] mb-6">
+                {para}
+              </p>
+            ))}
             <Link href={home.people.link.href} className="font-body text-sm font-medium text-bh-yellow hover:underline">
               {home.people.link.label} &rarr;
             </Link>
@@ -99,13 +101,13 @@ export default function Home() {
                 {home.prize.body}
               </p>
               <p className="font-body text-lg text-white/65 leading-[1.8] mb-6">
-                {home.prize.firstDrawLine}
-              </p>
-              <p className="font-body text-sm text-white/70 italic leading-relaxed mb-2">
-                {home.prize.footnote}
+                {home.prize.clarification}
               </p>
               <p className="font-body text-sm text-white/70 italic leading-relaxed">
-                {home.prize.legalNote}
+                {home.prize.footnote}{' '}
+                <Link href={home.prize.footnoteLinkHref} className="underline underline-offset-2 hover:text-white">
+                  {home.prize.footnoteLinkLabel}
+                </Link>
               </p>
             </div>
           </div>
@@ -132,6 +134,14 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="max-w-5xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10 mt-16 pt-12 border-t border-bh-charcoal/10">
+          {home.benefits.items.map(({ title, body }) => (
+            <div key={title}>
+              <h3 className="font-heading font-semibold text-lg text-bh-charcoal mb-2 leading-snug">{title}</h3>
+              <p className="font-body text-bh-charcoal/60 leading-[1.75]">{body}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* ─── Who it's for ──────────────────────────────────────────────────── */}
@@ -152,7 +162,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── Next event — standalone clickable card ────────────────────────── */}
+      {/* ─── Next event - standalone clickable card ────────────────────────── */}
       <section className="bg-white px-6 py-12">
         <div className="max-w-5xl mx-auto">
           <a
@@ -160,6 +170,9 @@ export default function Home() {
             className="group flex items-center justify-between gap-8 bg-bh-charcoal rounded-3xl px-10 py-9 hover:bg-bh-blue transition-colors duration-200"
           >
             <div>
+              <p className="font-body text-bh-yellow text-sm uppercase tracking-widest mb-3">
+                {home.eventProof.overline}
+              </p>
               <h2 className="font-heading font-semibold text-2xl md:text-3xl text-white mb-3 leading-tight max-w-xl">
                 {home.eventProof.heading}
               </h2>
@@ -167,7 +180,7 @@ export default function Home() {
                 {home.eventProof.body}
               </p>
               <span className="cta-glow inline-block bg-[#f06925] text-white font-body font-bold text-sm tracking-wide px-6 py-2.5 rounded-full">
-                {home.eventProof.cta}
+                {home.eventProof.link.label}
               </span>
             </div>
             <div className="shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/40 group-hover:text-white group-hover:border-white/60 transition-colors text-lg">
@@ -212,31 +225,11 @@ export default function Home() {
                   {plan.name}
                 </h3>
 
-                {/* Prices */}
+                {/* Price (incl. GST) */}
                 <div className="mb-1">
-                  {plan.foundingPrice ? (
-                    <>
-                      {/* Original price strikethrough (annual only) */}
-                      {plan.originalPrice && (
-                        <p className="font-body text-lg text-bh-charcoal/30 line-through mb-1">
-                          {plan.originalPrice}
-                        </p>
-                      )}
-                      {/* Regular price struck through — founding price is the deal */}
-                      <p className="font-body text-lg text-bh-charcoal/35 line-through mb-1">
-                        {plan.price}
-                      </p>
-                      {/* Founding price — hero number */}
-                      <span className="font-heading font-semibold text-bh-charcoal" style={{ fontSize: '3.25rem', lineHeight: 1 }}>
-                        {plan.foundingPrice}
-                      </span>
-                    </>
-                  ) : (
-                    /* No founding price — regular price is the hero */
-                    <span className="font-heading font-semibold text-bh-charcoal" style={{ fontSize: '3.25rem', lineHeight: 1 }}>
-                      {plan.price}
-                    </span>
-                  )}
+                  <span className="font-heading font-semibold text-bh-charcoal" style={{ fontSize: '3.25rem', lineHeight: 1 }}>
+                    {plan.price}
+                  </span>
                 </div>
                 <p className="font-body text-sm text-bh-charcoal/45 mb-5">{plan.priceNote}</p>
 
@@ -244,11 +237,14 @@ export default function Home() {
                   {plan.description}
                 </p>
 
-                {/* Founding discount band — annual only */}
-                {plan.foundingNote && (
+                {/* Founding member price band */}
+                {plan.foundingPrice && (
                   <div className="rounded-xl bg-bh-yellow px-4 py-3 mb-6">
+                    <p className="font-heading font-semibold text-2xl text-bh-charcoal leading-tight">
+                      {plan.foundingPrice}
+                    </p>
                     <p className="font-body text-sm text-bh-charcoal font-semibold leading-snug">
-                      {plan.foundingNote}
+                      {plan.foundingPriceNote}
                     </p>
                   </div>
                 )}
@@ -293,7 +289,7 @@ export default function Home() {
                 {home.firmPartnership.heading}
               </h2>
               <p className="font-body text-bh-charcoal/60 leading-relaxed max-w-xl">
-                {home.firmPartnership.subtext}
+                {home.firmPartnership.body}
               </p>
             </div>
             <Link
@@ -317,7 +313,7 @@ export default function Home() {
             {home.leadCapture.heading}
           </h2>
           <p className="font-body text-white/55 mb-10 leading-relaxed">{home.leadCapture.body}</p>
-          <LeadCaptureForm />
+          <LeadCaptureForm buttonLabel={home.leadCapture.button} />
         </div>
       </section>
 

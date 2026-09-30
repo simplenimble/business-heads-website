@@ -76,14 +76,14 @@ export default function ExperiencePage() {
             ))}
           </div>
 
-          {/* Feature pull quote - only shown if content provides a third paragraph */}
-          {experience.origin.body[2] && (
+          {/* Feature pull quote - the origin credit line */}
+          {experience.origin.credit && (
             <div className="border-t border-white/15 pt-10">
               <p
                 className="font-heading font-semibold text-bh-yellow leading-tight"
                 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 3rem)' }}
               >
-                {experience.origin.body[2]}
+                {experience.origin.credit}
               </p>
             </div>
           )}
@@ -161,8 +161,12 @@ export default function ExperiencePage() {
             {experience.prize.body.map((para) => (
               <p key={para} className="font-body text-white/65 leading-[1.8]">{para}</p>
             ))}
+            <p className="font-body text-white/65 leading-[1.8]">{experience.prize.clarification}</p>
             <p className="font-body text-sm text-white/70 italic">
-              {experience.prize.footnote}
+              {experience.prize.footnote}{' '}
+              <Link href={experience.prize.footnoteLinkHref} className="underline underline-offset-2 hover:text-white">
+                {experience.prize.footnoteLinkLabel}
+              </Link>
             </p>
           </div>
         </div>

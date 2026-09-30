@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@supabase/supabase-js'
 
 /*
- * Supabase setup — run this once in the Supabase SQL editor before going live:
+ * Supabase setup - run this once in the Supabase SQL editor before going live:
  *
  * CREATE TABLE leads (
  *   id uuid DEFAULT gen_random_uuid() PRIMARY KEY,

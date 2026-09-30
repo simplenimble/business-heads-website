@@ -1,4 +1,4 @@
-const JOIN_URL = '/join'
+const JOIN_URL = 'https://www.businessheads.com.au/checkout/joining-business-heads'
 
 export const home = {
   join_url: JOIN_URL,
@@ -8,70 +8,98 @@ export const home = {
     sub1: 'A business network where you can connect, test ideas, learn and grow with other business heads.',
     sub2: 'Not a referral machine. Not a pitch-fest. Something worth your time.',
     cta: 'Join Business Heads',
+    secondaryCta: 'Learn more',
   },
 
   people: {
-    overline: 'Why members stay',
-    heading: 'One good conversation changes things.',
-    body: 'You\'ve been to those events. You circulate, grab a drink, and leave wondering whether you\'d have been better off staying home. Business Heads exists because a few of us needed somewhere to think out loud — with people who\'d been through it, push back on our thinking, and actually understand the pressure.',
-    link: { href: '/experience', label: 'What actually happens' },
+    overline: 'Why Business Heads exists',
+    heading: 'Business owners do better when they help each other out.',
+    body: [
+      'You have probably been to a few networking events. You wander the room, swap some business cards, have a drink, and head home thinking you would have got more done at your desk, or with a friend who knows your business.',
+      'Business Heads started because a few of us wanted something different: people in a similar position to talk to, to solve problems with, and who would challenge our thinking. That is what we built, and members shape it from here.',
+    ],
+    link: { href: '/experience', label: 'See what happens at an event' },
   },
 
   prize: {
     overline: 'The Quarterly Draw',
-    heading: 'The money stays in the room.',
-    body: 'One member will win the quarterly draw. They spend it with other members. Their win becomes someone else\'s work. The money moves around, not out.',
-    footnote: 'Every member gets an entry into every draw, just for being here. Buy an event ticket, get another entry.',
-    firstDrawLine: 'The first $5,000 draw runs once our founding member group is in place.',
-    legalNote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
+    heading: '$5,000 goes back to the community each quarter.',
+    body: 'Each quarter, one member wins $5,000 to spend with other members. That win becomes work for another member\'s business, so the money keeps circulating inside the community. Every member is entered into every draw, and buying an event ticket earns you another entry.',
+    clarification: 'The first draw runs once our founding member group is in place.',
+    footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
+    footnoteLinkLabel: 'See Competition Terms',
+    footnoteLinkHref: '/competition-terms',
   },
 
   benefits: {
     overline: 'What you get',
-    heading: 'More than a membership. A room worth being in.',
-    body: 'Quarterly events, a prize draw, member discounts, co-coaching circles, facilitated introductions, and an online platform that keeps the conversation going between events.',
-    link: { href: '/experience', label: 'See everything that\'s included' },
+    heading: 'What is yours when you join',
+    body: 'Each of these gets better as more members take part.',
+    items: [
+      {
+        title: 'Four evenings a year with people who get it',
+        body: 'Quarterly events in Sydney, each with a topic or activity that gets the whole room talking about real things.',
+      },
+      {
+        title: 'Introductions to the right people',
+        body: 'Tell us what you are working on and we will introduce you to a member who can help. There is also a directory of everyone in the community.',
+      },
+      {
+        title: 'Your own advisory board',
+        body: 'Once a month, a small group of members works through something real together. Optional, and always useful.',
+      },
+      {
+        title: 'Sessions on what you need to know',
+        body: 'Monthly sessions led by people who have done it. Topics come from members, and when something keeps coming up, it becomes a session. Coming soon.',
+      },
+      {
+        title: 'Savings on what you already buy',
+        body: 'Member discounts on software, services and suppliers you are probably already paying for.',
+      },
+      {
+        title: 'A community online, between events',
+        body: 'Five spaces on Circle to ask questions, share wins and find answers when you need them.',
+      },
+    ],
+    link: { href: '/experience', label: 'See everything that is included' },
   },
 
   audience: {
-    heading: 'Sound familiar?',
+    heading: 'Who Business Heads is for',
     groups: [
       {
-        heading: 'You\'re doing it mostly alone.',
-        body: 'Sole trader or small team. You\'re the one holding it all together, and most days there\'s nobody to think out loud with.',
+        heading: 'You are running it mostly on your own.',
+        body: 'Sole trader or small team. You hold it all together, and most days there is nobody to think out loud with. You want people who understand the job.',
       },
       {
-        heading: 'You\'ve made it work. That\'s isolating in its own way.',
-        body: 'Mid-sized team. You\'ve figured a lot out, which makes it harder to find people you can be honest with.',
+        heading: 'You have made it work, and that can be lonely too.',
+        body: 'Mid-sized team. You have figured a lot out, which can make it harder to find people you can be straight with. You want peers who know what the job is really like.',
       },
     ],
-    footer: 'Busy, independent, pragmatic. You only give your time to something worth it.',
+    footer: 'You are busy, independent and practical, and you give your time to things that are worth it.',
   },
 
   eventProof: {
-    heading: 'Business Heads in Sydney',
-    body: 'Tuesday 27 October 2026. In person. Venue and format announced soon.',
-    cta: 'Find out more',
-    link: { href: '/events', label: 'Find out more' },
+    overline: 'Next event',
+    heading: 'Tuesday 27 October 2026. Sydney.',
+    body: 'In person. Venue and format will be announced soon. Tickets are $40 per person and are sold separately to membership.',
+    link: { href: '/events', label: 'Event details' },
   },
 
   pricing: {
     overline: 'Founding offer',
-    heading: 'Founding member rate.',
-    subheading: 'One good introduction. One subscription saved. One conversation that changes your direction. This membership earns its keep.',
-    highlight: 'This membership earns its keep.',
-    foundingDiscount: '30% off your first year — founding members only.',
+    heading: 'Founding member rate: 30% off your first year.',
+    subheading: 'One good introduction, one subscription saved or one conversation that shifts your direction can cover the cost.',
     plans: [
       {
         id: 'monthly',
         name: 'Monthly subscription',
         price: '$220',
-        priceNote: 'per month (inc. GST)',
-        originalPrice: null,
+        priceNote: 'per month, incl. GST',
         badge: null,
-        description: 'For business owners who want to get a feel for it first.',
-        foundingPrice: '',
-        foundingNote: '',
+        description: 'Get a feel for it first.',
+        foundingPrice: '$154',
+        foundingPriceNote: 'per month, incl. GST, for your first year',
         includes: [
           'One entry every month into the quarterly member draw',
           'Discounted member tickets to quarterly events',
@@ -86,12 +114,11 @@ export const home = {
         id: 'annual',
         name: 'Annual subscription',
         price: '$2,400',
-        priceNote: 'per year (inc. GST)',
-        originalPrice: null,
+        priceNote: 'per year, incl. GST',
         badge: 'Most popular',
-        description: 'Our most popular option. One month free, and you\'re in for the year.',
-        foundingPrice: '',
-        foundingNote: 'Founding member rate. 30% off your first year, so you pay $1,680.',
+        description: 'One month free, and you are in for the year.',
+        foundingPrice: '$1,680',
+        foundingPriceNote: 'for your first year, incl. GST',
         includes: [
           'Five entries into every quarterly draw (20 a year)',
           'One month free',
@@ -104,20 +131,22 @@ export const home = {
         ctaUrl: JOIN_URL,
       },
     ],
-    footnote: '$220/month or $2,400/year at full rate. No lock-in. Cancel any time.',
+    footnote: 'All prices include GST. No lock-in. Cancel any time.',
   },
 
   firmPartnership: {
-    heading: 'Give your clients the best two hours they will have in business this year. And put your name on it.',
-    subtext: 'This is an invitation for your firm to host a room of its own.',
-    cta: 'Learn more',
+    heading: 'Host a Business Heads evening for your clients.',
+    body: 'Your firm can host an evening for its own clients, with your name on it. Get in touch and we will talk it through.',
+    cta: 'Talk to us about hosting',
+    // /partner doesn't exist yet; points to the firm partnership card on /join.
     href: '/join#firm-partnership',
   },
 
   leadCapture: {
     overline: 'Not ready yet?',
     heading: 'Register your interest.',
-    body: 'No commitment. We\'ll keep you across what\'s happening.',
+    body: 'No commitment. We will keep you across what is happening.',
+    button: 'Register your interest',
   },
 
   finalCta: {

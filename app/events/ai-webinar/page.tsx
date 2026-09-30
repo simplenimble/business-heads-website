@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: '/images/og-ai-webinar.png',
         width: 1200,
         height: 630,
-        alt: 'Off the record: Can AI give you half your week back? — Business Heads x Horizon AI',
+        alt: 'Off the record: Can AI give you half your week back? | Business Heads x Horizon AI',
       },
     ],
   },

@@ -20,9 +20,9 @@ const ANNUAL_INCLUDES = [
 ]
 
 const FIRM_INCLUDES = [
-  'Three Business Heads memberships for your firm — one for you, two for whoever else you choose. Includes all ten events a year, the member platform, and entries into the quarterly prize draw.',
-  'Two curated events for your clients — up to thirty clients, venue, food and drinks covered, co-branded with your firm. You host.',
-  'Twenty half-price memberships to hand out — choose twenty clients to join at half price, $1,200 in their first year.',
+  'Three Business Heads memberships for your firm: one for you, two for whoever else you choose. Includes all ten events a year, the member platform, and entries into the quarterly prize draw.',
+  'Two curated events for your clients: up to thirty clients, venue, food and drinks covered, co-branded with your firm. You host.',
+  'Twenty half-price memberships to hand out: choose twenty clients to join at half price, $1,200 in their first year.',
 ]
 
 export const metadata: Metadata = {
@@ -88,7 +88,7 @@ export default function JoinPage() {
             </a>
           </div>
 
-          {/* Annual — most popular */}
+          {/* Annual - most popular */}
           <div className="bg-white border border-bh-charcoal/10 rounded-2xl p-8 flex flex-col relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <span

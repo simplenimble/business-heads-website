@@ -88,7 +88,7 @@ export default function TermsPage() {
                 </table>
               </div>
               <p>Business Heads may add to or adjust member benefits from time to time. Where a benefit is removed or materially reduced, we will give you at least 30 days notice. If you are on an annual membership and we remove or adjust any of the above benefits in a material way during your paid period, you may cancel and receive a pro-rata refund for the unused portion.</p>
-              <p>For the purposes of these terms, a material benefit is one of the core membership inclusions listed in the table above — the member directory, networking platform, member deals, quarterly event access, or competition entries. Minor changes to how a benefit is delivered do not constitute removal of a material benefit.</p>
+              <p>For the purposes of these terms, a material benefit is one of the core membership inclusions listed in the table above: the member directory, networking platform, member deals, quarterly event access, or competition entries. Minor changes to how a benefit is delivered do not constitute removal of a material benefit.</p>
             </Section>
 
             <Section num="4" heading="Pricing and Billing">
