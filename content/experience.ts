@@ -17,8 +17,8 @@ export const experience = {
     overline: 'Why Business Heads exists',
     heading: 'One good conversation can change how you see your business.',
     body: [
-      'Business owners do better when they help each other out.',
-      'It might be a question you have been sitting on for months, and a member who has already worked it out. You leave with a plan.',
+      'Most business owners have a question they have been carrying around for months. Pricing, hiring, a client who is hard work, whether to grow or stay small. It is hard to think through on your own, and friends and family can only help so much.',
+      'At Business Heads you are in a room with people who have been there. Chances are someone has already worked it out. You go home with a plan, or at least a better question.',
     ],
     credit: 'Members bring the topics. We look after the room.',
   },
@@ -28,7 +28,7 @@ export const experience = {
     heading: 'Four evenings a year with people who get it.',
     body: [
       'Each evening has a topic or activity that gets the whole room talking about something real, like what is working, what is stuck and what you would do differently.',
-      'You will leave having talked properly with people you would like to talk to again.',
+      'Most people go home with a few names they want to follow up with.',
     ],
     format: {
       heading: 'How the evening runs',

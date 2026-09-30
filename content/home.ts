@@ -63,7 +63,7 @@ export const home = {
   },
 
   audience: {
-    heading: 'Who Business Heads is for',
+    heading: 'Does this sound like you?',
     groups: [
       {
         heading: 'You are running it mostly on your own.',
