@@ -63,8 +63,6 @@ export const experience = {
     ],
     clarification: 'The first draw runs once our founding member group is in place.',
     footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
-    footnoteLinkLabel: 'See Competition Terms',
-    footnoteLinkHref: '/competition-terms',
   },
 
   platform: {

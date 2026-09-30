@@ -163,10 +163,7 @@ export default function ExperiencePage() {
             ))}
             <p className="font-body text-white/65 leading-[1.8]">{experience.prize.clarification}</p>
             <p className="font-body text-sm text-white/70 italic">
-              {experience.prize.footnote}{' '}
-              <Link href={experience.prize.footnoteLinkHref} className="underline underline-offset-2 hover:text-white">
-                {experience.prize.footnoteLinkLabel}
-              </Link>
+              {experience.prize.footnote}
             </p>
           </div>
         </div>

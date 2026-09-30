@@ -104,10 +104,7 @@ export default function Home() {
                 {home.prize.clarification}
               </p>
               <p className="font-body text-sm text-white/70 italic leading-relaxed">
-                {home.prize.footnote}{' '}
-                <Link href={home.prize.footnoteLinkHref} className="underline underline-offset-2 hover:text-white">
-                  {home.prize.footnoteLinkLabel}
-                </Link>
+                {home.prize.footnote}
               </p>
             </div>
           </div>

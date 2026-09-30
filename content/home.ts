@@ -27,8 +27,6 @@ export const home = {
     body: 'Each quarter, one member wins $5,000 to spend with other members. That win becomes work for another member\'s business, so the money keeps circulating inside the community. Every member is entered into every draw, and buying an event ticket earns you another entry.',
     clarification: 'The first draw runs once our founding member group is in place.',
     footnote: 'Winners may choose a $1,500 cash alternative instead of the member-business prize.',
-    footnoteLinkLabel: 'See Competition Terms',
-    footnoteLinkHref: '/competition-terms',
   },
 
   benefits: {
