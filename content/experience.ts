@@ -20,7 +20,6 @@ export const experience = {
       'Most business owners are carrying a question they cannot quite answer. Pricing, hiring, a difficult client, whether to grow. Networking events rarely help. You circulate, grab a drink, and nobody says anything real.',
       'Business Heads grew out of a different need. A few of us wanted people to think out loud with: people who understood the pressure, would push back on our thinking, and had been through something similar.',
     ],
-    credit: 'You bring the question. The room brings the experience.',
   },
 
   events: {

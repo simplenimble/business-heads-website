@@ -70,23 +70,11 @@ export default function ExperiencePage() {
           </h2>
 
           {/* Body paragraphs */}
-          <div className="grid md:grid-cols-2 gap-10 mb-12">
+          <div className="grid md:grid-cols-2 gap-10">
             {experience.origin.body.slice(0, 2).map((para) => (
               <p key={para} className="font-body text-white/65 leading-[1.8]">{para}</p>
             ))}
           </div>
-
-          {/* Feature pull quote - the origin credit line */}
-          {experience.origin.credit && (
-            <div className="border-t border-white/15 pt-10">
-              <p
-                className="font-heading font-semibold text-bh-yellow leading-tight"
-                style={{ fontSize: 'clamp(1.75rem, 3.5vw, 3rem)' }}
-              >
-                {experience.origin.credit}
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
