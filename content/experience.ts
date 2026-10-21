@@ -119,10 +119,4 @@ export const experience = {
     heading: 'Come as you are and talk about what is really going on.',
     body: 'Bring a question, a problem or a win, and the room takes it from there. Members set the topics, and you decide how much you share.',
   },
-
-  cta: {
-    heading: 'Come along to the next one.',
-    body: 'The next event is in Sydney on Tuesday 27 October 2026. Tickets are $40, sold separately to membership, so it is an easy way to see if Business Heads suits you.',
-    cta: 'Join Business Heads',
-  },
 }

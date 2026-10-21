@@ -102,24 +102,16 @@ export const events: EventItem[] = [
   },
 ]
 
-/* Tentative upcoming events shown as tabs (Oct–Dec) on the events page.
+/* Tentative upcoming events shown as tabs (Nov–Dec) on the events page.
    Update dates/details here as they're confirmed. */
 export const upcomingEventCards: UpcomingEventCard[] = [
   {
-    id: 'in-person-oct-2026',
-    tabLabel: 'Oct',
-    label: 'In person',
-    date: 'Tuesday 27 October 2026',
-    heading: 'Business Heads in Sydney',
-    body: 'Venue and format announced soon.',
-  },
-  {
     id: 'online-nov-2026',
     tabLabel: 'Nov',
-    label: 'Online',
+    label: 'Online webinar',
     date: 'November',
-    heading: 'November. Online.',
-    body: 'Community poll topic.',
+    heading: 'Off the record',
+    body: 'Topic to be chosen by the community. We will be asking members what they want covered, and announcing the date and topic shortly.',
   },
   {
     id: 'in-person-dec-2026',

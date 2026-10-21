@@ -81,9 +81,9 @@ export const home = {
 
   eventProof: {
     overline: 'Next event',
-    heading: 'Tuesday 27 October 2026. Sydney.',
-    body: 'In person. Venue and format will be announced soon. Tickets are $40 per person and are sold separately to membership.',
-    link: { href: '/events', label: 'Event details' },
+    heading: 'Off the record',
+    body: 'Online webinar. Topic to be chosen by the community. We will be asking members what they want covered, and announcing the date and topic shortly.',
+    link: { href: '/events', label: "See what's coming" },
   },
 
   pricing: {
